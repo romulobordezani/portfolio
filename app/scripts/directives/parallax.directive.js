@@ -86,7 +86,6 @@ angular.module('mdParallax', []).directive('mdParallax', [
                         calcVal = parallaxMaxVal;
                     }
 
-
                     if (isSpecialVal) {
                         resultVal = '' + cssValue + '(' + calcVal + 'px)';
                     } else {
@@ -102,13 +101,9 @@ angular.module('mdParallax', []).directive('mdParallax', [
 
                 }
 
-
                 if( window.screen.width > 768 ){
                     trueWindow.addEventListener('scroll', _onScroll);
-                }else{
-                    _onScroll();
                 }
-
 
             }
         };

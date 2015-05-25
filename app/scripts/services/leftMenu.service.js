@@ -21,7 +21,7 @@
                         alt: 'Home',
                         href: '/',
                         target : '',
-                        imgsrc: 'images/home.png'
+                        imgsrc: 'images/menu/home.svg'
                     },
 
                     /*
@@ -41,7 +41,7 @@
                         alt: 'Work',
                         href: '/work',
                         target : '',
-                        imgsrc: 'images/work.png'
+                        imgsrc: 'images/menu/work.svg'
                     },
 
                     /*,
@@ -98,7 +98,7 @@
                         alt: 'Sophia',
                         href: 'http://romulobordezani.com.br/sophia',
                         target : '',
-                        imgsrc: 'images/sophia.png'
+                        imgsrc: 'images/menu/sophia.svg'
                     },
 
                     {
@@ -106,7 +106,7 @@
                         alt: 'Blog - Modernet',
                         href: 'http://modernet.com.br/',
                         target : '',
-                        imgsrc: 'images/blog.png'
+                        imgsrc: 'images/menu/blog.svg'
                     },
 
                     {
@@ -114,7 +114,7 @@
                         alt: 'Contact',
                         href: '/contact',
                         target : '',
-                        imgsrc: 'images/contact.png'
+                        imgsrc: 'images/menu/contact.svg'
                     }
 
                 ];

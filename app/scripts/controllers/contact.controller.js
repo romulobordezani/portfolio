@@ -8,14 +8,45 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('contactController', function ($scope, $http, transformRequestAsFormPost, $mdDialog ){
+    .controller('contactController', function ($scope, $http, transformRequestAsFormPost, $mdDialog, Geolocation ){
 
-        $scope.user = {
-            name: '',
-            email: '',
-            phone: '',
-            address: '',
-            message: ''
+        var addressFullFilled = false;
+
+        function init(){
+
+            $scope.user = {
+                name: '',
+                email: '',
+                phone: '',
+                address: '',
+                message: ''
+            };
+
+        }
+
+
+        function fillAddressInput(position){
+
+            var coordinates = position.coords.latitude + "," + position.coords.longitude;
+
+            $http.get('http://maps.googleapis.com/maps/api/geocode/json?latlng=' + coordinates ).
+
+                success(function(data, status, headers, config) {
+                    $scope.user.address = data.results[0].formatted_address;
+                    addressFullFilled = true;
+                }).
+
+                error(function(data, status, headers, config) {
+
+                });
+
+        }
+
+
+        $scope.getGeolocation = function(){
+            if( !addressFullFilled ){
+                Geolocation.getLocation(fillAddressInput);
+            }
         };
 
 
@@ -34,6 +65,7 @@ angular.module('rbApp')
 
             request.success(
                 function() {
+
                     $mdDialog.show(
                         $mdDialog.alert()
                             .parent(angular.element(document.body))
@@ -42,6 +74,7 @@ angular.module('rbApp')
                             .ariaLabel('I will reply it as soon as possible. Thank you. Cheers')
                             .ok('Ok')
                     );
+
                     $scope.user = {
                         name: '',
                         email: '',
@@ -49,9 +82,12 @@ angular.module('rbApp')
                         address: '',
                         message: ''
                     };
+
                 }
             );
 
         };
+
+        init();
 
     });

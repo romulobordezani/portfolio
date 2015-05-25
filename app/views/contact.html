@@ -3,7 +3,7 @@
 
         <form name="contactForm" ng-submit="sendEmail()" novalidate autocomplete="off" >
 
-            <h1 class="md-title" hide-gt-sm >Contact</h1>
+            <h1 class="md-title" >Contact</h1>
 
             <md-input-container class="md-icon-float" >
                 <label>Name</label>
@@ -13,7 +13,7 @@
 
             <md-input-container class="md-icon-float" >
                 <md-icon md-svg-src="images/contact/ic_phone_24px.svg"></md-icon>
-                <input ng-model="user.phone" type="text" placeholder="Phone Number" >
+                <input ng-model="user.phone" type="tel" placeholder="Phone Number"  >
             </md-input-container>
 
             <md-input-container class="md-icon-float" >
@@ -23,17 +23,17 @@
 
             <md-input-container class="md-icon-float" >
                 <md-icon md-svg-src="images/contact/ic_place_24px.svg" style="display:inline-block;"></md-icon>
-                <input ng-model="user.address" type="text" placeholder="Address" >
+                <input flex ng-model="user.address" type="text" placeholder="Address" ng-click="getGeolocation()" >
             </md-input-container>
 
             <md-input-container flex>
-                <label>Message</label>
-                <textarea ng-model="user.message" columns="1"  md-maxlength="150" ng-required="true" ></textarea>
+                <label>Message ( Required )</label>
+                <textarea ng-model="user.message" columns="1" ng-required="true" md-maxlength="150" ng-required="true" ></textarea>
             </md-input-container>
 
             <br/>
 
-            <md-button class="md-raised md-primary" type="submit" >Send</md-button>
+            <md-button class="md-raised md-accent md-hue-2" type="submit" ng-disabled="!contactForm.$valid" >Send</md-button>
 
         </form>
 

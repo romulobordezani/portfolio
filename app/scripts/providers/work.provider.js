@@ -12,10 +12,9 @@ angular.module('rbApp')
                 $timeout( function(){
                     var currentValue = current ? '/' + current : '';
                     $location.path( '/work/' + year +  currentValue );
-                }, 10);
+                }, 150);
 
             };
-
 
             this.setDialogAlreadySeem = function(value) {
                 dialogAlreadySeem = value;
@@ -25,15 +24,12 @@ angular.module('rbApp')
                 return dialogAlreadySeem;
             };
 
-
-
-
             this.getCurrent = function() {
                 return current;
             };
 
             this.setCurrent = function( newCurrent, mustToRebuildUrl, mustToBroadcast ) {
-                //console.log( '%c setCurrent ' + newCurrent, 'color:orange;' );
+
                 current = newCurrent;
 
                 if( mustToBroadcast ) {
@@ -46,7 +42,6 @@ angular.module('rbApp')
 
             };
 
-
             this.resetCurrent = function() {
                 current = false;
                 $rootScope.$broadcast( 'changeCurrentVal' );
@@ -58,8 +53,6 @@ angular.module('rbApp')
             };
 
             this.setWorkYear = function( newYear, mustToRebuildUrl, mustToBroadcast ) {
-
-                //console.log( '%c setWorkYear ' + newYear, 'color:blue;', mustToRebuildUrl, mustTobroadcast );
 
                 newYear = parseInt( newYear, 10 );
 
@@ -84,10 +77,6 @@ angular.module('rbApp')
                 return year;
 
             };
-
-
-
-
 
 
             this.getWorkSwitcherVisibility = function() {
