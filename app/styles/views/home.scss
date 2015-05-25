@@ -1,0 +1,155 @@
+@import '../libs/colors.scss';
+@import '../libs/measures.scss';
+
+md-content#home {
+
+    &.content-pusher-home{
+        min-height: calc(100vh - 576px);
+    }
+
+    .parallax{
+
+        .parallax-wrapper {
+
+            width:100%;
+
+            .parallax-img {
+
+                background: url(../images/bg-parallax-sm.jpg) no-repeat center bottom;
+                background-size: cover;
+                height: 300px;
+                width: 100%;
+                position: relative;
+
+                @media (min-width: $flex-md ) {
+                    background: url(../images/bg-parallax-sm.jpg) no-repeat center bottom;
+                    background-size: 100%;
+                    height: 400px;
+                }
+
+                @media (min-width: $flex-lg ) {
+                    background: url(../images/bg-parallax.jpg) no-repeat center bottom;
+                    background-size: cover;
+                    height: 436px;
+                }
+
+            }
+
+            .parallax-txt {
+
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                text-align: center;
+                font-size: 3.0em;
+                color: $discret-black;
+
+
+                @media ( min-width: $flex-sm ) {
+                    font-size: 3.7em;
+                    text-shadow: 0 0 16px #FFFFFF;
+                }
+
+                @media ( min-width: $flex-lg ) {
+                    font-size: 4.7em;
+                }
+
+                @media ( min-width: $flex-lg + 500 ) {
+                    font-size: 6.7em;
+                }
+
+                div{
+
+                    margin: 0 7px;
+
+                    .parallax-subtext1{
+                        font-size:0.37em;
+                    }
+
+                    .parallax-subtext2{
+
+                        font-size:0.53em;
+
+                        @media ( min-width: $flex-md ) {
+                            font-size:0.37em;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+    .home-brands{
+
+        img{
+            width: 100%;
+        }
+
+    }
+
+    md-tab-content{
+
+        md-content{
+
+            margin-top: 33px;
+
+            p{
+                margin-bottom: 33px;
+
+
+            }
+
+        }
+
+
+
+    }
+
+    .hands-on {
+        img {
+            width: 100%;
+            height: 100%;
+            display:block;
+        }
+    }
+
+    .home-footer{
+
+        background: url('../images/home-footer-sm.jpg' ) $discret-black no-repeat center top;
+        background-size: cover;
+        height: 150px;
+        width: 100%;
+        position: relative;
+
+        @media (min-width: $flex-md ) {
+            background: url('../images/home-footer-md.jpg' ) $discret-black  no-repeat center top;
+            background-size: auto;
+            height: 233px;
+        }
+
+        @media ( min-width: 1490px ) {
+            background-size: cover;
+        }
+
+        @media (min-width: $flex-lg + 500 ) {
+            height: 400px;
+            background-size: cover;
+            background: url('../images/home-footer-lg.jpg' ) no-repeat center center;
+        }
+
+
+
+
+
+    }
+
+
+}

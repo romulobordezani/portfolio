@@ -1,0 +1,54 @@
+@import '../libs/colors.scss';
+@import '../libs/measures.scss';
+
+md-content#work {
+
+    .content-pusher-work {
+
+        min-height: calc(100vh - 192px);
+        margin-top: 16px;
+
+        h1.md-title {
+            margin-bottom: 0px;
+        }
+
+        md-card {
+
+            max-height: none;
+            background:#ffffff;
+            min-width: 47%;
+            cursor: pointer;
+
+            @media (max-width:$flex-sm){
+                margin-bottom: 56px!important;
+            }
+
+            @media (min-width:$flex-md){
+                min-width: 46%;
+            }
+
+            @media (min-width:$flex-lg){
+                min-width: 30%;
+            }
+
+            md-card-content {
+
+            }
+
+            .md-toolbar-tools {
+                background: $discret-black;
+                color:$white;
+                font-size: 0.9em;
+            }
+
+        }
+
+    }
+
+    #close-job {
+        position: fixed;
+        right: 4px;
+        bottom: 2px;
+    }
+
+}

@@ -1,0 +1,72 @@
+@import '../libs/colors.scss';
+@import '../libs/measures.scss';
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.md-avatar{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 22px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    float: left;
+}
+
+md-card{
+    outline:none!important;
+}
+
+
+
+md-content{
+
+    &.md-default-theme {
+        background-color: $white;
+    }
+
+}
+
+.content-splitter{
+    background: url('../images/uis/content-splitter.jpg') no-repeat center center transparent;
+    height:49px;
+    width: 100%;
+}
+
+.content-splitter-inverted{
+    background: url('../images/uis/content-splitter-inverted.jpg') no-repeat center center transparent;
+    height:49px;
+    width: 100%;
+}
+
+a, a:link, a:visited{
+    text-decoration: none;
+    color: rgb(255,87,34);
+}
+
+a:hover, a:active{
+    color: rgb(255,160,64);
+}
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

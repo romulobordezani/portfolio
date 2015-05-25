@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="no-js" ng-app="rbApp" ng-cloak >
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Romulo Bordezani</title>
+
+        <META NAME="robots" CONTENT="index, follow">
+        <META NAME="description" CONTENT="Turning ideas into code.">
+        <META NAME="keywords" CONTENT="romulo bordezani, romulobordezani, Rômulo, Bordezani, web, development, site, portfolio, interface, material design, angular" >
+        <META NAME="author" CONTENT="Romulo Bordezani">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Turning ideas displayables.">
+        <meta property="og:url" content="http://romulobordezani.com.br/"/>
+        <meta property="og:title" content="Romulo Bordezani" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://www.romulobordezani.com.br/images/ogimage.png" />
+        <meta property="og:site_name" content="Romulo Bordezani" />
+        <meta property="og:description" content="Turning ideas into code."/>
+        <meta name="theme-color" content="#333333">
+
+        <!-- For desktop browsers -->
+        <link rel='SHORTCUT ICON' href='favicon.ico' />
+        <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!--base href="/"-->
+
+        <script type="text/ng-template" id="footer.html">
+            <md-toolbar id="footer" layout="row" >
+                <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
+                    <div hide-sm >Rômulo Bordezani - São Paulo, Brazil </div><md-button class="md-primary" ng-href="#/contact" >contact</md-button>
+                </div>
+                <div layout="row" layout-align="end center" layout-padding class="footer-right" flex >
+                    <div hide-sm >powered by </div><img src="images/angular-logo.svg" />
+                </div>
+            </md-toolbar>
+        </script>
+
+    </head>
+
+    <body id="rb-body"  layout="column" ng-controller="appController"  >
+
+        <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <style>
+
+            div#pre-loader-wrapper{
+                margin: auto;
+                position: absolute;
+                background-color: #f6f6f6;
+                width: 100%;
+                height: 100%;
+                z-index: 50000;
+            }
+
+            .spinner {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                margin: auto;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+
+            .model-3 {
+                background: #BF1B21;
+            }
+            .model-3 .spinner {
+                background: #fff;
+                height: 40px;
+                border-radius: 0;
+                -webkit-animation: rotateRct 1.2s ease-in-out infinite, color-change 1.3s ease-in-out infinite;
+                animation: rotateRct 1.2s ease-in-out infinite, color-change 1.3s ease-in-out infinite;
+            }
+
+            @-webkit-keyframes color-change {
+                0% {
+                    background: #FF5722;
+                }
+                33% {
+                    background: #FF9C22;
+                }
+                66% {
+                    background: #1D71A3;
+                }
+                100% {
+                    background: #18B364;
+                }
+            }
+
+            @keyframes color-change {
+                0% {
+                    background: #FF5722;
+                }
+                33% {
+                    background: #FF9C22;
+                }
+                66% {
+                    background: #1D71A3;
+                }
+                100% {
+                    background: #18B364;
+                }
+            }
+
+            @-webkit-keyframes rotateRct {
+                0% {
+                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                }
+                50% {
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                }
+                100% {
+                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                }
+            }
+
+            @keyframes rotateRct {
+                0% {
+                    -ms-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                }
+                50% {
+                    -ms-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                }
+                100% {
+                    -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                }
+            }
+
+        </style>
+
+        <div id="pre-loader-wrapper" >
+            <section id="pre-loader-spinner"  class="mod model-3">
+                <div class="spinner"></div>
+            </section>
+        </div>
+
+
+
+
+
+        <md-toolbar id="header" layout="column" class="md-whiteframe-z1" >
+
+            <div id="menu-row" layout="row" layout-fill  >
+
+                <h1 class="md-toolbar-tools noselect" layout-align-gt-sm="left" >
+                    <a ng-href="#/" alt="Home" ><img src="images/homeLogo.svg" /><span>Rômulo Bordezani</span></a>
+                </h1>
+
+                <div id="social-links" class="noselect" hide-sm >
+                    <div><a ng-href="https://www.facebook.com/romulobordezani" ><img src="images/socials/ico_facebook.svg" /></a></div>
+                    <div><a href ng-href="https://plus.google.com/104483918654914497308/posts" ><img src="images/socials/ico_google.svg" /></a></div>
+                    <div><a href ng-href="https://br.linkedin.com/pub/rômulo-bordezani/21/a3a/55a" ><img src="images/socials/ico_linkedin.svg" /></a></div>
+                    <div><a href ng-href="https://twitter.com/romulobordezani" ><img src="images/socials/ico_twitter.svg" /></a></div>
+                </div>
+
+                <div id="menu-splitter" ></div>
+
+                <button ng-click="toggleSidenav('leftMenu')" class="menuBtn right noselect" >
+                    <span class="visually-hidden noselect">Menu</span>
+                </button>
+
+            </div>
+
+            <div id="timeline-row" ng-if="workSwitcherVisibility" class="work-switcher-animation" >
+
+                <div layout >
+                    <div flex="10" layout layout-align="center center">
+                        <span class="md-thumb-label" ng-bind="yearSlider" ></span>
+                    </div>
+                    <md-slider flex  class="md-primary md-hue-7" md-discrete ng-model="$parent.yearSlider" step="1" min="2002" max="2015" aria-label="rating" ></md-slider>
+                </div>
+
+            </div>
+
+        </md-toolbar>
+
+        <div layout="row" flex style="overflow: auto;" >
+            <div ng-view="" id="ngview" layout="column" flex class="class="animate-if" ></div>
+        </div>
+
+        <md-sidenav layout="column" class="md-sidenav-right md-whiteframe-z2" md-component-id="leftMenu"  >
+            <md-list layout="column" layout-align="space-around right"  >
+
+                <md-item ng-repeat="item in leftMenuList" >
+                    <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }"  >
+                        <div class="md-item-container"  >
+                            <img ng-src="{{item.imgsrc}}" class="md-avatar" alt="{{item.alt}}" />
+                            <div class="md-list-item-text">{{item.label}}</div>
+                        </div>
+                    </md-button>
+                </md-item>
+
+                <md-item hide-sm >
+                    <md-button ng-href="http://romulobordezani.com.br/index2.php"  ng-class="{'selected' : item === selected }"  >
+                        <div class="md-item-container"  >
+                            <img ng-src="images/flash.png" class="md-avatar" alt="Old Version" />
+                            <div class="md-list-item-text">OLD VERSION</div>
+                        </div>
+                    </md-button>
+                </md-item>
+
+                <md-item hide-gt-sm >
+                    <div id="social-links-menu" class="noselect" >
+                        <div><a ng-href="https://www.facebook.com/romulobordezani" ><img src="images/socials/ico_facebook.svg" /></a></div>
+                        <div><a href ng-href="https://plus.google.com/104483918654914497308/posts" ><img src="images/socials/ico_google.svg" /></a></div>
+                        <div><a href ng-href="https://br.linkedin.com/pub/rômulo-bordezani/21/a3a/55a" ><img src="images/socials/ico_linkedin.svg" /></a></div>
+                        <div><a href ng-href="https://twitter.com/romulobordezani" ><img src="images/socials/ico_twitter.svg" /></a></div>
+                    </div>
+                </md-item >
+
+            </md-list>
+        </md-sidenav>
+
+        <div id="dependency-injector" >
+
+            <!-- build:js(.) scripts/vendor.js -->
+            <!-- bower:js -->
+            <script src="bower_components/angular/angular.js"></script>
+            <script src="bower_components/angular-animate/angular-animate.js"></script>
+            <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+            <script src="bower_components/angular-resource/angular-resource.js"></script>
+            <script src="bower_components/angular-route/angular-route.js"></script>
+            <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+            <script src="bower_components/angular-touch/angular-touch.js"></script>
+            <script src="bower_components/angular-aria/angular-aria.js"></script>
+            <script src="bower_components/angular-material/angular-material.js"></script>
+            <script src="bower_components/angular-messages/angular-messages.js"></script>
+            <!-- endbower -->
+            <!-- endbuild -->
+
+            <!-- build:js({.tmp,app}) scripts/scripts.js -->
+            <script src="scripts/app.js"></script>
+            <script src="scripts/controllers/app.controller.js"></script>
+            <script src="scripts/controllers/about.controller.js"></script>
+            <script src="scripts/controllers/work.controller.js"></script>
+            <script src="scripts/controllers/work.controller.js"></script>
+            <script src="scripts/controllers/contact.controller.js"></script>
+            <script src="scripts/controllers/games.controller.js"></script>
+            <script src="scripts/controllers/home.controller.js"></script>
+
+
+            <script src="scripts/services/leftMenu.service.js"></script>
+            <script src="scripts/services/home.service.js"></script>
+
+            <script src="scripts/providers/work.provider.js"></script>
+            <script src="scripts/providers/utils.provider.js"></script>
+            <script src="scripts/providers/transformRequestAsFormPost.provider.js"></script>
+
+            <script src="scripts/directives/parallax.directive.js"></script>
+
+            <script src="scripts/extendedMaterial/tabs.js"></script>
+
+            <!-- endbuild -->
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+@import 'libs/colors.scss';
+@import 'libs/measures.scss';
+
+md-toolbar#footer{
+
+    background: $black;
+    color: $white;
+    font-size: 11px;
+
+    .footer-left{
+        margin-left: 15px;
+    }
+
+
+    .footer-right{
+
+        img{
+            width: 112px;
+            height:auto;
+            float:right;
+            margin: 0 15px;
+        }
+
+    }
+
+}

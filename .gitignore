@@ -1,0 +1,15 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+.DS_Store
+.svn
+log/*.log
+logs/*
+css/reveal.min.css
+js/reveal.min.js
+.idea
+npm-debug.log
+enviangular.php
+enviadado
