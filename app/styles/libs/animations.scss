@@ -1,10 +1,10 @@
 .rb-fade {
 
     opacity: 1;
-    -webkit-transition: all .6s cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
-    -moz-transition: all .6s cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
-    -o-transition: all .6s cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
-    transition: all .6s cubic-bezier(0.250, 0.460, 0.450, 0.940) !important;
+    -webkit-transition: opacity 1.6s ease-out !important;
+    -moz-transition: opacity 1.6s ease-out !important;
+    -o-transition: opacity 1.6s ease-out !important;
+    transition: opacity 1.6s ease-out !important;
 
     &.ng-enter {
         opacity:0;
@@ -22,10 +22,10 @@
 
 .work-switcher-animation.ng-enter, .work-switcher-animation.ng-leave {
 
-    -moz-transition: max-height .5s ease-out, opacity .3s ease-out;
-    -webkit-transition: max-height .5s ease-out, opacity .3s ease-out;
-    -o-transition: max-height .5s ease-out, opacity .3s ease-out;
-    transition: max-height .5s ease-out, opacity .3s ease-out;
+    -moz-transition: max-height .7s ease-out, opacity .3s ease-out;
+    -webkit-transition: max-height .7s ease-out, opacity .3s ease-out;
+    -o-transition: max-height .7s ease-out, opacity .3s ease-out;
+    transition: max-height .7s ease-out, opacity .3s ease-out;
 }
 
 .work-switcher-animation.ng-enter {
@@ -44,7 +44,6 @@
 }
 
 .work-switcher-animation.ng-leave.ng-leave-active {
-    transition-delay: .6s;
     max-height: 0;
     opacity:0;
 }

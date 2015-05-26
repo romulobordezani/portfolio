@@ -109,43 +109,5 @@ div#home {
 
     }
 
-    .hands-on {
-        img {
-            width: 100%;
-            height: 100%;
-            display:block;
-        }
-    }
-
-    .home-footer{
-
-        background: url('../images/home-footer-sm.jpg' ) $discret-black no-repeat center top;
-        background-size: cover;
-        height: 150px;
-        width: 100%;
-        position: relative;
-
-        @media (min-width: $flex-md ) {
-            background: url('../images/home-footer-md.jpg' ) $discret-black  no-repeat center top;
-            background-size: auto;
-            height: 233px;
-        }
-
-        @media ( min-width: 1490px ) {
-            background-size: cover;
-        }
-
-        @media (min-width: $flex-lg + 500 ) {
-            height: 400px;
-            background-size: cover;
-            background: url('../images/home-footer-lg.jpg' ) no-repeat center center;
-        }
-
-
-
-
-
-    }
-
 
 }
