@@ -42,7 +42,7 @@
         <script type="text/ng-template" id="footer.html">
             <md-toolbar id="footer" layout="row" >
                 <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
-                    <div hide-sm >Rômulo Bordezani - São Paulo, Brazil </div><md-button class="md-primary" ng-href="#/contact" >contact</md-button>
+                    <div hide-sm >Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" >contact</md-button>
                 </div>
                 <div layout="row" layout-align="end center" layout-padding class="footer-right" flex >
                     <div hide-sm >powered by </div><img src="images/angular-logo.svg" />
@@ -58,116 +58,124 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <style>
-
-            div#pre-loader-wrapper{
-                margin: auto;
-                position: absolute;
-                background-color: #f6f6f6;
-                width: 100%;
-                height: 100%;
-                z-index: 50000;
-            }
-
-            .spinner {
-                width: 50px;
-                height: 50px;
-                border-radius: 100%;
-                margin: auto;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-            }
-
-
-            .model-3 {
-                background: #BF1B21;
-            }
-            .model-3 .spinner {
-                background: #fff;
-                height: 40px;
-                border-radius: 0;
-                -webkit-animation: rotateRct 1.2s ease-in-out infinite, color-change 1.3s ease-in-out infinite;
-                animation: rotateRct 1.2s ease-in-out infinite, color-change 1.3s ease-in-out infinite;
-            }
-
-            @-webkit-keyframes color-change {
-                0% {
-                    background: #FF5722;
-                }
-                33% {
-                    background: #FF9C22;
-                }
-                66% {
-                    background: #1D71A3;
-                }
-                100% {
-                    background: #18B364;
-                }
-            }
-
-            @keyframes color-change {
-                0% {
-                    background: #FF5722;
-                }
-                33% {
-                    background: #FF9C22;
-                }
-                66% {
-                    background: #1D71A3;
-                }
-                100% {
-                    background: #18B364;
-                }
-            }
-
-            @-webkit-keyframes rotateRct {
-                0% {
-                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-                }
-                50% {
-                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-                }
-                100% {
-                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                }
-            }
-
-            @keyframes rotateRct {
-                0% {
-                    -ms-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-                    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-                }
-                50% {
-                    -ms-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-                }
-                100% {
-                    -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-                }
-            }
-
-        </style>
-
         <div id="pre-loader-wrapper" >
+
             <section id="pre-loader-spinner"  class="mod model-3">
                 <div class="spinner"></div>
             </section>
+
+            <style>
+
+                div#pre-loader-wrapper{
+                    margin: auto;
+                    position: absolute;
+                    background-color: #f6f6f6;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 50000;
+                }
+
+                .spinner {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    margin: auto;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+
+
+                .model-3 {
+                    background: #BF1B21;
+                }
+                .model-3 .spinner {
+                    background: #fff;
+                    height: 40px;
+                    border-radius: 0;
+                    -webkit-animation: rotateRct 1.2s ease-in-out infinite, color-change 1.3s ease-in-out infinite;
+                    animation: rotateRct 1.2s ease-in-out infinite, color-change 1.3s ease-in-out infinite;
+                }
+
+                @-webkit-keyframes color-change {
+                    0% {
+                        background: #FF5722;
+                    }
+                    33% {
+                        background: #FF9C22;
+                    }
+                    66% {
+                        background: #1D71A3;
+                    }
+                    100% {
+                        background: #18B364;
+                    }
+                }
+
+                @keyframes color-change {
+                    0% {
+                        background: #FF5722;
+                    }
+                    33% {
+                        background: #FF9C22;
+                    }
+                    66% {
+                        background: #1D71A3;
+                    }
+                    100% {
+                        background: #18B364;
+                    }
+                }
+
+                @-webkit-keyframes rotateRct {
+                    0% {
+                        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    }
+                    50% {
+                        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    }
+                    100% {
+                        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    }
+                }
+
+                @keyframes rotateRct {
+                    0% {
+                        -ms-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    }
+                    50% {
+                        -ms-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    }
+                    100% {
+                        -ms-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                    }
+                }
+
+            </style>
+
         </div>
 
         <md-toolbar id="header" layout="column" class="md-whiteframe-z1" >
 
-            <div id="menu-row" layout="row" layout-fill  >
+            <div id="menu-row" layout="row"  >
+
+                <button ng-click="toggleSidenav('leftMenu')" class="menuBtn right noselect" >
+                    <span class="visually-hidden noselect">Menu</span>
+                </button>
+
+                <div id="menu-splitter" ></div>
 
                 <h1 class="md-toolbar-tools noselect" layout-align-gt-sm="left" >
                     <a ng-href="#/" alt="Home" ><img src="images/homeLogo.svg" /><span>Rômulo Bordezani</span></a>
@@ -179,12 +187,6 @@
                     <div><a href ng-href="https://br.linkedin.com/pub/rômulo-bordezani/21/a3a/55a" ><img src="images/socials/ico_linkedin.svg" /></a></div>
                     <div><a href ng-href="https://twitter.com/romulobordezani" ><img src="images/socials/ico_twitter.svg" /></a></div>
                 </div>
-
-                <div id="menu-splitter" ></div>
-
-                <button ng-click="toggleSidenav('leftMenu')" class="menuBtn right noselect" >
-                    <span class="visually-hidden noselect">Menu</span>
-                </button>
 
             </div>
 
@@ -201,11 +203,7 @@
 
         </md-toolbar>
 
-        <div layout="row" flex style="overflow: auto;" >
-            <div ng-view="" id="ngview" layout="column" flex class="class="animate-if" ></div>
-        </div>
-
-        <md-sidenav layout="column" class="md-sidenav-right md-whiteframe-z2" md-component-id="leftMenu"  >
+        <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="leftMenu"  >
             <md-list layout="column" layout-align="space-around right"  >
 
                 <md-item ng-repeat="item in leftMenuList" >
@@ -237,6 +235,17 @@
 
             </md-list>
         </md-sidenav>
+
+        <md-content flex id="ngview-container"  >
+
+            <div ng-view="" id="ngview" layout="column" class="content-pusher rb-fade" ></div>
+
+            <div  md-parallax parallax-ratio="0.2" parallax-css="transform:translateY"  parallax-scroller="ngview-container"  >
+                <div hide-sm class="home-footer" md-parallax parallax-ratio="0.1" parallax-css="background-position-y" parallax-init-val-md="-36" parallax-init-val-lg="-76" parallax-max-val="0"  parallax-scroller="ngview-container" ></div>
+                <div ng-include src="'footer.html'"></div>
+            </div>
+
+        </md-content>
 
         <div id="dependency-injector" >
 

@@ -65,6 +65,8 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 parallaxScroller = iScope.parallaxScroller;
                 var trueWindow = document.getElementById(parallaxScroller) || $window ;
 
+                console.log( trueWindow );
+
                 if( pureCssVal === 'background-position-y' ){
                     cssKey = 'background-position';
                     toFirefoxParallaxInitVal = 'center ' + parallaxInitVal + 'px';
@@ -100,6 +102,8 @@ angular.module('mdParallax', []).directive('mdParallax', [
                     iElem.css(cssKey, resultVal);
 
                 }
+
+
 
                 if( window.screen.width > 768 ){
                     trueWindow.addEventListener('scroll', _onScroll);

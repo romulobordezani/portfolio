@@ -1,11 +1,7 @@
 @import '../libs/colors.scss';
 @import '../libs/measures.scss';
 
-md-content#home {
-
-    &.content-pusher-home{
-        min-height: calc(100vh - 576px);
-    }
+div#home {
 
     .parallax{
 

@@ -1,6 +1,10 @@
 {
   "name": "romulobordezani",
   "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romulobordezani/portfolio.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.2",

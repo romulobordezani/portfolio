@@ -26,18 +26,22 @@ angular
                     controller: 'aboutController'
                 })
 
-                .when('/work', {
-                    templateUrl: 'views/work.html',
+                .when('/work/:year/:current', {
+                    templateUrl: function(urlattr){
+                        return 'views/work/' + urlattr.year + '.html';
+                    },
                     controller: 'workController'
                 })
 
                 .when('/work/:year', {
-                    templateUrl: 'views/work.html',
+                    templateUrl: function(urlattr){
+                        return 'views/work/' + urlattr.year + '.html';
+                    },
                     controller: 'workController'
                 })
 
-                .when('/work/:year/:current', {
-                    templateUrl: 'views/work.html',
+                .when('/work/', {
+                    templateUrl: 'views/work/2015.html',
                     controller: 'workController'
                 })
 

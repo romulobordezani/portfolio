@@ -70,3 +70,15 @@ a:hover, a:active{
     -ms-user-select: none;
     user-select: none;
 }
+
+
+md-backdrop{
+    .md-sidenav-backdrop{
+        overflow: hidden;
+    }
+}
+
+
+.content-pusher{
+    min-height: calc(100vh - 190px);
+}

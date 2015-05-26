@@ -27,16 +27,18 @@ angular.module('rbApp')
 
         function fillAddressInput(position){
 
-            var coordinates = position.coords.latitude + "," + position.coords.longitude;
+            var coordinates = position.coords.latitude + ',' + position.coords.longitude;
 
             $http.get('http://maps.googleapis.com/maps/api/geocode/json?latlng=' + coordinates ).
 
-                success(function(data, status, headers, config) {
+                success(function(data) {
+                    /*jshint camelcase: false */
                     $scope.user.address = data.results[0].formatted_address;
                     addressFullFilled = true;
                 }).
 
-                error(function(data, status, headers, config) {
+                error(function(data) {
+                    console.warn( 'Error loading Google Maps API: ', data );
 
                 });
 

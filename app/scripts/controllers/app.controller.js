@@ -8,8 +8,8 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider', 'Utils',
-        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider, Utils  ){
+    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider',
+        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider ){
 
             function init(){
                 menu.loadService();
@@ -93,7 +93,6 @@ angular.module('rbApp')
                     $scope.$watch('yearSlider', function(value){
 
                         if( workSwitcher.isWorkPage() && alreadyLoaded > 0 ){
-                            //Utils.laoderCurtain.show();
                             workProvider.resetCurrent();
                             workProvider.setWorkYear( value, true, false);
                         }

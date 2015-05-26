@@ -1,11 +1,11 @@
-<md-content id="home" class="content-pusher-home" >
+<div id="home"  >
 
     <div class="parallax" layout-fill style="min-height:0;"  >
         <div layout="row" >
 
-            <div md-parallax class="parallax-wrapper"  parallax-ratio="0.1" parallax-css="transform:translateY"  parallax-scroller="home" >
-                <div md-parallax  parallax-ratio="0.3"  parallax-css="background-position-y" parallax-init-val="0" class="parallax-img" parallax-scroller="home" >
-                    <div md-parallax  parallax-ratio="1.1" parallax-css="bottom" parallax-init-val="77" class="parallax-txt"  parallax-scroller="home" layout="column" layout-gt-md="row" layout-align="center center" >
+            <div md-parallax class="parallax-wrapper"  parallax-ratio="0.1" parallax-css="transform:translateY"  parallax-scroller="ngview-container" >
+                <div md-parallax  parallax-ratio="0.3"  parallax-css="background-position-y" parallax-init-val="0" class="parallax-img" parallax-scroller="ngview-container" >
+                    <div md-parallax  parallax-ratio="1.1" parallax-css="bottom" parallax-init-val="77" class="parallax-txt"  parallax-scroller="ngview-container" layout="column" layout-gt-md="row" layout-align="center center" >
                         <div layout-sm="row"layout-md="row" class="noselect" ><strong>Code</strong>sign.</div>
                         <div layout-sm="row"layout-md="row"  ><span class="parallax-subtext1 noselect" >Full stack development,</span></div>
                         <div layout-sm="row" layout-md="row" >
@@ -216,10 +216,4 @@
         </md-content>
     </div>
 
-    <div  md-parallax  parallax-ratio="0.2" parallax-css="transform:translateY"  parallax-scroller="home"  >
-        <div hide-sm class="home-footer" md-parallax parallax-ratio="0.1" parallax-css="background-position-y" parallax-init-val-md="-36" parallax-init-val-lg="-76" parallax-max-val="0"  parallax-scroller="home" ></div>
-        <div ng-include src="'footer.html'"></div>
-    </div>
-
-
-</md-content>
+</div>

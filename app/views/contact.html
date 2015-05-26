@@ -1,5 +1,4 @@
 <div layout="column" class="md-padding" >
-    <md-content layout-padding >
 
         <form name="contactForm" ng-submit="sendEmail()" novalidate autocomplete="off" >
 
@@ -26,7 +25,7 @@
                 <input flex ng-model="user.address" type="text" placeholder="Address" ng-click="getGeolocation()" >
             </md-input-container>
 
-            <md-input-container flex>
+            <md-input-container flex >
                 <label>Message ( Required )</label>
                 <textarea ng-model="user.message" columns="1" ng-required="true" md-maxlength="150" ng-required="true" ></textarea>
             </md-input-container>
@@ -38,5 +37,7 @@
         </form>
 
 
-    </md-content>
+
 </div>
+
+
