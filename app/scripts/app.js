@@ -28,7 +28,7 @@ angular
 
                 .when('/work/:year/:current', {
                     templateUrl: function(urlattr){
-                        return 'views/work/' + urlattr.year + '.html';
+                        return 'views/work/' + urlattr.year + '-' + urlattr.current + '.html';
                     },
                     controller: 'workController'
                 })
@@ -68,15 +68,20 @@ angular
         }
 
 ).run(
-    function(){
+    function ($rootScope, $timeout) {
 
-        setTimeout( function(){
-
+        $timeout( function(){
             var spinnerParent = document.getElementById('rb-body');
             var spinner = document.getElementById('pre-loader-wrapper');
             spinnerParent.removeChild(spinner);
+        }, 1000);
 
-        }, 1500);
+
+        $rootScope.$on('$routeChangeSuccess', function () {
+            $timeout(function () {
+                document.getElementById('ngview-container').scrollTop = 0;
+            }, 500);
+        });
 
 
         var signature = [

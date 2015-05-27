@@ -192,7 +192,7 @@
 
             <div id="timeline-row" ng-if="workSwitcherVisibility" class="work-switcher-animation" >
 
-                <div layout >
+                <div layout style="margin: 0 15px 15px;" >
                     <div flex="10" layout layout-align="center center">
                         <span class="md-thumb-label" ng-bind="yearSlider" ></span>
                     </div>
@@ -236,9 +236,9 @@
             </md-list>
         </md-sidenav>
 
-        <md-content flex id="ngview-container"  >
+        <md-content flex id="ngview-container" style="overflow:auto;"  >
 
-            <div ng-view="" id="ngview" layout="column" class="content-pusher rb-fade" ></div>
+            <div ng-view="" id="ngview" layout="column" class="content-pusher view" ></div>
 
             <div  md-parallax parallax-ratio="0.2" parallax-css="transform:translateY"  parallax-scroller="ngview-container"  >
                 <div class="home-footer" md-parallax parallax-ratio="0.1" parallax-css="background-position-y" parallax-init-val-md="-36" parallax-init-val-lg="-76" parallax-max-val="0"  parallax-scroller="ngview-container" ></div>

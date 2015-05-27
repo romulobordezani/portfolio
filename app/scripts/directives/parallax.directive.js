@@ -65,11 +65,12 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 parallaxScroller = iScope.parallaxScroller;
                 var trueWindow = document.getElementById(parallaxScroller) || $window ;
 
-                console.log( trueWindow );
-
-                if( pureCssVal === 'background-position-y' ){
+                if( pureCssVal === 'background-position-y' ) {
                     cssKey = 'background-position';
                     toFirefoxParallaxInitVal = 'center ' + parallaxInitVal + 'px';
+
+                }else if(pureCssVal === 'opacity'){
+                    toFirefoxParallaxInitVal = parallaxInitVal;
                 }else{
                     toFirefoxParallaxInitVal = parallaxInitVal + 'px';
                 }
@@ -97,6 +98,8 @@ angular.module('mdParallax', []).directive('mdParallax', [
                     if( pureCssVal === 'background-position-y' ){
                         cssKey = 'background-position';
                         resultVal = 'center ' + resultVal;
+                    }else if( pureCssVal === 'opacity' ) {
+                        resultVal = 1 - ( calcVal / 500 ) ;
                     }
 
                     iElem.css(cssKey, resultVal);
