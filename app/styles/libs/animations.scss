@@ -5,6 +5,7 @@ $use-fadeInDown : true;
 
 
 /** View Animation **/
+
 .view.ng-leave {
     -webkit-animation-name: fadeOutUp;
     -moz-animation-name: fadeOutUp;
@@ -32,6 +33,7 @@ $use-fadeInDown : true;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
 
 .view.ng-enter {
     -webkit-animation-name: fadeInDown;
@@ -69,15 +71,21 @@ $use-fadeInDown : true;
 
 
 
-
 /** Work Switcher  Animation * */
 .work-switcher-animation{
 
-    &.ng-enter, &.ng-leave {
-        -moz-transition: max-height .7s ease-out, opacity .3s ease-out;
-        -webkit-transition: max-height .7s ease-out, opacity .3s ease-out;
-        -o-transition: max-height .7s ease-out, opacity .3s ease-out;
-        transition: max-height .7s ease-out, opacity .3s ease-out;
+    &.ng-leave{
+        -moz-transition: max-height 1s ease-out, opacity .3s ease-out;
+        -webkit-transition: max-height 1s ease-out, opacity .3s ease-out;
+        -o-transition: max-height 1s ease-out, opacity .3s ease-out;
+        transition: max-height 1s ease-out, opacity .3s ease-out;
+    }
+
+    &.ng-enter {
+        -moz-transition: max-height .3s ease-out, opacity 1s ease-out;
+        -webkit-transition: max-height .3s ease-out, opacity 1s ease-out;
+        -o-transition: max-height .3s ease-out, opacity 1s ease-out;
+        transition: max-height .3s ease-out, opacity 1s ease-out;
     }
 
 
