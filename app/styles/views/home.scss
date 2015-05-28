@@ -11,20 +11,20 @@ div#home {
 
             .parallax-img {
 
-                background: url(../images/bg-parallax-sm.jpg) no-repeat center bottom;
+                background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center bottom;
                 background-size: cover;
                 height: 300px;
                 width: 100%;
                 position: relative;
 
                 @media (min-width: $flex-md ) {
-                    background: url(../images/bg-parallax-sm.jpg) no-repeat center bottom;
+                    background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center bottom;
                     background-size: 100%;
                     height: 400px;
                 }
 
                 @media (min-width: $flex-lg ) {
-                    background: url(../images/bg-parallax.jpg) no-repeat center bottom;
+                    background: url(../images/parallax/bg-parallax.jpg) no-repeat center bottom;
                     background-size: cover;
                     height: 436px;
                 }
@@ -41,6 +41,7 @@ div#home {
                 text-align: center;
                 font-size: 3.0em;
                 color: $discret-black;
+                cursor: default;
 
 
                 @media ( min-width: $flex-sm ) {
@@ -61,12 +62,17 @@ div#home {
                     margin: 0 7px;
 
                     .parallax-subtext1{
-                        font-size:0.37em;
+
+                        font-size:0.36em;
+
+                        @media ( min-width: $flex-md ) {
+                            font-size:0.37em;
+                        }
                     }
 
                     .parallax-subtext2{
 
-                        font-size:0.53em;
+                        font-size:0.52em;
 
                         @media ( min-width: $flex-md ) {
                             font-size:0.37em;
@@ -99,7 +105,6 @@ div#home {
 
             p{
                 margin-bottom: 33px;
-
 
             }
 

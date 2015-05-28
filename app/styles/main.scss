@@ -6,6 +6,7 @@
 body {
 
     font-family: Comfortaa, Helvetica, sans-serif;
+    font-weight: 200;
     letter-spacing: 1px;
     overflow-y: hidden;
     background-color: $white;
@@ -175,7 +176,11 @@ body {
                         padding: 0 7px;
 
                         @media (min-width: $flex-md){
-                            font-size: 17px;
+                            font-size: 19px;
+                        }
+
+                        @media (min-width: $flex-lg){
+                            font-size: 21px;
                         }
 
                     }
@@ -289,33 +294,6 @@ body {
 
         @import 'views/home.scss';
         @import 'views/work.scss';
-
-    }
-
-    .home-footer{
-
-        background: url('../images/home-footer-sm.jpg' ) $discret-black no-repeat center top;
-        background-size: cover;
-        height: 150px;
-        width: 100%;
-        position: relative;
-
-        @media (min-width: $flex-md ) {
-            background: url('../images/home-footer-md.jpg' ) $discret-black  no-repeat center top;
-            background-size: auto;
-            height: 233px;
-        }
-
-        @media ( min-width: 1490px ) {
-            background-size: cover;
-        }
-
-        @media (min-width: $flex-lg + 500 ) {
-            height: 400px;
-            background-size: cover;
-            background: url('../images/home-footer-lg.jpg' ) no-repeat center center;
-        }
-
 
     }
 

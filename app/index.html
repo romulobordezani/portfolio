@@ -38,18 +38,6 @@
         <!-- endbuild -->
 
         <!--base href="/"-->
-
-        <script type="text/ng-template" id="footer.html">
-            <md-toolbar id="footer" layout="row" >
-                <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
-                    <div hide-sm >Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" >contact</md-button>
-                </div>
-                <div layout="row" layout-align="end center" layout-padding class="footer-right" flex >
-                    <div hide-sm >powered by </div><img src="images/angular-logo.svg" />
-                </div>
-            </md-toolbar>
-        </script>
-
     </head>
 
     <body id="rb-body"  layout="column" ng-controller="appController"  >
@@ -178,7 +166,7 @@
                 <div id="menu-splitter" ></div>
 
                 <h1 class="md-toolbar-tools noselect" layout-align-gt-sm="left" >
-                    <a ng-href="#/" alt="Home" ><img src="images/homeLogo.svg" /><span>Rômulo Bordezani</span></a>
+                    <a ng-href="#/" alt="Home" ><img src="images/uis/logo.svg" /><span>Rômulo Bordezani</span></a>
                 </h1>
 
                 <div id="social-links" class="noselect" hide-sm >
@@ -240,9 +228,29 @@
 
             <div ng-view="" id="ngview" layout="column" class="content-pusher view" ></div>
 
-            <div  md-parallax parallax-ratio="0.2" parallax-css="transform:translateY"  parallax-scroller="ngview-container"  >
-                <div class="home-footer" md-parallax parallax-ratio="0.1" parallax-css="background-position-y" parallax-init-val-md="-36" parallax-init-val-lg="-76" parallax-max-val="0"  parallax-scroller="ngview-container" ></div>
-                <div ng-include src="'footer.html'"></div>
+            <div  md-parallax  parallax-ratio="0.2" parallax-css="transform:translateY"  parallax-scroller="ngview-container"  >
+
+                <div class="parallax-footer" hide-sm >
+
+                    <div class="cloud-1" md-parallax parallax-ratio="0.2" parallax-css="background-position-y" parallax-init-val-md="-146" parallax-init-val-lg="-246" parallax-max-val="500"    parallax-scroller="ngview-container" ></div>
+                    <div class="cloud-2" md-parallax parallax-ratio="0.7" parallax-css="background-position-y" parallax-init-val-md="-46" parallax-init-val-lg="-276" parallax-max-val="500"   parallax-scroller="ngview-container" ></div>
+                    <div class="cloud-3" md-parallax parallax-ratio="0.3" parallax-css="background-position-y" parallax-init-val-md="-46" parallax-init-val-lg="-86"  parallax-max-val="500"  parallax-scroller="ngview-container" ></div>
+
+
+                    <div class="parallax-txt kill-animations"  layout="row" layout-align="space-around center" >
+                        <div layout="column" class="noselect" >Creative</div>
+                        <div layout="column"  ><span class="parallax-reverse-text noselect" >Logical</span></div>
+                    </div>
+                </div>
+
+                <md-toolbar id="footer" layout="row" >
+                    <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
+                        <div hide-sm >Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" >contact</md-button>
+                    </div>
+                    <div layout="row" layout-align="end center" layout-padding class="footer-right" flex >
+                        <div hide-sm >powered by </div><img hide-sm src="images/uis/angular-logo.svg" /><img class="angular-logo-sm" hide-gt-sm src="images/uis/angular-logo-sm.svg" />
+                    </div>
+                </md-toolbar>
             </div>
 
         </md-content>

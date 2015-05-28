@@ -107,8 +107,7 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 }
 
 
-
-                if( window.screen.width > 768 ){
+                if( window.screen.width > 360 ){
                     trueWindow.addEventListener('scroll', _onScroll);
                 }
 

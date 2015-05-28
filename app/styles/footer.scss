@@ -1,6 +1,100 @@
 @import 'libs/colors.scss';
 @import 'libs/measures.scss';
 
+
+.parallax-footer{
+
+    height: 133px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #bdbdbd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#bdbdbd));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#bdbdbd 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#bdbdbd 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#bdbdbd 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#bdbdbd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bdbdbd',GradientType=0 );
+
+
+    @media (min-width: $flex-sm) {
+        height: 233px;
+    }
+
+
+    .parallax-txt {
+
+        position: absolute;
+        bottom: 47px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 2.0em;
+        color: $white;
+        text-shadow: 0px 0px 27px #666;
+        cursor: default;
+
+        @media (min-width: $flex-sm) {
+            font-size: 3.7em;
+            text-shadow: 0px 0px 27px #999;
+            bottom: 77px;
+        }
+
+        @media (min-width: $flex-lg) {
+            font-size: 4.7em;
+        }
+
+        @media (min-width: $flex-lg + 500) {
+            font-size: 6.7em;
+        }
+
+        .parallax-reverse-text{
+            -webkit-transform:rotateY(180deg);
+            -moz-transform:rotateY(180deg);
+            -o-transform:rotateY(180deg);
+            -ms-transform:rotateY(180deg);
+            transform:rotateY(180deg);
+
+        }
+
+    }
+
+    .cloud-1{
+        background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
+        background-size: contain;
+        width: 604px;
+        height: 312px;
+        position: absolute;
+        left:0px;
+    }
+
+    .cloud-2{
+        background: url(../images/parallax/cloud-2.png) no-repeat center bottom;
+        background-size: contain;
+        width: 615px;
+        height: 251px;
+        position: absolute;
+        right: 0px;
+    }
+
+    .cloud-3{
+        background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
+        background-size: contain;
+        width: 666px;
+        height: 325px;
+        position: absolute;
+        left: 40%
+    }
+
+
+
+
+}
+
+
 md-toolbar#footer{
 
     background: $black;
@@ -9,6 +103,11 @@ md-toolbar#footer{
 
     .footer-left{
         margin-left: 15px;
+
+        @media(max-width:$flex-md){
+            margin-left: 0px;
+        }
+
     }
 
 
@@ -19,8 +118,16 @@ md-toolbar#footer{
             height:auto;
             float:right;
             margin: 0 15px;
+
+            &.angular-logo-sm{
+                width: 36px;
+            }
+
         }
 
     }
 
 }
+
+
+
