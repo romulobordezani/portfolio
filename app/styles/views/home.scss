@@ -89,14 +89,6 @@ div#home {
 
     }
 
-    .home-brands{
-
-        img{
-            width: 100%;
-        }
-
-    }
-
     md-tab-content{
 
         md-content{
@@ -108,9 +100,33 @@ div#home {
 
             }
 
+            img{
+
+                width: 86px;
+                height:86px;
+
+                @media ( min-width: $flex-md ) {
+                    width: 133px;
+                    height:133px;
+                }
+
+            }
+
+
         }
 
+    }
 
+    .home-brands{
+
+        .home-brand{
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+        }
 
     }
 

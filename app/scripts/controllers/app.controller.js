@@ -16,6 +16,29 @@ angular.module('rbApp')
                 workSwitcher.init();
             }
 
+            $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
+
+                if( currRoute.animation === 'work' && prevRoute ){
+
+                    var currYear = currRoute.params.year || null;
+                    var prevYear = prevRoute.params.year || null;
+
+                    if( currYear < prevYear ){
+                        $scope.animation = 'right';
+                    }else{
+                        $scope.animation = 'left';
+                    }
+
+
+                }else{
+                    $scope.animation = currRoute.animation;
+                }
+
+
+            });
+
+            $scope.animation = $rootScope.animation;
+
             var menu = {
 
                 init : function(){
