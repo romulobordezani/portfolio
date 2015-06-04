@@ -1,42 +1,41 @@
 <div layout="column" class="md-padding" >
 
-        <form name="contactForm" ng-submit="sendEmail()" novalidate autocomplete="off" >
-
-            <h1 class="md-title" >Contact</h1>
-
-            <md-input-container class="md-icon-float" >
-                <label>Name</label>
-                <md-icon md-svg-src="images/contact/ic_person_24px.svg" class="name" ></md-icon>
-                <input ng-model="user.name" type="text">
-            </md-input-container>
-
-            <md-input-container class="md-icon-float" >
-                <md-icon md-svg-src="images/contact/ic_phone_24px.svg"></md-icon>
-                <input ng-model="user.phone" type="tel" placeholder="Phone Number"  >
-            </md-input-container>
-
-            <md-input-container class="md-icon-float" >
-                <md-icon md-svg-src="images/contact/ic_email_24px.svg" class="email"></md-icon>
-                <input ng-model="user.email" type="email" placeholder="E-mail (required)" ng-required="true" >
-            </md-input-container>
-
-            <md-input-container class="md-icon-float" >
-                <md-icon md-svg-src="images/contact/ic_place_24px.svg" style="display:inline-block;"></md-icon>
-                <input flex ng-model="user.address" type="text" placeholder="Address" ng-click="getGeolocation()" >
-            </md-input-container>
-
-            <md-input-container flex >
-                <label>Message ( Required )</label>
-                <textarea ng-model="user.message" columns="1" ng-required="true" md-maxlength="150" ng-required="true" ></textarea>
-            </md-input-container>
-
-            <br/>
-
-            <md-button class="md-raised md-accent md-hue-2" type="submit" ng-disabled="!contactForm.$valid" >Send</md-button>
-
-        </form>
+    <div class="md-title kill-animations" >Contact</div>
+    <form name="contactForm" ng-submit="sendEmail()" novalidate autocomplete="off" >
 
 
+
+        <md-input-container class="md-icon-float" >
+            <label>Name</label>
+            <md-icon md-svg-src="images/contact/ic_person_24px.svg" class="name" ></md-icon>
+            <input ng-model="user.name" type="text">
+        </md-input-container>
+
+        <md-input-container class="md-icon-float" >
+            <md-icon md-svg-src="images/contact/ic_phone_24px.svg"></md-icon>
+            <input ng-model="user.phone" type="tel" placeholder="Phone Number"  >
+        </md-input-container>
+
+        <md-input-container class="md-icon-float" >
+            <md-icon md-svg-src="images/contact/ic_email_24px.svg" class="email"></md-icon>
+            <input ng-model="user.email" type="email" placeholder="E-mail (required)" ng-required="true" >
+        </md-input-container>
+
+        <md-input-container class="md-icon-float" >
+            <md-icon md-svg-src="images/contact/ic_place_24px.svg" style="display:inline-block;"></md-icon>
+            <input flex ng-model="user.address" type="text" placeholder="Address" ng-click="getGeolocation()" >
+        </md-input-container>
+
+        <md-input-container flex >
+            <label>Message ( Required )</label>
+            <textarea ng-model="user.message" columns="1" ng-required="true" md-maxlength="150" ng-required="true" ></textarea>
+        </md-input-container>
+
+        <br/>
+
+        <md-button class="md-raised md-accent md-hue-2" type="submit" ng-disabled="!contactForm.$valid" >Send</md-button>
+
+    </form>
 
 </div>
 

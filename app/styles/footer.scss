@@ -9,14 +9,14 @@
     position: relative;
     overflow: hidden;
 
-    background: #ffffff;
-    background: -moz-linear-gradient(top,  #ffffff 0%, #bdbdbd 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#bdbdbd));
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#bdbdbd 100%);
-    background: -o-linear-gradient(top,  #ffffff 0%,#bdbdbd 100%);
-    background: -ms-linear-gradient(top,  #ffffff 0%,#bdbdbd 100%);
-    background: linear-gradient(to bottom,  #ffffff 0%,#bdbdbd 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bdbdbd',GradientType=0 );
+    background: $white;
+    background: -moz-linear-gradient(top,  $white 0%, #bdbdbd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#bdbdbd));
+    background: -webkit-linear-gradient(top,  $white 0%,#bdbdbd 100%);
+    background: -o-linear-gradient(top,  $white 0%,#bdbdbd 100%);
+    background: -ms-linear-gradient(top,  $white 0%,#bdbdbd 100%);
+    background: linear-gradient(to bottom,  $white 0%,#bdbdbd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='#bdbdbd',GradientType=0 );
 
 
     @media (min-width: $flex-sm) {

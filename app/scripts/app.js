@@ -18,41 +18,48 @@ angular
 
                 .when('/', {
                     templateUrl: 'views/home.html',
-                    controller: 'homeController'
+                    controller: 'homeController',
+                    animation: 'fade'
                 })
 
                 .when('/about', {
                     templateUrl: 'views/about.html',
-                    controller: 'aboutController'
+                    controller: 'aboutController',
+                    animation: 'fade'
                 })
 
                 .when('/work/:year/:current', {
                     templateUrl: function(urlattr){
                         return 'views/work/' + urlattr.year + '-' + urlattr.current + '.html';
                     },
-                    controller: 'workController'
+                    controller: 'workController',
+                    animation: 'work'
                 })
 
                 .when('/work/:year', {
                     templateUrl: function(urlattr){
                         return 'views/work/' + urlattr.year + '.html';
                     },
-                    controller: 'workController'
+                    controller: 'workController',
+                    animation: 'work'
                 })
 
                 .when('/work/', {
                     templateUrl: 'views/work/2015.html',
-                    controller: 'workController'
+                    controller: 'workController',
+                    animation: 'work'
                 })
 
                 .when('/contact', {
                     templateUrl: 'views/contact.html',
-                    controller: 'contactController'
+                    controller: 'contactController',
+                    animation: 'fade'
                 })
 
                 .when('/games', {
                     templateUrl: 'views/games.html',
-                    controller: 'gamesController'
+                    controller: 'gamesController',
+                    animation: 'fade'
                 })
 
                 .otherwise({
@@ -74,15 +81,13 @@ angular
             var spinnerParent = document.getElementById('rb-body');
             var spinner = document.getElementById('pre-loader-wrapper');
             spinnerParent.removeChild(spinner);
-        }, 1000);
-
+        }, 3000);
 
         $rootScope.$on('$routeChangeSuccess', function () {
             $timeout(function () {
                 document.getElementById('ngview-container').scrollTop = 0;
             }, 500);
         });
-
 
         var signature = [
 
