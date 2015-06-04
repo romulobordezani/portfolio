@@ -1,211 +1,245 @@
-<md-content id="work"  >
-    <main    >
+<section id="work"  >
+    <main>
 
-        <div layout="row" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()"  layout-sm="column" layout-wrap layout-align-sm="center space-around" >
+        <div layout="column" ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" ng-if="year==2014" class="animate-if"  >
+
+            <div layout="column" layout-gt-md="row" layout-sm="column" layout-wrap layout-align-sm="center space-around" >
+
+                <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex-gt-md="30" flex  ng-if="current==1 || current == false" flex-order="1"  >
+
+                    <img ng-if="!current==1 || current == false" src="images/work/sac-architecture.png" class="md-card-image" >
+
+                    <md-toolbar ng-if="current==1"  >
+                        <div class="md-toolbar-tools">
+
+                            <h2><span>SAC UOL architecture</span></h2>
+
+                            <span flex></span>
+
+                            <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
+                                <md-icon md-svg-icon="images/backTolist-centered.svg"  ></md-icon>
+                            </md-button>
+
+                        </div>
+                    </md-toolbar>
 
 
-            <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" ng-click="setCurrent(6)" class="no-select" flex ng-if="current==6 || current == false" >
+                    <md-card-content>
 
-                <img src="images/work/own-portfolio-creative.png" class="md-card-image " >
+                        <h2 class="md-title" ng-if="current==false" >SAC UOL architecture </h2>
 
-                <md-toolbar >
-                    <div class="md-toolbar-tools">
-                        <h2><span>UX and</span></h2>
+                        <p>
+                            Finally I met Angular, and it changed the way I code.
+                        </p>
+
+                        <p ng-if="current==1" >
+
+                            We use to code front end with Apache velocity, suddenly a new leader ( Marco Tulio, yeap, I already mentioned him for helped me with the Firefox extensions...) challenged us to rebuild the entire platform starting with the SAC.<br><br>
+                            That was a year of discoveries and learn.<br><br>
+
+                            Angular, SASS, Scaffolds, Angulartics, Karma behavior driven tests, Mustache, Continuous integration, REST full applications and Ngnix web servers become true at UOL.<br><br>
+
+                            While all this things was being implemented, we was setting up the new UOL bootstrap, a customization of Twitter Bootstrap.<br><br>
+
+                            But there was a problem, we still needs to use four different and old JAVA applications to provide SAC services, and the *boss dind't want to evolute even a line of them.<br><br>
+
+                            So the nightmare began, support ie8, jQuery less interfaces to integrate with just a single js file and a high complex sell platform drives me mad untill nowadays.<br><br>
+
+                            But there is not problem at all, UOLers use to be braves, and I should to be to.<br><br> ;)
+
+                        </p>
+
+                    </md-card-content>
+
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-primary" ng-if="current==false" ng-click="setCurrent(1)" >Case</md-button>
+                        <md-button class="md-primary" ng-if="current==false" ng-href="https://sac.uol.com.br/" target="_blank" >Go to</md-button>
                     </div>
-                </md-toolbar>
 
-                <md-card-content>
-                    <p> UX and layout design of this site.</p>
-                    <p ng-if="current==6" >
-                        I learned Angular Material and built it up in four days and three nights in a row, thanks Angular Material team, its works like a charm.
-                    </p>
-                </md-card-content>
+                </md-card>
 
-                <div class="md-actions" layout="row" layout-align="end end" >
-                    <md-button class="md-fab md-mini md-primary" >
-                        <md-icon md-svg-icon="images/homeLogo.svg"  ></md-icon>
-                    </md-button>
-                    <md-button class="md-fab md-mini md-primary" >
-                        <md-icon md-svg-icon="images/homeLogo.svg"  ></md-icon>
-                    </md-button>
-                </div>
+                <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex-gt-md="30" flex ng-if="current==2 || current == false" flex-order="2" >
 
-            </md-card>
+                    <img ng-if="!current==2 || current == false" src="images/work/lcb.png" class="md-card-image" >
 
-            <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" ng-click="setCurrent(3)" class="no-select" flex ng-if="current==3 || current == false" >
+                    <md-toolbar ng-if="current==2"  >
+                        <div class="md-toolbar-tools">
 
-                <img src="images/work/own-portfolio.png" class="md-card-image "  >
+                            <h2><span>Evonik Symposium Presentation</span></h2>
 
-                <md-toolbar ng-if="current==3" >
-                    <div class="md-toolbar-tools">
+                            <span flex></span>
 
-                        <h2><span>This site.</span></h2>
-                        <span flex></span>
+                            <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
+                                <md-icon md-svg-icon="images/backTolist-centered.svg"  ></md-icon>
+                            </md-button>
 
+                        </div>
+                    </md-toolbar>
+
+
+                    <md-card-content>
+
+                        <h2 class="md-title" ng-if="current==false" >Evonik Symposium Presentation</h2>
+
+                        <p>
+                            LCB's CEO motioned presentation to explain Expanded Liners method to potencial customers.
+                        </p>
+
+                        <p ng-if="current==2" >
+
+                            In the first meeting to brief the presentation, Javier Galego (LCB's CEO), challenged me to do something original, beautiful and motioned.<br><br>
+                            But, it's wasn't the whole challenge. He wants to show that Expanded Liners really matters to keep nature safe where oil pipelines passes by.<br><br>
+                            He also hired me to translate everything, because he is Argentinean, and barely speaks portuguese.<br><br>
+                            After all, I created an art concept based on leaves, who transports life in their ducts.<br><br>
+                            With the art concept approved, I coded an Artificial Intelligence Action Script Class, called Live Leaves, with aleatory shining representing life passing by a lot of leaf ducts.<br><br>
+                            Then, i build a presntation AS3 core to remotely control the slides.
+                            And finally packed every thing with Adobe Air. <br><br>
+
+                        </p>
+
+                    </md-card-content>
+
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-primary" ng-if="current==false" ng-click="setCurrent(2)" >Case</md-button>
+                        <!-- md-button class="md-primary" ng-if="current==false" ng-href="#" target="_blank" >Download Installer</md-button -->
                     </div>
-                </md-toolbar>
+
+                </md-card>
+
+                <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex-gt-md="30" flex ng-if="current==4 || current == false" flex-order="4"  >
+
+                    <img ng-if="!current==4 || current == false" src="images/work/executioner.png" class="md-card-image" alt="Executioner">
+
+                    <md-toolbar ng-if="current==4" >
+                        <div class="md-toolbar-tools">
+
+                            <h2><span>Executioner</span></h2>
+
+                            <span flex></span>
+
+                            <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
+                                <md-icon md-svg-icon="images/backTolist-centered.svg" ></md-icon>
+                            </md-button>
+
+                        </div>
+                    </md-toolbar>
 
 
-                <md-card-content>
+                    <md-card-content>
 
-                    <p>
-                        Development part of this site.
-                    </p>
+                        <h2 class="md-title" ng-if="current==false" >Executioner</h2>
 
-                    <p ng-if="current==3" >
+                        <p>
+                            An Adobe Air desktop application to run Grunt tasks or whatever you want in a shell.
+                        </p>
 
-                        I learned Angular Material and built it up in four days and three nights in a row, thanks Angular Material team, its works like a charm.
+                        <p ng-if="current==4" >
 
-                    </p>
+                            Features:
 
-                </md-card-content>
+                            &middot; This application is able to keep Always on top over your display, so you can code and see the logs at the same time
+                            &middot; Opens a new prompt, execute a tasks and monitores it withn a single click
+                            &middot; Bash commands customization in a Json file
+                            &middot; Skinnable
 
-            </md-card>
+                        </p>
 
-            <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex ng-if="current==1 || current == false"  >
+                    </md-card-content>
 
-                <img src="images/work/sacbol.png" class="md-card-image" >
-
-                <md-toolbar ng-if="current==1"  >
-                    <div class="md-toolbar-tools">
-
-                        <h2><span>SAC BOL 2.0</span></h2>
-
-                        <span flex></span>
-
-                        <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
-                            <md-icon md-svg-icon="images/backTolist-centered.svg"  ></md-icon>
-                        </md-button>
-
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-primary" ng-if="current==false" ng-click="setCurrent(4)" >Case</md-button>
+                        <md-button class="md-primary" ng-if="current==false" ng-href="https://github.com/romulobordezani/Executioner" target="_blank" >See on Git Hub</md-button>
                     </div>
-                </md-toolbar>
 
-                <md-card-content>
+                </md-card>
 
-                    <p>
-                        UOL SAC's skin engine in action.
-                    </p>
+                <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex-gt-md="30" flex ng-if="current==5 || current == false" flex-order="5" >
 
-                </md-card-content>
+                    <img ng-if="!current==5 || current == false" src="images/work/linklist.png" class="md-card-image" >
 
-            </md-card>
+                    <md-toolbar ng-if="current==5"  >
+                        <div class="md-toolbar-tools">
 
-            <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex ng-if="current==2 || current == false"  >
+                            <h2><span>Link List</span></h2>
 
-                <img src="images/work/sac.png" class="md-card-image" >
+                            <span flex></span>
 
-                <md-toolbar ng-if="current==2"  >
-                    <div class="md-toolbar-tools">
+                            <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
+                                <md-icon md-svg-icon="images/backTolist-centered.svg" ></md-icon>
+                            </md-button>
 
-                        <h2><span>SAC UOL 2.0</span></h2>
+                        </div>
+                    </md-toolbar>
 
-                        <span flex></span>
 
-                        <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
-                            <md-icon md-svg-icon="images/backTolist-centered.svg"  ></md-icon>
-                        </md-button>
+                    <md-card-content>
 
+                        <h2 class="md-title" ng-if="current==false" >Link List</h2>
+
+                        <p>
+                            A useful Bootstrap theme to quickly show bookmarks, tasks, appointments, birthdates, or whatever you want to see in every new browser tab opened.
+                        </p>
+
+                        <p ng-if="current==5" >
+                            Optimized to quick and localy loaded, provides a horizontal carousel as sub-tabs.<br><br>
+                            Integrated with any newTab browser extension, became a very usefull tool to keep links, memos, birthdates, or whatever you want to see every new browser tab opened.<br><br>
+                            It's great to share urls and keep them up to date.<br><br>
+                        </p>
+
+                    </md-card-content>
+
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-primary" ng-if="current==false" ng-click="setCurrent(5)" >Case</md-button>
+                        <md-button class="md-primary" ng-if="current==false" ng-href="https://github.com/romulobordezani/LinkList" target="_blank" >Se on Github</md-button>
                     </div>
-                </md-toolbar>
+
+                </md-card>
+
+                <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex-gt-md="30" flex ng-if="current==6 || current == false" flex-order="6" >
+
+                    <img ng-if="!current==6 || current == false" src="images/work/appendit.png" class="md-card-image" >
+
+                    <md-toolbar ng-if="current==6"  >
+                        <div class="md-toolbar-tools">
+
+                            <h2><span>Appendit</span></h2>
+
+                            <span flex></span>
+
+                            <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
+                                <md-icon md-svg-icon="images/backTolist-centered.svg" ></md-icon>
+                            </md-button>
+
+                        </div>
+                    </md-toolbar>
 
 
-                <md-card-content>
+                    <md-card-content>
 
-                    <p>
-                        The responsive version launch.
-                    </p>
+                        <h2 class="md-title" ng-if="current==false" >Appendit</h2>
 
-                    <p ng-if="current==2" >
+                        <p>
+                            Grunt plugin based on grunt-cdn, that was evolved to append strings as params at cdnfieds urls.
+                        </p>
 
-                    </p>
+                        <p ng-if="current==6" >
+                            At UOL, they use a CDN that controls the file version within a url param.<br><br>
+                            The official grunt cdn doesn't do it, so I evolved it to append parameters after CDNfy.<br><br>
+                            This is available at Node.js npm official repository, and I built it at home in my free time, so you can use at your will.
+                        </p>
 
-                </md-card-content>
+                    </md-card-content>
 
-                <!--div class="md-actions" layout="row" layout-align="end center">
-                    <md-button class="md-primary" ng-if="current==false" ng-href="https://sac.uol.com.br/" target="_blank" >Go to</md-button>
-                </div-->
-
-            </md-card>
-
-            <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex ng-if="current==4 || current == false"  >
-
-                <img ng-if="!current==4 || current == false" src="images/work/pipeline.png" class="md-card-image" >
-
-                <md-toolbar ng-if="current==4"  >
-                    <div class="md-toolbar-tools">
-
-                        <h2><span>Pipe Line Docker</span></h2>
-
-                        <span flex></span>
-
-                        <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
-                            <md-icon md-svg-icon="images/backTolist-centered.svg" ></md-icon>
-                        </md-button>
-
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-primary" ng-if="current==false" ng-click="setCurrent(6)" >Case</md-button>
+                        <md-button class="md-primary" ng-if="current==false" ng-href="https://github.com/romulobordezani/AppendIt" target="_blank" >See on Git Hub</md-button>
                     </div>
-                </md-toolbar>
 
+                </md-card>
 
-                <md-card-content>
-
-                    <p>
-                        HTML 5 presentation for pipelines.<br><br>
-                    </p>
-
-                    <p ng-if="current==4" >
-
-                    </p>
-
-                </md-card-content>
-
-                <!--div class="md-actions" layout="row" layout-align="end center">
-                    <md-button class="md-primary" ng-if="current==false" ng-href="https://github.com/romulobordezani/PipelineDoc" target="_blank" >See on Git Hub</md-button>
-                </div-->
-
-            </md-card>
-
-            <md-card ng-swipe-left="swipeLeft()" ng-swipe-right="swipeRight()" class="no-select" flex ng-if="current==5 || current == false"  >
-
-                <img ng-if="!current==5 || current == false" src="images/work/laad.png" class="md-card-image" >
-
-                <md-toolbar ng-if="current==5"  >
-                    <div class="md-toolbar-tools">
-
-                        <h2><span>LAAD - Bootstrap Shopping Cart</span></h2>
-
-                        <span flex></span>
-
-                        <md-button class="md-icon-button" aria-label="Back to the List" ng-click="$parent.$parent.setCurrent(false)"  >
-                            <md-icon md-svg-icon="images/backTolist-centered.svg" ></md-icon>
-                        </md-button>
-
-                    </div>
-                </md-toolbar>
-
-
-                <md-card-content>
-
-                    <p>
-                        LAAD - Bootstrap Shopping Cart
-                    </p>
-
-                    <p ng-if="current==5" >
-
-                    </p>
-
-                </md-card-content>
-
-                <div class="md-actions" layout="row" layout-align="end center">
-                </div>
-
-            </md-card>
+            </div>
 
         </div>
 
-        <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" >
-            <img src="images/backTolist.svg"  />
-        </md-button>
-
     </main>
-
-</md-content>
+</section>
