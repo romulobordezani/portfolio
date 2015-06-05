@@ -19,7 +19,8 @@ angular
                 .when('/', {
                     templateUrl: 'views/home.html',
                     controller: 'homeController',
-                    animation: 'fade'
+                    animation: 'fade',
+                    routeclass : 'home'
                 })
 
                 .when('/about', {
@@ -30,24 +31,33 @@ angular
 
                 .when('/work/:year/:current', {
                     templateUrl: function(urlattr){
-                        return 'views/work/' + urlattr.year + '-' + urlattr.current + '.html';
+
+                        var current;
+
+                        if( urlattr.current < 10){
+                            current = '0' + urlattr.current;
+                        }else{
+                            current = urlattr.current;
+                        }
+
+                        return 'views/work/' + urlattr.year + '/' + current + '.html';
+
                     },
                     controller: 'workController',
-                    animation: 'work'
+                    animation: 'fade'
                 })
 
                 .when('/work/:year', {
                     templateUrl: function(urlattr){
-                        return 'views/work/' + urlattr.year + '.html';
+                        return 'views/work/' + urlattr.year + '/index.html';
                     },
                     controller: 'workController',
                     animation: 'work'
                 })
 
                 .when('/work/', {
-                    templateUrl: 'views/work/2015.html',
-                    controller: 'workController',
-                    animation: 'work'
+                    redirectTo: '/work/2015',
+                    animation: 'fade'
                 })
 
                 .when('/contact', {
@@ -63,7 +73,8 @@ angular
                 })
 
                 .otherwise({
-                    redirectTo: '/'
+                    redirectTo: '/',
+                    animation: 'fadest'
                 });
 
             $mdThemingProvider.theme('default')
@@ -75,11 +86,11 @@ angular
         }
 
 ).run(
-    function ($rootScope, $timeout) {
+    function ( $rootScope, $timeout, $templateCache, $http ) {
 
         $timeout( function(){
             var spinnerParent = document.getElementById('rb-body');
-            var spinner = document.getElementById('pre-loader-wrapper');
+            var spinner = document.getElementById('main-pre-loader-wrapper');
             spinnerParent.removeChild(spinner);
         }, 3000);
 
@@ -87,6 +98,17 @@ angular
             $timeout(function () {
                 document.getElementById('ngview-container').scrollTop = 0;
             }, 500);
+        });
+
+
+        $http.get('views/contact.html', { cache: $templateCache }).then(function(){
+
+            $http.get('views/work/2015/index.html', { cache: $templateCache }).then(function() {
+
+                $http.get('views/home.html', { cache: $templateCache });
+
+            });
+
         });
 
         var signature = [

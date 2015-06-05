@@ -39,7 +39,7 @@
                     {
                         label: 'WORK',
                         alt: 'Work',
-                        href: '/work',
+                        href: '/work/2015',
                         target : '',
                         imgsrc: 'images/menu/work.svg'
                     },

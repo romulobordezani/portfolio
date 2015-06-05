@@ -99,7 +99,8 @@ angular.module('mdParallax', []).directive('mdParallax', [
                         cssKey = 'background-position';
                         resultVal = 'center ' + resultVal;
                     }else if( pureCssVal === 'opacity' ) {
-                        resultVal = 1 - ( calcVal / 500 ) ;
+                        resultVal = 0 + ( calcVal / 500 ) ;
+                        console.log( resultVal );
                     }
 
                     iElem.css(cssKey, resultVal);
