@@ -8,7 +8,7 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('contactController', function ($scope, $http, transformRequestAsFormPost, $mdDialog, Geolocation ){
+    .controller('contactController', function ($scope, $http, transformRequestAsFormPost, $mdDialog, Geolocation, $rootScope ){
 
         var addressFullFilled = false;
 
@@ -21,6 +21,8 @@ angular.module('rbApp')
                 address: '',
                 message: ''
             };
+
+            $rootScope.contactButtonVisibility = false;
 
         }
 

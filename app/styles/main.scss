@@ -3,6 +3,7 @@
 @import 'libs/colors.scss';
 @import 'libs/animations.scss';
 
+
 body {
 
     font-family: Comfortaa, Helvetica, sans-serif;
@@ -12,14 +13,17 @@ body {
     background-color: $white;
     font-size: 100%;
 
+
+
     md-toolbar {
 
         min-width: 320px;
 
         &.md-default-theme {
 
-            background-color: $white;
             color:$black;
+            background-color: $white;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 
             div#menu-row{
 
@@ -27,7 +31,7 @@ body {
 
                     width: 260px;
                     float: right;
-                    margin: 0px 10px 0;
+                    margin: 0px 30px 0;
 
                     div {
 
@@ -186,15 +190,53 @@ body {
                     }
 
 
-
-
                 }
 
+            }
+
+            div#background-row{
+                display:none;
             }
 
         }
 
     }
+
+    &.home {
+
+        md-toolbar {
+
+            background-color: transparent;
+            position: fixed!important;
+            box-shadow: none;
+
+            div#menu-row {
+
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                right: 0px;
+
+            }
+
+            div#background-row{
+                background: $white none repeat scroll 0 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                z-index: 0;
+                display:block;
+            }
+
+
+        }
+
+    }
+
+
 
 
     md-sidenav{

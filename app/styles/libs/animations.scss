@@ -11,36 +11,36 @@ $use-fadeIn : true;
 @import "../bower_components/animate-sass/animate";
 
 /** View Animation **/
-.right .view.ng-leave {
+.right .view.ng-leave{
     -webkit-animation-name: slideOutRight;
     -moz-animation-name: slideOutRight;
     -ms-animation-name: slideOutRight;
     -o-animation-name: slideOutRight;
     animation-name: slideOutRight;
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
+    animation-duration: 0.25s;
 }
 
 
-.right .view.ng-enter {
+.right .view.ng-enter  {
     -webkit-animation-name: slideInLeft;
     -moz-animation-name: slideInLeft;
     -ms-animation-name: slideInLeft;
     -o-animation-name: slideInLeft;
     animation-name: slideInLeft;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -ms-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration:0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -ms-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
 }
 
 
@@ -51,11 +51,11 @@ $use-fadeIn : true;
     -ms-animation-name: slideOutLeft;
     -o-animation-name: slideOutLeft;
     animation-name: slideOutLeft;
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
+    animation-duration: 0.25s;
 }
 
 
@@ -65,16 +65,16 @@ $use-fadeIn : true;
     -ms-animation-name: slideInRight;
     -o-animation-name: slideInRight;
     animation-name: slideInRight;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -ms-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -ms-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
 }
 
 
@@ -93,6 +93,14 @@ $use-fadeIn : true;
     animation-duration: 0.5s;
 }
 
+.fade .view.ng-enter.ng-enter-active{
+    opacity: 1;
+}
+
+.fade .view.ng-leave.ng-leave-active{
+    opacity: 0;
+}
+
 
 .fade .view.ng-enter {
     -webkit-animation-name: fadeIn;
@@ -100,16 +108,19 @@ $use-fadeIn : true;
     -ms-animation-name: fadeIn;
     -o-animation-name: fadeIn;
     animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -ms-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
     -webkit-animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
     -ms-animation-delay: 0.5s;
     -o-animation-delay: 0.5s;
     animation-delay: 0.5s;
+
+
 }
 
 
@@ -119,25 +130,23 @@ $use-fadeIn : true;
 .work-switcher-animation{
 
     &.ng-leave{
-        -moz-transition: max-height 1s ease-out, opacity .3s ease-out;
-        -webkit-transition: max-height 1s ease-out, opacity .3s ease-out;
-        -o-transition: max-height 1s ease-out, opacity .3s ease-out;
-        transition: max-height 1s ease-out, opacity .3s ease-out;
+        -moz-transition:    max-height .3s ease-out, opacity .3s ease-out;
+        -webkit-transition: max-height .3s ease-out, opacity .3s ease-out;
+        -o-transition:      max-height .3s ease-out, opacity .3s ease-out;
+        transition:         max-height .3s ease-out, opacity .3s ease-out;
     }
 
     &.ng-enter {
-        -moz-transition: max-height .3s ease-out, opacity 1s ease-out;
-        -webkit-transition: max-height .3s ease-out, opacity 1s ease-out;
-        -o-transition: max-height .3s ease-out, opacity 1s ease-out;
-        transition: max-height .3s ease-out, opacity 1s ease-out;
+        -moz-transition:    max-height .3s ease-out, opacity .3s ease-out;
+        -webkit-transition: max-height .3s ease-out, opacity .3s ease-out;
+        -o-transition:      max-height .3s ease-out, opacity .3s ease-out;
+        transition:         max-height .3s ease-out, opacity .3s ease-out;
     }
 
 
     &.ng-enter {
-        transition-delay: 0.6s;
         max-height: 0;
         opacity: 0;
-        margin: 0px;
     }
 
     &.ng-enter.ng-enter-active {
@@ -146,7 +155,6 @@ $use-fadeIn : true;
     }
 
     &.ng-leave {
-        transition-delay: 0.6s;
         max-height: 100px;
         opacity:1;
     }

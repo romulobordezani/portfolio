@@ -18,6 +18,10 @@ angular.module('rbApp')
 
             $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
 
+                menu.selectMenuItemByUrl();
+                $rootScope.contactButtonVisibility = true;
+                $rootScope.routeclass = currRoute.routeclass;
+
                 if( currRoute.animation === 'work' && prevRoute ){
 
                     var currYear = currRoute.params.year || null;
@@ -25,19 +29,30 @@ angular.module('rbApp')
 
                     if( currYear < prevYear ){
                         $scope.animation = 'right';
-                    }else{
+                    }else if( currYear && prevYear ){
                         $scope.animation = 'left';
+                    }else{
+                        $scope.animation = 'fade';
                     }
-
 
                 }else{
                     $scope.animation = currRoute.animation;
                 }
 
+                if( $scope.animation === undefined || $scope.animation === 'work' ){
+                    $scope.animation = 'fade';
+                }
 
             });
 
-            $scope.animation = $rootScope.animation;
+
+
+            $rootScope.$on('forceAnimationSet', function(event, args) {
+                $scope.animation = args.animation;
+            });
+
+
+
 
             var menu = {
 
@@ -48,10 +63,6 @@ angular.module('rbApp')
 
                 setListeners : function(){
 
-                    $rootScope.$on('$routeChangeStart', function (){
-                        menu.selectMenuItemByUrl();
-                    });
-
                     $scope.toggleSidenav = function(menuId) {
                         $mdSidenav(menuId).toggle();
                     };
@@ -61,19 +72,19 @@ angular.module('rbApp')
                         $scope.selected = angular.isNumber(menuItem) ? $scope.leftMenuList[menuItem] : menuItem;
 
                         $mdSidenav('leftMenu').toggle().then(function () {
-                            //console.log('close LEFT is done');
+
+                            if( menuItem.href.indexOf('http') > -1 ){
+
+                                window.open(
+                                    menuItem.href,
+                                    '_blank'
+                                );
+
+                            }else{
+                                $location.path(menuItem.href);
+                            }
+
                         });
-
-                        if( menuItem.href.indexOf('http') > -1 ){
-
-                            window.open(
-                                menuItem.href,
-                                '_blank'
-                            );
-
-                        }else{
-                            $location.path(menuItem.href);
-                        }
 
                         e.preventDefault();
 

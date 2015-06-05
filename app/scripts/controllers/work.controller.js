@@ -13,7 +13,18 @@ angular.module('rbApp')
             $timeout( function(){
                 workProvider.setWorkYear( $scope.year, false, true );
                 workProvider.setCurrent( $scope.current, false, true );
+
             }, 200);
+
+            if( $scope.year === 2015 || $scope.year === '2015' ){
+
+                $timeout( function(){
+                    $rootScope.$broadcast('forceAnimationSet', { animation : 'right' } );
+                }, 1500);
+
+            }
+
+
 
         }
 
