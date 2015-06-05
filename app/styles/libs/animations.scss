@@ -129,12 +129,9 @@ $use-fadeIn : true;
 /** Work Switcher  Animation * */
 .work-switcher-animation{
 
-    &.ng-leave{
-        -moz-transition:    max-height .3s ease-out, opacity .3s ease-out;
-        -webkit-transition: max-height .3s ease-out, opacity .3s ease-out;
-        -o-transition:      max-height .3s ease-out, opacity .3s ease-out;
-        transition:         max-height .3s ease-out, opacity .3s ease-out;
-    }
+
+
+
 
     &.ng-enter {
         -moz-transition:    max-height .3s ease-out, opacity .3s ease-out;
@@ -154,14 +151,6 @@ $use-fadeIn : true;
         opacity:1;
     }
 
-    &.ng-leave {
-        max-height: 100px;
-        opacity:1;
-    }
 
-    &.ng-leave.ng-leave-active {
-        max-height: 0;
-        opacity:0;
-    }
 
 }

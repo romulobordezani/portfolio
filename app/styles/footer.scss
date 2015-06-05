@@ -4,7 +4,7 @@
 
 .parallax-footer{
 
-    height: 133px;
+    height: 333px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -20,7 +20,7 @@
 
 
     @media (min-width: $flex-sm) {
-        height: 233px;
+        height: 333px;
     }
 
 
@@ -40,7 +40,7 @@
         @media (min-width: $flex-sm) {
             font-size: 3.7em;
             text-shadow: 0px 0px 27px #999;
-            bottom: 77px;
+            bottom: 116px;
         }
 
         @media (min-width: $flex-lg) {
@@ -66,7 +66,7 @@
         background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
         background-size: contain;
         width: 604px;
-        height: 312px;
+        height: 333px;
         position: absolute;
         left:0px;
     }
@@ -75,7 +75,7 @@
         background: url(../images/parallax/cloud-2.png) no-repeat center bottom;
         background-size: contain;
         width: 615px;
-        height: 251px;
+        height: 333px;
         position: absolute;
         right: 0px;
     }
@@ -84,7 +84,7 @@
         background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
         background-size: contain;
         width: 666px;
-        height: 325px;
+        height: 333px;
         position: absolute;
         left: 40%
     }
