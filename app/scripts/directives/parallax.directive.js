@@ -100,7 +100,6 @@ angular.module('mdParallax', []).directive('mdParallax', [
                         resultVal = 'center ' + resultVal;
                     }else if( pureCssVal === 'opacity' ) {
                         resultVal = 0 + ( calcVal / 500 ) ;
-                        console.log( resultVal );
                     }
 
                     iElem.css(cssKey, resultVal);
@@ -108,7 +107,11 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 }
 
 
+
                 //if( window.screen.width > 360 ){
+
+                //if( window.screen.width > 360 || pureCssVal === 'opacity' ){
+
                     trueWindow.addEventListener('scroll', _onScroll);
                 //}
 

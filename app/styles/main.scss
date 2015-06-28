@@ -19,11 +19,12 @@ body {
 
         min-width: 320px;
 
-        &.md-default-theme {
+        &#header {
 
             color:$black;
             background-color: $white;
-            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            z-index: 50;
 
             div#menu-row{
 
@@ -111,8 +112,15 @@ body {
                         span {
 
                             float: left;
-                            margin: 7px 7px 0 0;
-                            font-size: 16px;
+                            margin: 6px 9px 0 0;
+                            font-size: 17px;
+
+                            @media ( min-width : 360px ){
+
+                                margin: 3px 0 0 8px;
+                                font-size: 21px;
+
+                            }
 
                             @media ( min-width : $flex-md ){
 
@@ -206,31 +214,46 @@ body {
 
         md-toolbar {
 
-            background-color: transparent;
-            position: fixed!important;
-            box-shadow: none;
+            &#header {
 
-            div#menu-row {
+                background-color: transparent;
+                position: fixed !important;
+                box-shadow: none;
 
-                position: absolute;
-                z-index: 1;
-                width: 100%;
-                right: 0px;
+                -webkit-transition: all .7s;
+                -moz-transition: all .7s;
+                -ms-transition: all .7s;
+                -o-transition: all .7s;
+                transition: all .7s;
+
+                -webkit-transition-delay: 1.3s;
+                -moz-transition-delay: 1.3s;
+                -ms-transition-delay: 1.3s;
+                -o-transition-delay: 1.3s;
+                transition-delay: 1.3s;
+
+                div#menu-row {
+
+                    position: absolute;
+                    z-index: 200;
+                    width: 100%;
+                    right: 0;
+
+                }
+
+                div#background-row {
+                    background: $white none repeat scroll 0 0;
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 100%;
+                    z-index: 0;
+                    display: block;
+                }
 
             }
-
-            div#background-row{
-                background: $white none repeat scroll 0 0;
-                height: 100%;
-                left: 0;
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 100%;
-                z-index: 0;
-                display:block;
-            }
-
 
         }
 
