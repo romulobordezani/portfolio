@@ -2,29 +2,42 @@
 angular.module('rbApp')
     .provider('Utils', function UtilProvider() {
 
-        this.getBootstrapGridSize = function( ){
+        this.$get = ['$location', function ($location) {
 
-            var sufix,
-                width = screen.width;
+            this.getBootstrapGridSize = function( ){
 
-            if( width < 320 ){
-                sufix = 'xs';
-            }else if( width >= 320 && width < 600  ){
-                sufix = 'sm';
-            }else if( width >= 600 && width < 960  ){
-                sufix = 'md';
-            }else if( width >= 960  ){
-                sufix = 'lg';
-            }
+                var sufix,
+                    width = screen.width;
 
-            return sufix;
+                if( width < 320 ){
+                    sufix = 'xs';
+                }else if( width >= 320 && width < 600  ){
+                    sufix = 'sm';
+                }else if( width >= 600 && width < 960  ){
+                    sufix = 'md';
+                }else if( width >= 960  ){
+                    sufix = 'lg';
+                }
 
-        };
+                return sufix;
+
+            };
 
 
-        this.$get = function UtilProvider() {
+            this.goTo = function(url){
+                var isntAnAngularUrl = url.indexOf('http' ) >= 0 ? true : false;
+                if( isntAnAngularUrl ){
+                    document.location.href = url;
+                }else{
+                    url = url.replace('#', '');
+                    $location.path(url);
+                }
+            };
+
+
             return this;
-        };
+
+        }];
 
     }
 );

@@ -1,8 +1,7 @@
 <div id="home"  >
 
-    <div class="parallax" layout-fill style="min-height:0;"  >
+    <div id="home-desktop" class="parallax" layout-fill style="min-height:0;"  >
         <div layout="row" >
-
             <div md-parallax class="parallax-wrapper"  parallax-ratio="0.1" parallax-css="transform:translateY"  parallax-scroller="ngview-container" >
                 <div md-parallax  parallax-ratio="0.3"  parallax-css="background-position-y" parallax-init-val="0" class="parallax-img" parallax-scroller="ngview-container" >
                 </div>
@@ -10,7 +9,9 @@
         </div>
     </div>
 
-    <div layout="column"  layout-wrap >
+    <div class="content-splitter" ></div>
+
+    <div id="home-about-tabs"  layout="column"  layout-wrap >
         <md-content class="md-padding" >
             <h1 class="md-title" hide-gt-sm >About</h1>
             <md-tabs md-dynamic-height md-no-ink  md-border-bottom md-selected="selectedIndex" >
@@ -22,9 +23,9 @@
 
                         <p>   Sophia's dad, Aline's husband and mama's beloved one. </p>
 
-                        <p>   Sometimes developing front-end, sometimes back-end, other times designing and at home giving help desk support to the whole family. </p>
+                        <p>   Sometimes developing front-end, sometimes back-end, other times designing and always giving help desk support to the whole family. </p>
 
-                        <p>  Doesn't matter if it is an heuristic or a code review, the important is always be more fool then full. </p>
+                        <p>   Doesn't matter if it is an heuristic or a code review, the important to me is to keep myself more fool than full. </p>
 
                         <p>   I had been work to make the World Wide Web more than Search, Facebook and Porn, hoping to be part of a new internet age, where the connection could be the main provider of improvements to the society, connecting people, business and governments in real time.</p>
 
@@ -40,7 +41,7 @@
 
                         <img ng-src="images/home/coding-img-tab.svg" class="md-avatar" alt="Development" />
 
-                        <p>   Coding since 2002 in different languages and frameworks, I'm still in love with web development, dazzled with the opportunities that internet brought to me, like the continuous learning and the infinite challenge source.</p>
+                        <p>   Coding since 2002 in different languages and frameworks, I'm still in love with web development, dazzled with the opportunities that internet brought to me, as the continuous learning and the infinite challenge source.</p>
 
                         <p>   I'm experienced with server and frontend development focused in ubiquitousness and responsivess for high audience. </p>
 
@@ -204,6 +205,66 @@
 
             </md-tabs>
         </md-content>
+    </div>
+
+    <div class="content-splitter" ></div>
+
+    <div id="home-featured" layout="row" >
+
+        <div layout="column" flex class="md-padding" layout-align="center center"  >
+
+            <div layout="row" flex layout-fill ng-click="goTo('#/work/2015')" class="clickable" >
+
+                <div layout="column" flex="40" layout-align="center end"  >
+                    <img src="images/home/coffee.svg" />
+                </div>
+
+                <div layout="column" flex layout-margin layout-padding >
+                    <h4 class="md-title" > What I have been done </h4>
+                    See my experience timeline.
+                </div>
+
+            </div>
+
+            <div layout="row" flex class="md-padding" ><img src="images/uis/gradient-line-horizontal.svg" style="height:1px; width: 100%; margin: 30px 0;" /></div>
+
+            <div layout="row" flex layout-fill ng-click="goTo('#/games')" class="clickable" >
+
+                <div layout="column" flex="40" layout-align="center end"  >
+                    <img src="images/home/games.svg" />
+                </div>
+
+                <div layout="column" flex layout-margin layout-padding >
+                    <h4 class="md-title" >Free time? </h4>
+                    Play some one of my<br> old flash games.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div layout="column" flex="5" class="md-padding" ><img src="images/uis/gradient-line-vertical.svg" style="height:100%; width: 1px; margin: 30px 0;" /></div>
+
+
+        <div layout="column" flex="60" >
+
+            <div layout="row" flex layout-fill class="md-padding clickable" ng-click="goTo('#/contact')" >
+
+                <div layout="column" layout-align="center start"  >
+                    <img src="images/home/girl.jpg" class="md-avatar"  />
+                </div>
+
+                <div layout="column" layout-align="center start" >
+                    <h4 class="md-title" >Mobile first  matters </h4>
+                    <p>Now that even Google prefers mobile friendly <br>sites, guess what your users are looking for? </p>
+                    <p>Let me help you making your customers love your site.</p>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 </div>

@@ -8,7 +8,7 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('homeController', function ($scope, homeService) {
+    .controller('homeController', function ($scope, homeService, Utils) {
 
         homeService
             .loadHome()
@@ -20,5 +20,6 @@ angular.module('rbApp')
             $scope.selectedIndex = index;
         };
 
+        $scope.goTo = Utils.goTo;
 
     });

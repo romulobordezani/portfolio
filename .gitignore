@@ -7,9 +7,8 @@ bower_components
 .svn
 log/*.log
 logs/*
-css/reveal.min.css
-js/reveal.min.js
 .idea
 npm-debug.log
 enviangular.php
 enviadado
+_notes
