@@ -1,0 +1,44 @@
+
+$use-pulse : true;
+$use-tada : true;
+@import "../bower_components/animate-sass/animate";
+
+.clickable{
+
+    cursor: pointer;
+
+    -moz-transition:     opacity .3s ease-out;
+    -webkit-transition:  opacity .3s ease-out;
+    -o-transition:       opacity .3s ease-out;
+    transition:          opacity .3s ease-out;
+
+
+    &:hover{
+        opacity: 0.66;
+        -webkit-animation-name: pulse;
+        -moz-animation-name: pulse;
+        -ms-animation-name: pulse;
+        -o-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 0.66s;
+        -moz-animation-duration: 0.66s;
+        -ms-animation-duration: 0.66s;
+        -o-animation-duration: 0.66s;
+        animation-duration: 0.66s;
+    }
+
+    &.clicked{
+        opacity: 1;
+        -webkit-animation-name: tada;
+        -moz-animation-name: tada;
+        -ms-animation-name: tada;
+        -o-animation-name: tada;
+        animation-name: tada;
+        -webkit-animation-duration: 0.66s;
+        -moz-animation-duration: 0.66s;
+        -ms-animation-duration: 0.66s;
+        -o-animation-duration: 0.66s;
+        animation-duration: 0.66s;
+    }
+
+}
