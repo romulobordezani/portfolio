@@ -1,0 +1,61 @@
+<section id="work"  >
+    <main class="work-description" >
+        <div layout-margin layout-padding >
+
+            <h1 class="md-title" >SAC BOL: the UOL SAC's skin engine in action.</h1>
+
+            <p>This is the first clone of UOL's SAC using an internal application called Chameleon, that allows non-dev users to customize their clones and keep them up to date with the main distribution.  </p>
+            <p>Also the first Angular and single page app project in UOL's Chameleon, was a kind of pioneer work over a huge corporation as UOL, I'm glad to see it working.</p>
+
+
+            <div class="work-spacer" ></div>
+            <p><h1 class="md-title">Main challenges:</h1></p>
+            <p>
+                <ul>
+                    <li>To configure out CORS using Nginx and to overcome a lot of cross domain issues using the SAC REST api, in other domain.</li>
+                    <li>To avoid undesirable customizations in the clones, providing editable fields and controlled edition spots.</li>
+                    <li>To provide a way to customize different states per pages.</li>
+                    <li>Distribute app's controllers, directives, modules and providers over the same file and CDN to ingrease performance using controlled cache with md5 based renamed files.</li>
+                    <li>To stipulate a consistent documentation and API to non-dev users</li>
+                </ul>
+            </p>
+
+            <div class="work-spacer" ></div>
+
+            <div class="work-spacer" ></div>
+
+            <div layout="row" layout-fill layout-wrap >
+
+                <md-card class="noselect no-pointer"  layout="column" flex >
+                    <img src="../../../images/work/2015/1/sac-bol-1.png" class="md-card-image md-whiteframe-z1 " >
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-warn md-default-theme"  ng-href="https://sac.bol.uol.com.br/" target="_blank" >Go to</md-button>
+                    </div>
+                </md-card>
+
+                <md-card class="noselect no-pointer"  layout="column" flex >
+                    <img src="../../../images/work/2015/1/sac-bol-2.png" class="md-card-image md-whiteframe-z1 " >
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-warn md-default-theme"  ng-href="https://sac.bol.uol.com.br/#/login" target="_blank" >Go to</md-button>
+                    </div>
+                </md-card>
+
+                <md-card class="noselect no-pointer"  layout="column" flex >
+                    <img src="../../../images/work/2015/1/sac-bol-3.png" class="md-card-image md-whiteframe-z1 " >
+                    <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button class="md-warn md-default-theme"  ng-href="https://sac.bol.uol.com.br/#/recuperarsenha" target="_blank" >Go to</md-button>
+                    </div>
+                </md-card>
+
+            </div>
+
+
+
+        </div>
+
+        <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" >
+            <img src="images/uis/backTolist.svg"  />
+        </md-button>
+
+    </main>
+</section>
