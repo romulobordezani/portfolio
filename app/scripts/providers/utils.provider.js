@@ -25,9 +25,17 @@ angular.module('rbApp')
 
 
             this.goTo = function(url){
-                var isntAnAngularUrl = url.indexOf('http' ) >= 0 ? true : false;
+                var isntAnAngularUrl = url.indexOf('http' ) >= 0 ? true : false || url.indexOf('/images' ) === 0 ;
                 if( isntAnAngularUrl ){
+
+                    if( url.indexOf('/images' ) === 0 ){
+                        url = 'http://' + window.location.host + url;
+                        window.open( url );
+                        return false;
+                    }
+
                     document.location.href = url;
+
                 }else{
                     url = url.replace('#', '');
                     $location.path(url);

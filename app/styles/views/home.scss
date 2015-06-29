@@ -135,10 +135,69 @@ div#home {
 
     #home-featured{
 
-        margin-top: 90px;
+        @media ( min-width : $flex-lg ){
+            margin-top: 90px;
+        }
 
         h4{
             margin: 0px;
+        }
+
+
+        #first-featured-item{
+
+            @media ( max-width : $flex-md ) {
+
+                font-size: 0.75em;
+
+                h4 {
+                    font-size: 1.3em;
+                    margin-top: 17px;
+                }
+
+            }
+
+            @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
+
+                font-size: 1.3em;
+
+                h4 {
+                    font-size: 1.6em;
+                }
+
+            }
+
+        }
+
+
+        #third-featured-item{
+
+            @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
+                margin-top: 33px;
+            }
+
+
+
+            img.md-avatar{
+
+                width:100%;
+                height:auto;
+
+                @media ( max-width : $flex-md ) {
+                    margin: 0;
+                    width: 76%;
+                }
+
+
+            }
+
+            h4 {
+                @media ( max-width : $flex-md ) {
+                    margin-top : 15px;
+                }
+            }
+
+
         }
 
     }

@@ -126,12 +126,8 @@ $use-fadeIn : true;
 
 
 
-/** Work Switcher  Animation * */
+/** Work Switcher  Animation **/
 .work-switcher-animation{
-
-
-
-
 
     &.ng-enter {
         -moz-transition:    max-height .3s ease-out, opacity .3s ease-out;
@@ -139,7 +135,6 @@ $use-fadeIn : true;
         -o-transition:      max-height .3s ease-out, opacity .3s ease-out;
         transition:         max-height .3s ease-out, opacity .3s ease-out;
     }
-
 
     &.ng-enter {
         max-height: 0;
@@ -150,7 +145,5 @@ $use-fadeIn : true;
         max-height: 100px;
         opacity:1;
     }
-
-
 
 }

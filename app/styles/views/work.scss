@@ -17,6 +17,10 @@ section#work {
         min-width: 47%;
         cursor: pointer;
 
+        &.no-pointer{
+            cursor: default;
+        }
+
         @media (max-width:$flex-sm){
             margin-bottom: 56px!important;
         }
@@ -41,15 +45,30 @@ section#work {
 
     }
 
-    /*
+
+    .work-description{
+
+        .work-spacer{
+            width: 100%;
+            height: 20px;
+            margin: 20px 0;
+        }
+
+        ul {
+            li{
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+
 
     #close-job {
         position: fixed;
-        right: 4px;
+        right: 16px;
         bottom: 2px;
         transition: none;
     }
 
-    */
 
 }

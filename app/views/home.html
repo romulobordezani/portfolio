@@ -23,7 +23,7 @@
 
                         <p>   Sophia's dad, Aline's husband and mama's beloved one. </p>
 
-                        <p>   Sometimes developing front-end, sometimes back-end, other times designing and always giving help desk support to the whole family. </p>
+                        <p>   Coding since 2001, sometimes developing front-end, sometimes back-end, other times designing but always giving help desk support to the whole family. </p>
 
                         <p>   Doesn't matter if it is an heuristic or a code review, the important to me is to keep myself more fool than full. </p>
 
@@ -209,56 +209,50 @@
 
     <div class="content-splitter" ></div>
 
-    <div id="home-featured" layout="row" >
+    <div id="home-featured" layout="row" layout-wrap >
 
-        <div layout="column"  layout-sm="row"  flex class="md-padding" layout-align="center center" >
+        <div layout="column" layout-sm="row" layout-md="row" flex class="md-padding" layout-align="center center" >
 
-            <div layout="row" flex layout-fill ng-click="goTo('#/work/2015')" class="clickable" >
-
-                <div layout="column" flex="40" layout-align="center end" >
+            <div id="first-featured-item" layout="row"  flex layout-fill  clickable-url="#/work/2015" clickable >
+                <div layout="column" flex="40" flex-sm="25" flex-md="25" layout-align="center end" >
                     <img src="images/home/coffee.svg" />
                 </div>
-
                 <div layout="column" flex layout-margin layout-padding >
                     <h4 class="md-title" > What I have been done </h4>
                     See my experience timeline.
                 </div>
-
             </div>
 
-            <div layout="row" flex class="md-padding" ><img src="images/uis/gradient-line-horizontal.svg" style="height:1px; width: 100%; margin: 30px 0;" /></div>
+            <div layout="row" hide-sm hide-md  flex class="md-padding" ><img src="images/uis/gradient-line-horizontal.svg" style="height:1px; width: 100%; margin: 30px 0;" /></div>
 
-            <div layout="row" flex layout-fill ng-click="goTo('#/games')" class="clickable" >
-
+            <div layout="row" id="second-featured-item" hide-sm hide-md flex layout-fill clickable-url="#/games" clickable >
                 <div layout="column" flex="40" layout-align="center end"  >
                     <img src="images/home/games.svg" />
                 </div>
-
                 <div layout="column" flex layout-margin layout-padding >
                     <h4 class="md-title" >Free time? </h4>
-                    Play some one of my<br> old flash games.
+                    Play some one of my old flash games.
                 </div>
-
             </div>
 
         </div>
 
+        <div layout="column" hide-sm hide-md flex="5" class="md-padding" ><img src="images/uis/gradient-line-vertical.svg" style="height:100%; width: 1px; margin: 30px 0;" /></div>
 
-        <div layout="column" flex="5" class="md-padding" ><img src="images/uis/gradient-line-vertical.svg" style="height:100%; width: 1px; margin: 30px 0;" /></div>
+        <div class="content-splitter" hide-gt-md style="margin-top: 43px;" ></div>
 
+        <div layout="column" layout-sm="row" layout-md="row" flex="60" flex-sm="100" flex-md="100" >
 
-        <div layout="column" flex="60" >
+            <div id="third-featured-item" layout="row" flex layout-wrap layout-fill class="md-padding" clickable clickable-url="#/contact" >
 
-            <div layout="row" flex layout-fill class="md-padding clickable" ng-click="goTo('#/contact')" >
-
-                <div layout="column" layout-align="center start"  >
-                    <img src="images/home/girl.jpg" class="md-avatar"  />
+                <div layout="column" layout-sm="row" layout-align="center start" layout-align-sm="center center" layout-align-md="center center" flex="20" flex-sm="100" flex-md="33" >
+                    <img src="images/home/girl.jpg" class="md-avatar" />
                 </div>
 
-                <div layout="column" layout-align="center start" >
-                    <h4 class="md-title" >Mobile first  matters </h4>
-                    <p>Now that even Google prefers mobile friendly <br>sites, guess what your users are looking for? </p>
-                    <p>Let me help you making your customers love your site.</p>
+                <div layout="column" layout-sm="row" layout-align="center start" layout-wrap class="md-padding" flex="50" flex-sm="100"  flex-md="66" >
+                    <h4 class="md-title" layout-fill >Mobile first  matters </h4>
+                    <p>Now that even Google prefers mobile friendly sites, guess what your users are looking for? </p>
+                    <p>Let me to help you make your customers love your site.</p>
                 </div>
 
             </div>

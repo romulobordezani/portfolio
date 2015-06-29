@@ -10,7 +10,8 @@ angular
         'ngTouch',
         'ngMaterial',
         'ngMessages',
-        'mdParallax'
+        'mdParallax',
+        'addClassOnClick'
     ])
     .config(
         function ( $routeProvider, $mdThemingProvider ) {
