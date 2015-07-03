@@ -8,48 +8,52 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider',
-        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider ){
+    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider', 'favicoProvider',
+        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider, favicoProvider ){
 
             function init(){
+                attachEvents();
                 menu.loadService();
                 workSwitcher.init();
             }
 
-            $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
+            function attachEvents(){
 
-                menu.selectMenuItemByUrl();
-                $rootScope.contactButtonVisibility = true;
-                $rootScope.routeclass = currRoute.routeclass;
+                $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
 
-                if( currRoute.animation === 'work' && prevRoute ){
+                    menu.selectMenuItemByUrl();
+                    favicoProvider.blow();
+                    $rootScope.contactButtonVisibility = true;
+                    $rootScope.routeclass = currRoute.routeclass;
 
-                    var currYear = currRoute.params.year || null;
-                    var prevYear = prevRoute.params.year || null;
+                    if( currRoute.animation === 'work' && prevRoute ){
 
-                    if( currYear < prevYear ){
-                        $scope.animation = 'right';
-                    }else if( currYear && prevYear ){
-                        $scope.animation = 'left';
+                        var currYear = currRoute.params.year || null;
+                        var prevYear = prevRoute.params.year || null;
+
+                        if( currYear < prevYear ){
+                            $scope.animation = 'right';
+                        }else if( currYear && prevYear ){
+                            $scope.animation = 'left';
+                        }else{
+                            $scope.animation = 'fade';
+                        }
+
                     }else{
+                        $scope.animation = currRoute.animation;
+                    }
+
+                    if( $scope.animation === undefined || $scope.animation === 'work' ){
                         $scope.animation = 'fade';
                     }
 
-                }else{
-                    $scope.animation = currRoute.animation;
-                }
+                });
 
-                if( $scope.animation === undefined || $scope.animation === 'work' ){
-                    $scope.animation = 'fade';
-                }
+                $rootScope.$on('forceAnimationSet', function(event, args) {
+                    $scope.animation = args.animation;
+                });
 
-            });
-
-
-
-            $rootScope.$on('forceAnimationSet', function(event, args) {
-                $scope.animation = args.animation;
-            });
+            }
 
 
 
