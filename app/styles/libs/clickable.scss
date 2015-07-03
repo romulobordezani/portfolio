@@ -6,15 +6,10 @@ $use-tada : true;
 .clickable{
 
     cursor: pointer;
-
-    -moz-transition:     opacity .3s ease-out;
-    -webkit-transition:  opacity .3s ease-out;
-    -o-transition:       opacity .3s ease-out;
-    transition:          opacity .3s ease-out;
-
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;height:100%;
 
     &:hover{
-        opacity: 0.66;
         -webkit-animation-name: pulse;
         -moz-animation-name: pulse;
         -ms-animation-name: pulse;
@@ -25,10 +20,11 @@ $use-tada : true;
         -ms-animation-duration: 0.66s;
         -o-animation-duration: 0.66s;
         animation-duration: 0.66s;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;height:100%;
     }
 
     &.clicked{
-        opacity: 1;
         -webkit-animation-name: tada;
         -moz-animation-name: tada;
         -ms-animation-name: tada;
