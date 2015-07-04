@@ -184,12 +184,12 @@ angular
     .module('material.components.tabs')
     .controller('MdTabsController', MdTabsController);
 
-function MdTabsController ($scope, $element, $window, $timeout, $mdConstant, $mdInkRipple,
-                           $mdUtil, $animate) {
-  var ctrl     = this,
-      locked   = false,
-      elements = getElements(),
-      queue    = [];
+function MdTabsController ($scope, $element, $window, $timeout, $mdConstant, $mdInkRipple, $mdUtil, $animate, $rootScope) {
+
+    var ctrl     = this,
+        locked   = false,
+        elements = getElements(),
+        queue    = [];
 
   ctrl.scope = $scope;
   ctrl.parent = $scope.$parent;
@@ -375,6 +375,7 @@ function MdTabsController ($scope, $element, $window, $timeout, $mdConstant, $md
       updateInkBarStyles();
       updateHeightFromContent();
       $scope.$broadcast('$mdTabsChanged');
+      $rootScope.$broadcast('$mdTabsChanged');
       ctrl.tabs[oldValue] && ctrl.tabs[oldValue].scope.deselect();
       ctrl.tabs[newValue] && ctrl.tabs[newValue].scope.select();
 
@@ -553,7 +554,7 @@ function MdTabsController ($scope, $element, $window, $timeout, $mdConstant, $md
     $mdInkRipple.attachTabBehavior(scope, element, options);
   }
 }
-MdTabsController.$inject = ["$scope", "$element", "$window", "$timeout", "$mdConstant", "$mdInkRipple", "$mdUtil", "$animate"];
+MdTabsController.$inject = ["$scope", "$element", "$window", "$timeout", "$mdConstant", "$mdInkRipple", "$mdUtil", "$animate", "$rootScope"];
 
 /**
  * @ngdoc directive

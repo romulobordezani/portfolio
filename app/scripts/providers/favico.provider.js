@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('rbApp')
-    .provider('favicoProvider', [
-        function() {
+    .provider('favicoProvider', [function() {
 
             this.$get = function() {
 
@@ -63,6 +62,5 @@ angular.module('rbApp')
 
             };
 
-        }
-    ]
+    }]
 );

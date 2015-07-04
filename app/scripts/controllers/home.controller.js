@@ -8,17 +8,11 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('homeController', function ($scope, homeService, Utils) {
+    .controller('homeController', function ($scope, Utils, $routeParams, $rootScope, Animator) {
 
-        homeService
-            .loadHome()
-            .then( function( home ) {
-                $scope.homeList = [].concat(home);
-            });
-
-        $scope.changeSelected = function(index){
-            $scope.selectedIndex = index;
-        };
+        $rootScope.$on('$mdTabsChanged', function(){
+            Animator.scrollToTabTop();
+        });
 
         $scope.goTo = Utils.goTo;
 

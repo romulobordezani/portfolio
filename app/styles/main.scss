@@ -1,7 +1,7 @@
-@import 'libs/browsehappy.scss';
-@import 'libs/measures.scss';
-@import 'libs/colors.scss';
-@import 'libs/animations.scss';
+@import 'libs/browsehappy';
+@import 'libs/measures';
+@import 'libs/colors';
+@import 'libs/animations';
 
 
 body {
@@ -363,17 +363,17 @@ body {
 
     div#ngview {
 
-        @import 'views/home.scss';
-        @import 'views/work.scss';
+        @import 'views/home';
+        @import 'views/work';
 
     }
 
-    @import 'footer.scss';
+    @import 'assets/footer';
 
 
 }
 
-@import 'libs/materialExtensions.scss';
-@import 'directives/clickable.directive.scss';
-@import 'directives/device-frame.directive.scss';
+@import 'libs/materialExtensions';
+@import 'directives/clickable.directive';
+@import 'directives/device-frame.directive';
 
