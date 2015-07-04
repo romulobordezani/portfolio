@@ -374,5 +374,6 @@ body {
 }
 
 @import 'libs/materialExtensions.scss';
-@import 'libs/clickable.scss';
+@import 'directives/clickable.directive.scss';
+@import 'directives/device-frame.directive.scss';
 

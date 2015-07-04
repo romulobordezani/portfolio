@@ -11,7 +11,8 @@ angular
         'ngMaterial',
         'ngMessages',
         'mdParallax',
-        'addClassOnClick'
+        'addClassOnClick',
+        'deviceFrame'
     ])
     .config(
         function ( $routeProvider, $mdThemingProvider ) {
