@@ -15,4 +15,4 @@ URL: http://romulobordezani.com.br <br/>
 
 ###Preview
 
-![roms-og-image](http://romulobordezani.com.br/images/git/rb-index.jpg)
+![roms-og-image](http://romulobordezani.com.br/images/git/rb-index2.jpg)
