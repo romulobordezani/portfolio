@@ -136,11 +136,11 @@
 
         </md-toolbar>
 
-        <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="leftMenu"  >
-            <md-list layout="column" layout-align="space-around right"  >
+        <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="leftMenu"   >
+            <md-list layout="column" layout-align="space-around right"    >
 
-                <md-item ng-repeat="item in leftMenuList" >
-                    <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }"  >
+                <md-item ng-repeat="item in leftMenuList"  >
+                    <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" ng-swipe-left="swipeLeftMenu()" >
                         <div class="md-item-container"  >
                             <img ng-src="{{item.imgsrc}}" class="md-avatar" alt="{{item.alt}}" />
                             <div class="md-list-item-text">{{item.label}}</div>
@@ -149,7 +149,7 @@
                 </md-item>
 
                 <md-item hide-sm >
-                    <md-button ng-href="http://romulobordezani.com.br/index2.php"  ng-class="{'selected' : item === selected }"  >
+                    <md-button ng-href="http://romulobordezani.com.br/index2.php"  ng-class="{'selected' : item === selected }" ng-swipe-left="swipeLeftMenu()"  >
                         <div class="md-item-container"  >
                             <img ng-src="images/menu/flash.svg" class="md-avatar" alt="Old Version" />
                             <div class="md-list-item-text">OLD VERSION</div>
@@ -159,10 +159,11 @@
 
                 <md-item hide-gt-sm >
                     <div id="social-links-menu" class="noselect" >
-                        <div><a ng-href="https://www.facebook.com/romulobordezani" ><img src="images/socials/ico_facebook.svg" /></a></div>
-                        <div><a href ng-href="https://plus.google.com/104483918654914497308/posts" ><img src="images/socials/ico_google.svg" /></a></div>
-                        <div><a href ng-href="https://br.linkedin.com/pub/rômulo-bordezani/21/a3a/55a" ><img src="images/socials/ico_linkedin.svg" /></a></div>
-                        <div><a href ng-href="https://twitter.com/romulobordezani" ><img src="images/socials/ico_twitter.svg" /></a></div>
+                        <div><a ng-href="https://www.facebook.com/romulobordezani" target="_BLANK" ><img src="images/socials/ico_facebook.svg" /></a></div>
+                        <div><a href ng-href="https://plus.google.com/104483918654914497308/posts" target="_BLANK" ><img src="images/socials/ico_google.svg" /></a></div>
+                        <div><a href ng-href="https://br.linkedin.com/pub/rômulo-bordezani/21/a3a/55a" target="_BLANK" ><img src="images/socials/ico_linkedin.svg" /></a></div>
+                        <div><a href ng-href="https://twitter.com/romulobordezani" target="_BLANK" ><img src="images/socials/ico_twitter.svg" /></a></div>
+                        <div><a href ng-href="https://github.com/romulobordezani" target="_BLANK" ><img src="images/socials/ico-github.svg" /></a></div>
                     </div>
                 </md-item>
 
@@ -174,12 +175,13 @@
             <div ng-view="" id="ngview" layout="column" class="content-pusher view" ></div>
 
             <div md-parallax  parallax-ratio="0.07" parallax-css="transform:translateY"  parallax-scroller="ngview-container" >
-                <div class="content-splitter-inverted" ></div>
+
+                <div class="pre-footer" hide-sm ></div>
                 <div class="parallax-footer" hide-sm >
 
-                    <div class="cloud-1" md-parallax parallax-ratio="0.2" parallax-css="background-position-y" parallax-init-val-md="-146" parallax-init-val-lg="-246" parallax-max-val="533"    parallax-scroller="ngview-container" ></div>
-                    <div class="cloud-2" md-parallax parallax-ratio="0.7" parallax-css="background-position-y" parallax-init-val-md="-46" parallax-init-val-lg="-576" parallax-max-val="533"   parallax-scroller="ngview-container" ></div>
-                    <div class="cloud-3" md-parallax parallax-ratio="0.3" parallax-css="background-position-y" parallax-init-val-md="-46" parallax-init-val-lg="-86"  parallax-max-val="533"  parallax-scroller="ngview-container" ></div>
+                    <div class="cloud-1" md-parallax parallax-ratio="0.1" parallax-css="background-position-y" parallax-init-val-md="-146" paralla1-init-val-lg="-246" parallax-max-val="533"    parallax-scroller="ngview-container" ></div>
+                    <div class="cloud-2" md-parallax parallax-ratio="0.3" parallax-css="background-position-y" parallax-init-val-md="-46" parallax-init-val-lg="-576" parallax-max-val="533"   parallax-scroller="ngview-container" ></div>
+                    <div class="cloud-3" md-parallax parallax-ratio="0.1" parallax-css="background-position-y" parallax-init-val-md="-46" parallax-init-val-lg="-86"  parallax-max-val="533"  parallax-scroller="ngview-container" ></div>
 
                     <div class="parallax-txt kill-animations"  layout="row" layout-align="space-around center" >
                         <div layout="column" class="noselect" >Creative</div>

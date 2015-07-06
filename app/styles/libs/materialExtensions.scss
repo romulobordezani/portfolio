@@ -37,13 +37,15 @@ md-content{
 }
 
 .content-splitter{
-    background: url('../images/uis/content-splitter.jpg') no-repeat center center transparent;
+    background: url('../images/uis/content-splitter.jpg') no-repeat center top transparent;
+    background-size: 97%;
     height:49px;
     width: 100%;
 }
 
 .content-splitter-inverted{
-    background: url('../images/uis/content-splitter-inverted.jpg') no-repeat center center transparent;
+    background: url('../images/uis/content-splitter-inverted.jpg') no-repeat center bottom transparent;
+    background-size: 97%;
     height:49px;
     width: 100%;
 }

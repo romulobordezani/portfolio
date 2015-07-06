@@ -80,8 +80,7 @@ angular.module('rbApp')
                             if( menuItem.href.indexOf('http') > -1 ){
 
                                 window.open(
-                                    menuItem.href,
-                                    '_blank'
+                                    menuItem.href
                                 );
 
                             }else{
@@ -92,6 +91,11 @@ angular.module('rbApp')
 
                         e.preventDefault();
 
+                    };
+
+
+                    $scope.swipeLeftMenu = function(){
+                        $mdSidenav('leftMenu').close();
                     };
 
 

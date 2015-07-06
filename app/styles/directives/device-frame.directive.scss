@@ -4,7 +4,13 @@
 .device-frame{
 
     height: 300px;
-    margin: 0 33px;
+    min-width: 290px;
+
+    @media ( min-width : $flex-sm ){
+        margin: 0 13px;
+        min-width: 0;
+    }
+
 
     a{
         position: relative;
@@ -16,7 +22,7 @@
             position: absolute;
             top: 0px;
             left: 0px;
-            z-index: 2000;
+            z-index: 3;
             background-image: url('../images/uis/ic_launch_24px.svg');
             background-size: 46px 46px;
             background-repeat : no-repeat;
@@ -34,6 +40,14 @@
             &:before{
                 display: block;
                 opacity: 0.7;
+            }
+
+        }
+
+        &:active{
+
+            &:before{
+                display: none;
             }
 
         }
@@ -85,13 +99,13 @@
         a.df-md-screen{
 
             width: 120px;
-            height: 251px;
+            height: 150px;
             margin: 10px auto 0;
 
             img{
                 position: absolute;
-                width: auto;
-                height: 250px;
+                width: 120px;
+                height: auto;
                 clip: rect(0px, 120px, 150px, 0px);
             }
 
@@ -147,7 +161,7 @@
             img{
                 position: absolute;
                 width: 280px;
-                height: 220px;
+                height: auto;
                 clip: rect(0px, 280px, 180px, 0px);
             }
 

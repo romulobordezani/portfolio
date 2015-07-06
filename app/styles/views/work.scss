@@ -60,6 +60,33 @@ section#work {
             }
         }
 
+        .responsibilityIcon{
+           vertical-align:  middle;
+            margin-right: 7px;
+            width: 24px;
+            height: auto;
+        }
+
+        .no-responsibility{
+            opacity: 0.15;
+        }
+
+        md-checkbox[disabled]{
+            cursor: default;
+        }
+
+        md-checkbox[disabled].md-default-theme.md-checked .md-icon{
+            background-color: #18B364;
+        }
+
+        md-card{
+            cursor: default;
+        }
+
+        .md-clickable{
+            cursor: default!important;
+        }
+
     }
 
 

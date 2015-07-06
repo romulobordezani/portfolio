@@ -1,6 +1,19 @@
 @import '../libs/colors';
 @import '../libs/measures';
 
+.pre-footer{
+    width: 100%;
+    height: 66px;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, $white  0%, #FFFFFF 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#FFFFFF));
+    background: -webkit-linear-gradient(top,  #FFFFFF 0%, $white 100%);
+    background: -o-linear-gradient(top,  $white 0%,#FFFFFF 100%);
+    background: -ms-linear-gradient(top,  $white 0%,#FFFFFF  100%);
+    background: linear-gradient(to bottom, $white  0%,#FFFFFF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='$white',GradientType=0 );
+
+}
 
 .parallax-footer{
 
@@ -9,14 +22,14 @@
     position: relative;
     overflow: hidden;
 
-    background: $white;
-    background: -moz-linear-gradient(top,  $white 0%, #bdbdbd 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#bdbdbd));
-    background: -webkit-linear-gradient(top,  $white 0%,#bdbdbd 100%);
-    background: -o-linear-gradient(top,  $white 0%,#bdbdbd 100%);
-    background: -ms-linear-gradient(top,  $white 0%,#bdbdbd 100%);
-    background: linear-gradient(to bottom,  $white 0%,#bdbdbd 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$white', endColorstr='#bdbdbd',GradientType=0 );
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top,  #FFFFFF 0%, #bdbdbd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#bdbdbd));
+    background: -webkit-linear-gradient(top,  #FFFFFF 0%,#bdbdbd 100%);
+    background: -o-linear-gradient(top,  #FFFFFF 0%,#bdbdbd 100%);
+    background: -ms-linear-gradient(top,  #FFFFFF 0%,#bdbdbd 100%);
+    background: linear-gradient(to bottom,  #FFFFFF 0%,#bdbdbd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#bdbdbd',GradientType=0 );
 
 
     @media (min-width: $flex-sm) {

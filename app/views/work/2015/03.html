@@ -1,38 +1,92 @@
 <section id="work"  >
     <main class="work-description" >
+
         <div layout-margin layout-padding >
 
-            <h1 class="md-title" >SAC BOL: the UOL SAC's skin engine in action.</h1>
+            <div layout="row" layout-wrap  >
 
-            <p>This is the first clone of UOL's SAC using an internal application called Chameleon, that allows non-dev users to customize their clones and keep them up to date with the main distribution.  </p>
-            <p>Also the first Angular and single page app project in UOL's Chameleon, was a kind of pioneer work over a huge corporation as UOL, I'm glad to see it working.</p>
+                <div layout="column" flex flex-sm="100" >
+
+                    <h1 class="md-title" >SAC BOL: the UOL SAC's skin engine in action.</h1>
+
+                    <p>This is the first clone of UOL's SAC using an internal application called Chameleon, that allows non-dev users to customize their clones and keep them up to date with the main distribution.  </p>
+                    <p>Also the first Angular and single page app project in UOL's Chameleon, was a kind of pioneer work over a huge corporation as UOL, I'm glad to see it working.</p>
+
+
+                    <div class="work-spacer" ></div>
+                    <h1 class="md-title">Main challenges:</h1>
+
+                    <ul>
+                        <li>To configure out CORS using Nginx to overcome cross domain issues using the SAC REST api in other domain.</li>
+                        <li>To avoid undesirable customizations in the clones, providing editable fields and controlled edition spots.</li>
+                        <li>To provide a way to customize different states per pages.</li>
+                        <li>Distribute app's controllers, directives, modules and providers over the same file and CDN to ingrease performance using controlled cache with md5 based renamed files.</li>
+                        <li>To stipulate a consistent documentation and API to non-dev users</li>
+                    </ul>
+
+
+                </div>
+
+                <div layout="column" flex="33" flex-sm="100" >
+
+                    <md-card>
+                        <md-card-content>
+                            <h4 class="md-headline">Story responsibilities:</h4>
+                            <md-list>
+
+                                <md-list-item >
+                                    <md-icon md-svg-src="images/uis/ic_code_24px.svg"></md-icon>
+                                    <p>Frontend</p>
+                                    <md-checkbox class="md-secondary" ng-model="responsible" disabled  ></md-checkbox>
+                                </md-list-item>
+                                <md-divider></md-divider>
+
+                                <md-list-item >
+                                    <md-icon md-svg-src="images/uis/ic_cloud_24px.svg"></md-icon>
+                                    <p>Backend</p>
+                                    <md-checkbox class="md-secondary" ng-model="noResponsible" disabled  ></md-checkbox>
+                                </md-list-item>
+                                <md-divider></md-divider>
+
+                                <md-list-item >
+                                    <md-icon md-svg-src="images/uis/ic_db_24px.svg"></md-icon>
+                                    <p>Data Base</p>
+                                    <md-checkbox class="md-secondary" ng-model="noResponsible" disabled ></md-checkbox>
+                                </md-list-item>
+                                <md-divider></md-divider>
+
+                                <md-list-item >
+                                    <md-icon md-svg-src="images/uis/ic_ux_24px.svg"></md-icon>
+                                    <p>UX</p>
+                                    <md-checkbox class="md-secondary" ng-model="noResponsible" disabled ></md-checkbox>
+                                </md-list-item>
+                                <md-divider></md-divider>
+
+                                <md-list-item >
+                                    <md-icon md-svg-src="images/uis/ic_eye_24px.svg"></md-icon>
+                                    <p>Design</p>
+                                    <md-checkbox class="md-secondary" ng-model="noResponsible" disabled ></md-checkbox>
+                                </md-list-item>
+
+                            </md-list>
+                        </md-card-content>
+                    </md-card>
+
+                </div>
+
+            </div>
 
 
             <div class="work-spacer" ></div>
-            <p><h1 class="md-title">Main challenges:</h1></p>
-            <p>
-                <ul>
-                    <li>To configure out CORS using Nginx and to overcome a lot of cross domain issues using the SAC REST api, in other domain.</li>
-                    <li>To avoid undesirable customizations in the clones, providing editable fields and controlled edition spots.</li>
-                    <li>To provide a way to customize different states per pages.</li>
-                    <li>Distribute app's controllers, directives, modules and providers over the same file and CDN to ingrease performance using controlled cache with md5 based renamed files.</li>
-                    <li>To stipulate a consistent documentation and API to non-dev users</li>
-                </ul>
-            </p>
-
-            <div class="work-spacer" ></div>
-
-            <div class="work-spacer" ></div>
-
             <div layout="row" layout-wrap layout-fill layout-align="center end" >
 
-                <device-frame href="testehttps" size="lg" src="../../../images/work/2015/1/sac-bol-3.png" ></device-frame>
+                <device-frame size="lg" src="../../../images/work/2015/3/lg.png" ></device-frame>
 
-                <device-frame href="https://sac.uol.com.br" size="gt-lg" src="../../../images/work/2015/1/sac-bol-2.png"  ></device-frame>
+                <device-frame size="gt-lg" src="../../../images/work/2015/3/gt-lg.png" ></device-frame>
 
-                <device-frame href="testehttps" size="md" src="../../../images/work/2015/1/sac-bol-2.png"  ></device-frame>
+                <device-frame size="md" src="../../../images/work/2015/3/md.png" ></device-frame>
 
-                <device-frame href="testehttps" size="sm" src="../../../images/work/2015/1/sac-bol-1.png"  ></device-frame>
+                <device-frame size="sm" src="../../../images/work/2015/3/sm.png" ></device-frame>
 
             </div>
 

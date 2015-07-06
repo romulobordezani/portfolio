@@ -9,6 +9,8 @@ angular.module('rbApp')
             $scope.year = $routeParams.year || 2015;
             workProvider.setDialogAlreadySeem(true);
             workProvider.setWorkSwitcherVisibility(true);
+            $scope.responsible = true;
+            $scope.noResponsible = false;
 
             $timeout( function(){
 
