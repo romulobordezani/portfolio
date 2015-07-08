@@ -1,0 +1,44 @@
+@import '../libs/colors.scss';
+@import '../libs/measures.scss';
+
+div#contact {
+
+    #social-contacts{
+
+
+        div {
+
+            float: right;
+            width: 23px;
+            margin: 20px 7px 0;
+
+            &.linkedin{
+                margin: 18px 5px 0 7px;
+            }
+
+            a{
+
+                display:block;
+                width: 100%;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+            }
+
+        }
+
+    }
+
+    md-input-container.md-default-theme label, md-input-container.md-default-theme .md-placeholder{
+        color: #333333;
+    }
+
+    button.md-raised{
+        max-width: 66px;
+}
+
+
+}
