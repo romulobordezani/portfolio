@@ -212,6 +212,7 @@ AddDefaultCharset utf-8
     Options +FollowSymlinks
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
+    RewriteRule ^sophia.*$ http://sophia.romulobordezani.com.br [R=301,L]
   # RewriteBase /
 </IfModule>
 
