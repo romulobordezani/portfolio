@@ -1,6 +1,6 @@
 'use strict';
-angular.module('responsibilities', []).directive('responsibilities',[ '$mdDialog',
-        function($mdDialog) {
+angular.module('responsibilities', []).directive('responsibilities',
+        function() {
             return {
 
                 restrict: 'E',
@@ -8,20 +8,17 @@ angular.module('responsibilities', []).directive('responsibilities',[ '$mdDialog
                 templateUrl : 'views/templates/responsibilities.directive.html',
 
                 scope: {
-                    frontend: '=',
-                    backend : '=',
-                    database : '=',
-                    ux : '=',
-                    design : '='
-                },
-
-                link: function(scope, element, attrs) {
-                    for( var attr in scope ){
-                        console.log( scope[attr] );
-                    }
+                    frontend: '=?',
+                    backend : '=?',
+                    database : '=?',
+                    ux : '=?',
+                    design : '=?',
+                    headline : '=?'
                 }
+
+                // ,link: function(scope, element, attrs) {}
 
             };
 
-     }]
+     }
 );

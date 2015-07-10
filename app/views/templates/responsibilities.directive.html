@@ -1,42 +1,48 @@
 <md-card>
     <md-card-content>
 
-        <h4 class="md-headline">Story responsibilities:</h4>
+        <h4 class="md-headline" ng-bind="headline || 'Main collaboration:'" ></h4>
         <md-list>
 
-            <md-list-item >
+
+            <md-list-item  md-no-ink    ng-show="frontend != undefined" >
                 <md-icon md-svg-src="images/uis/ic_code_24px.svg"></md-icon>
                 <p>Frontend</p>
-                <md-checkbox class="md-secondary" ng-model="responsible" disabled  ></md-checkbox>
+                <md-checkbox class="md-secondary" ng-model="frontend" disabled ></md-checkbox>
             </md-list-item>
-            <md-divider></md-divider>
+            <md-divider ng-show="frontend != undefined && backend  != undefined" ></md-divider>
 
-            <md-list-item >
+
+            <md-list-item  md-no-ink    ng-show="backend  != undefined" >
                 <md-icon md-svg-src="images/uis/ic_cloud_24px.svg"></md-icon>
                 <p>Backend</p>
-                <md-checkbox class="md-secondary" ng-model="noResponsible" disabled  ></md-checkbox>
+                <md-checkbox class="md-secondary" ng-model="backend" disabled ></md-checkbox>
             </md-list-item>
-            <md-divider></md-divider>
+            <md-divider ng-show="backend != undefined && database  != undefined" ></md-divider>
 
-            <md-list-item >
+
+            <md-list-item  md-no-ink    ng-show="database  != undefined" >
                 <md-icon md-svg-src="images/uis/ic_db_24px.svg"></md-icon>
                 <p>Data Base</p>
-                <md-checkbox class="md-secondary" ng-model="noResponsible" disabled ></md-checkbox>
+                <md-checkbox class="md-secondary" ng-model="database" disabled ></md-checkbox>
             </md-list-item>
-            <md-divider></md-divider>
+            <md-divider ng-show="database  != undefined && ux != undefined" ></md-divider>
 
-            <md-list-item >
+
+            <md-list-item  md-no-ink  ng-show="ux != undefined" >
                 <md-icon md-svg-src="images/uis/ic_ux_24px.svg"></md-icon>
                 <p>UX</p>
-                <md-checkbox class="md-secondary" ng-model="noResponsible" disabled ></md-checkbox>
+                <md-checkbox class="md-secondary" ng-model="ux" disabled ></md-checkbox>
             </md-list-item>
-            <md-divider></md-divider>
+            <md-divider ng-show="ux != undefined && design != undefined" ></md-divider>
 
-            <md-list-item >
+
+            <md-list-item  md-no-ink    ng-show="design != undefined" >
                 <md-icon md-svg-src="images/uis/ic_eye_24px.svg"></md-icon>
                 <p>Design</p>
-                <md-checkbox class="md-secondary" ng-model="noResponsible" disabled ></md-checkbox>
+                <md-checkbox class="md-secondary" ng-model="design" disabled ></md-checkbox>
             </md-list-item>
+
 
         </md-list>
     </md-card-content>

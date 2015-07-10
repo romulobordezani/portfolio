@@ -1,9 +1,8 @@
-@import '../libs/colors';
-@import '../libs/measures';
-
 md-toolbar {
 
     min-width: 320px;
+    display: none!important;
+
 
     &#header {
 
