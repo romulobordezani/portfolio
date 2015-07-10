@@ -5,7 +5,7 @@ angular.module('deviceFrame', []).directive('deviceFrame',[ '$mdDialog',
 
                 restrict: 'E',
                 transclude: true,
-                templateUrl : 'views/templates/deviceFrame.html',
+                templateUrl : 'views/templates/deviceFrame.directive.html',
 
                 scope: {
                     href: '@',
