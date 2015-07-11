@@ -117,7 +117,7 @@ angular.module('rbApp')
                         step : function(delta) {
                             var finalTo = ( to * delta );
                             if( finalTo > startedScroll ){
-                                trueWindow.scrollTop = finalTo;
+                                trueWindow.scrollTop = Math.ceil(finalTo);
                             }
                         }
 

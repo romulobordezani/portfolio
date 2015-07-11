@@ -89,50 +89,6 @@ div#home {
 
     }
 
-    #home-about-tabs {
-
-        md-tab-content {
-
-            md-content {
-
-                margin-top: 33px;
-
-                p {
-                    margin-bottom: 33px;
-
-                }
-
-                img {
-
-                    width: 86px;
-                    height: 86px;
-
-                    @media (min-width: $flex-md) {
-                        width: 133px;
-                        height: 133px;
-                    }
-
-                }
-
-                .home-brands {
-
-                    .home-brand {
-
-                        img {
-                            width: 100%;
-                            height: auto;
-                        }
-
-                    }
-
-                }
-
-            }
-
-        }
-
-    }
-
     #home-featured{
 
         @media ( min-width : $flex-lg ){
@@ -201,6 +157,5 @@ div#home {
         }
 
     }
-
 
 }

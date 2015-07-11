@@ -22,6 +22,8 @@ angular.module('deviceFrame', []).directive('deviceFrame',[ '$mdDialog',
 
                     scope.showImage = function(){
 
+                        var fullSrc = attrs.src.replace(/(\-thumb)/g, '');
+
                         $mdDialog.show({
 
                             clickOutsideToClose: true,
@@ -29,8 +31,8 @@ angular.module('deviceFrame', []).directive('deviceFrame',[ '$mdDialog',
                             preserveScope: true,
                             template:   '<md-dialog>' +
                                         '  <md-dialog-content  >' +
-                                        '     <a  target="_blank" href="' + attrs.src + '" >' +
-                                        '       <img class="md-whiteframe-z2" style="width: 100%; height: auto;" src="' + attrs.src + '" />' +
+                                        '     <a  target="_blank" href="' + fullSrc + '" >' +
+                                        '       <img class="md-whiteframe-z2" style="width: 100%; height: auto;" src="' + fullSrc + '" />' +
                                         '     </a>' +
                                         '  </md-dialog-content>' +
                                         '  <div class="md-actions">' +
@@ -53,7 +55,7 @@ angular.module('deviceFrame', []).directive('deviceFrame',[ '$mdDialog',
                                 };
 
                                 $scope.launch = function() {
-                                    window.open( attrs.src );
+                                    window.open( fullSrc );
                                 };
                             }
 

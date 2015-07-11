@@ -29,10 +29,19 @@ angular
                 .when('/about', {
                     templateUrl: 'views/about.html',
                     controller: 'aboutController',
-                    animation: 'fade'
+                    animation: 'fade',
+                    routeclass : 'home'
+                })
+
+
+                .when('/sophia', {
+                    templateUrl: 'views/sophia.html',
+                    animation: 'fade',
+                    routeclass : 'home'
                 })
 
                 .when('/work/:year/:current', {
+
                     templateUrl: function(urlattr){
 
                         var current;
@@ -46,6 +55,7 @@ angular
                         return 'views/work/' + urlattr.year + '/' + current + '.html';
 
                     },
+
                     controller: 'workController',
                     animation: 'fade'
                 })
@@ -102,7 +112,6 @@ angular
                 document.getElementById('ngview-container').scrollTop = 0;
             }, 500);
         });
-
 
         $http.get('views/contact.html', { cache: $templateCache }).then(function(){
 

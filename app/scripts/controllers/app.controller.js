@@ -8,8 +8,8 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider', 'favicoProvider',
-        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider, favicoProvider ){
+    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider', 'favicoProvider', '$timeout',
+        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider, favicoProvider, $timeout ){
 
             function init(){
                 attachEvents();
@@ -23,8 +23,11 @@ angular.module('rbApp')
 
                     menu.selectMenuItemByUrl();
                     favicoProvider.blow();
+                    menu.blowHome();
                     $rootScope.contactButtonVisibility = true;
+                    $rootScope.onWorkPage = false;
                     $rootScope.routeclass = currRoute.routeclass;
+                    $rootScope.$$listeners.$mdTabsChanged=[];
 
                     if( currRoute.animation === 'work' && prevRoute ){
 
@@ -53,11 +56,13 @@ angular.module('rbApp')
                     $scope.animation = args.animation;
                 });
 
+
+
             }
 
 
 
-
+            var blowingTimeout;
             var menu = {
 
                 init : function(){
@@ -98,6 +103,11 @@ angular.module('rbApp')
                         $mdSidenav('leftMenu').close();
                     };
 
+                    $scope.blowOnClick = function(){
+                        $location.path('/');
+                        menu.blowHome();
+                    };
+
 
                 },
 
@@ -118,6 +128,20 @@ angular.module('rbApp')
                             $scope.selected = $scope.leftMenuList[i];
                         }
                     }
+                },
+
+                blowHome : function(){
+
+                    $rootScope.blow = true;
+                    //clearTimeout(blowingTimeout);
+
+                    blowingTimeout = $timeout( function(){
+
+                        $rootScope.blow = false;
+                    }, 1500);
+
+
+
                 }
 
             };
@@ -130,7 +154,6 @@ angular.module('rbApp')
 
                     $scope.workSwitcherVisibility =  workProvider.getWorkSwitcherVisibility();
                     $scope.yearSlider = 2015;
-
 
                     $scope.$watch('yearSlider', function(value){
 

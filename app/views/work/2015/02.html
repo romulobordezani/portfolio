@@ -2,7 +2,7 @@
     <main class="work-description" >
 
         <div layout-margin layout-padding >
-        
+
           <h1 class="md-title">Development part of this site.</h1>
             <p>All built with Google's <a href="https://angularjs.org/" target="_blank">Angular</a> and <a href="https://material.angularjs.org/" target="_blank">Material Angular</a>, it's a jQuery less site to save memory for mobile devices.</p>
             <p>Uses <a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a> to power CSS3 animations and transitions, all made in HTML5 standards.</p>
@@ -30,16 +30,20 @@
                     <li>To support retina devices and high density screens</li>
 
                 </ul>
-            </p>          
+            </p>
 
 
         </div>
 
 
 
-        <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" >
-            <img src="images/uis/backTolist.svg"  />
-        </md-button>
+        <div id="actions" >
+
+            <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" clickable >
+                <md-icon md-svg-src="images/uis/backTolist-centered.svg"></md-icon>
+            </md-button>
+
+        </div>
 
     </main>
 </section>

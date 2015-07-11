@@ -95,7 +95,7 @@
         <![endif]-->
 
         <div class="pre-loader-wrapper" id="main-pre-loader-wrapper" >
-            <!--div class="spinner"></div-->
+            <div class="spinner"></div>
         </div>
 
         <md-toolbar id="header" layout="column">
@@ -109,7 +109,7 @@
                 <div id="menu-splitter" ></div>
 
                 <h1 class="md-toolbar-tools noselect" layout-align-gt-sm="left" >
-                    <a ng-href="#/" alt="Home" ><img src="images/uis/logo.svg" /><span>Rômulo Bordezani</span></a>
+                    <a alt="Home" ng-click="blowOnClick();" ><img ng-class=" { 'spin-blow' : blow }" src="images/uis/logo.svg" /><span>Rômulo Bordezani</span></a>
                 </h1>
 
                 <div id="social-links" class="noselect" hide-sm >
@@ -196,7 +196,7 @@
                     <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
                         <div hide-sm >Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" ng-if="contactButtonVisibility" >contact</md-button>
                     </div>
-                    <div layout="row" layout-align="end center" layout-padding class="footer-right" flex >
+                    <div layout="row" layout-align="end center" layout-padding class="footer-right" flex ng-class="{ 'visually-hidden' : onWorkPage }" >
                         <div hide-sm >powered by </div><img hide-sm src="images/uis/angular-logo.svg" /><img class="angular-logo-sm" hide-gt-sm src="images/uis/angular-logo-sm.svg" />
                     </div>
                 </md-toolbar>

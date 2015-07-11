@@ -1,0 +1,85 @@
+@import '../libs/colors.scss';
+@import '../libs/measures.scss';
+
+div#about {
+
+    #home-desktop.parallax{
+
+        .parallax-wrapper {
+
+            width:100%;
+
+            .parallax-img {
+
+                background: url(../images/parallax/bg-parallax-sm-about.jpg) no-repeat center bottom;
+                background-size: cover;
+                height: 300px;
+                width: 100%;
+                position: relative;
+
+                @media (min-width: $flex-md ) {
+                    background: url(../images/parallax/bg-parallax-sm-about.jpg) no-repeat center bottom;
+                    background-size: 100%;
+                    height: 400px;
+                }
+
+                @media (min-width: $flex-lg ) {
+                    background: url(../images/parallax/bg-parallax-about.jpg) no-repeat center bottom;
+                    background-size: cover;
+                    height: 436px;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+    #home-about-tabs {
+
+        md-tab-content {
+
+            md-content {
+
+                margin-top: 33px;
+
+                p {
+                    margin-bottom: 33px;
+
+                }
+
+                img {
+
+                    width: 86px;
+                    height: 86px;
+
+                    @media (min-width: $flex-md) {
+                        width: 133px;
+                        height: 133px;
+                    }
+
+                }
+
+                .home-brands {
+
+                    .home-brand {
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

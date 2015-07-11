@@ -2,62 +2,61 @@
     <main class="work-description" >
         <div layout-margin layout-padding >
 
-            <h1 class="md-title" >UOL SAC: responsive activation</h1>
+            <div layout="row" layout-wrap >
 
-            <p>Privileging the user experience, our CEO asked us to turn off the responsiveness while the old pages stills on-line.</p>
-            <p>But it wasn't so simple, to turn off an adaptive Bootstrap app brings some problems.</p>
+                <div layout="column" flex flex-sm="100" >
 
+                    <h1 class="md-title" >UOL SAC: responsive activation</h1>
 
-            <div class="work-spacer" ></div>
-            <p><h1 class="md-title">Main challenges:</h1></p>
-            <p>
-                <ul>
-                    <li>UOL SAC is adaptive, not responsive, so hard code containers widths was useless.</li>
-                    <li>We had to integrate more than 500 old HTML1 pages into the app via something that we called Wrapper, an iFrame with super powers</li>
-                    <li>To adapt the browser viewport dinamicaly to support old pages width</li>
-                    <li>Suddenly run away from i.e. 8 support </li>
-                    <li>To refactor a lot of unit tests, that broken with Wrapper concept</li>
-                    <li>Be the first team in UOL to use and evolve it's brand new Custom Bootstrap</li>
-                    <li>To discover that Native Bootstrap do not support Angular and say hello to Angular UI.</li>
-                </ul>
-            </p>
+                    <p>Thinking in the user experience, our CEO asked us to turn off the SAC's responsiveness for a while, at least until the old pages could be shooted down.</p>
+                    <p>But it wasn't so simple, there was more then five hundred pages to shut down, so our team created something called wrapper, to embed old pages into Angular Apps via iFrames.</p>
 
-            <div class="work-spacer" ></div>
+                    <div class="work-spacer" ></div>
+                    <h1 class="md-title">Main challenges:</h1>
+                    <p>
+                        <ul>
+                            <li>UOL SAC is adaptive, not responsive, so, hard coded container's widths was totally useless to disable responsivity.</li>
+                            <li>We had to integrate more than 500 old HTML1 pages into the app via wrapper, an iFrame with super powers</li>
+                            <li>To adapt the browser viewport dinamicly to support old pages width inside the wrapper</li>
+                            <li>To see in the middle of the project that i.e. unique visitors number decreased enough to cancel support for old browsers </li>
+                            <li>To refactor a lot of unit tests, that broken with Wrapper concept and i.e. 8 support kill</li>
+                            <li>Be the first team in UOL to use and evolve it's brand new Custom Bootstrap</li>
+                            <li>To discover that Native Bootstrap do not support Angular and learn Angular UI from the scratch.</li>
+                        </ul>
+                    </p>
 
-            <div class="work-spacer" ></div>
+                    <div class="work-spacer" ></div>
 
-            <div layout="row" layout-fill layout-wrap >
+                </div>
 
-                <md-card class="noselect no-pointer"  layout="column" flex >
-                    <img src="../../../images/work/2015/1/sac-uol-1.png" class="md-card-image md-whiteframe-z1 " >
-                    <div class="md-actions" layout="row" layout-align="end center">
-                        <md-button class="md-warn md-default-theme"  ng-href="https://sac.uol.com.br/" target="_blank" >Go to</md-button>
-                    </div>
-                </md-card>
-
-                <md-card class="noselect no-pointer"  layout="column" flex >
-                    <img src="../../../images/work/2015/1/sac-uol-2.png" class="md-card-image md-whiteframe-z1 " >
-                    <div class="md-actions" layout="row" layout-align="end center">
-                        <md-button class="md-warn md-default-theme"  ng-href="https://sac.uol.com.br/#/login" target="_blank" >Go to</md-button>
-                    </div>
-                </md-card>
-
-                <md-card class="noselect no-pointer"  layout="column" flex >
-                    <img src="../../../images/work/2015/1/sac-uol-3.png" class="md-card-image md-whiteframe-z1 " >
-                    <div class="md-actions" layout="row" layout-align="end center">
-                        <md-button class="md-warn md-default-theme"  ng-href="https://sac.uol.com.br/#/recuperarsenha" target="_blank" >Go to</md-button>
-                    </div>
-                </md-card>
+                <div layout="column" flex="33" flex-sm="100" >
+                    <responsibilities frontend="true" backend="false" database="false" ux="false" design="false" tests="true"  ></responsibilities>
+                </div>
 
             </div>
 
+            <div class="work-spacer" ></div>
+            <div layout="row" layout-wrap layout-fill layout-align="center end" >
+                <device-frame  size="lg"    src="images/work/2015/4/lg-thumb.png" ></device-frame>
+                <device-frame  size="gt-lg" src="images/work/2015/4/gt-lg-thumb.png" ></device-frame>
+                <device-frame  size="md"    src="images/work/2015/4/md-thumb.png" ></device-frame>
+                <device-frame  size="sm"    src="images/work/2015/4/sm-thumb.png" ></device-frame>
+            </div>
 
 
         </div>
 
-        <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" >
-            <img src="images/uis/backTolist.svg"  />
-        </md-button>
+        <div id="actions" >
+
+            <md-button id="goto-job" class="md-fab md-accent md-hue-2" aria-label="Go to Sophia's Pics" clickable-url="https://sac.uol.com.br/" clickable  >
+                <md-icon md-svg-src="images/uis/ic_goto_24px.svg"></md-icon>
+            </md-button>
+
+            <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" clickable >
+                <md-icon md-svg-src="images/uis/backTolist-centered.svg"></md-icon>
+            </md-button>
+
+        </div>
 
     </main>
 </section>

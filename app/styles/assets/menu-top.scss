@@ -1,8 +1,6 @@
 md-toolbar {
 
     min-width: 320px;
-    display: none!important;
-
 
     &#header {
 
@@ -80,6 +78,7 @@ md-toolbar {
 
                     outline: none;
                     color: $black;
+                    cursor: pointer;
 
                     &:link, &:visited, &:hover{
                         color: $black;
@@ -98,6 +97,13 @@ md-toolbar {
                             width: 43px;
 
                         }
+
+                        &.spin-blow{
+                            -webkit-animation: spin 1.5s ease-out;
+                            -o-animation: spin 1.5s ease-out;
+                            animation: spin 1.5s ease-out;
+                        }
+
                     }
 
                     span {
@@ -265,7 +271,7 @@ md-sidenav{
 
         md-item {
 
-            height: 16%;
+            height: 14%;
             border-top: 1px solid rgba(0, 0, 0, 0.12);
 
             .md-button {

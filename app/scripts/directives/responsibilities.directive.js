@@ -13,7 +13,11 @@ angular.module('responsibilities', []).directive('responsibilities',
                     database : '=?',
                     ux : '=?',
                     design : '=?',
-                    headline : '=?'
+                    tests : '=?',
+                    headline : '=?',
+                    custom : '=?',
+                    customImg : '=?',
+                    customLabel : '=?'
                 }
 
                 // ,link: function(scope, element, attrs) {}

@@ -24,6 +24,14 @@
                         imgsrc: 'images/menu/home.svg'
                     },
 
+                    {
+                        label: 'ABOUT',
+                        alt: 'About',
+                        href: '/about',
+                        target : '',
+                        imgsrc: 'images/menu/about.svg'
+                    },
+
 
                     {
                         label: 'WORK',
@@ -36,7 +44,7 @@
                     {
                         label: 'SOPHIA\'S PICS',
                         alt: 'Sophia',
-                        href: 'http://romulobordezani.com.br/sophia',
+                        href: '/sophia',
                         target : '',
                         imgsrc: 'images/menu/sophia.svg'
                     },

@@ -106,11 +106,13 @@
 
         </div>
 
+        <div id="actions" >
 
+            <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" clickable >
+                <md-icon md-svg-src="images/uis/backTolist-centered.svg"></md-icon>
+            </md-button>
 
-        <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" >
-            <img src="images/uis/backTolist.svg"  />
-        </md-button>
+        </div>
 
     </main>
 </section>
