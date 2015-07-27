@@ -13,7 +13,8 @@ angular
         'mdParallax',
         'addClassOnClick',
         'deviceFrame',
-        'responsibilities'
+        'responsibilities',
+        'slideOnSwipe'
     ])
     .config(
         function ( $routeProvider, $mdThemingProvider ) {
@@ -107,11 +108,16 @@ angular
             spinnerParent.removeChild(spinner);
         }, 3000);
 
+
+        /*
+
         $rootScope.$on('$routeChangeSuccess', function () {
             $timeout(function () {
                 document.getElementById('ngview-container').scrollTop = 0;
             }, 500);
         });
+
+        */
 
         $http.get('views/contact.html', { cache: $templateCache }).then(function(){
 
