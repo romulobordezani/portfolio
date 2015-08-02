@@ -7,13 +7,14 @@ angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe',
                 restrict: 'A',
 
                 scope: {
-                    start : '=',
-                    end : '='
+                    onlyLeft : '=',
+                    onlyRight : '='
                 },
 
                 link: function(scope, ele /* , attrs, ctrl */ ) {
 
                     var startX, pointX;
+
                     $swipe.bind(ele, {
 
                         'start': function(coords) {
@@ -23,15 +24,37 @@ angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe',
 
                         'move': function(coords) {
                             var delta = coords.x - pointX;
-                            console.log( delta );
-                            ele.css('transform','translate3d(' + delta + 'px,0,0)');
+                            angular.element(ele).parent().css('transform','translate3d(' + delta + 'px,0,0)');
                         },
 
-                        'end': function() {
-                           // ele.css('transform','translate3d(0px,0,0)');
+                        'end': function(coords) {
+
+
+                            var halfScreen = screen.width / 2;
+
+                            if( scope.onlyLeft && coords.x <= halfScreen ){
+                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                            }
+
+                            if( scope.onlyRight && coords.x >= halfScreen ){
+                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                            }
+
                         },
 
-                        'cancel': function() {
+                        'cancel': function(coords) {
+
+                            console.log( 'canceled' );
+
+                            var halfScreen = screen.width / 2;
+
+                            if( scope.onlyLeft && coords.x <= halfScreen ){
+                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                            }
+
+                            if( scope.onlyRight && coords.x >= halfScreen ){
+                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                            }
 
                         }
 
