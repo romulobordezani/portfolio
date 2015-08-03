@@ -10,6 +10,7 @@ angular.module('rbApp')
             workProvider.setDialogAlreadySeem(true);
             workProvider.setWorkSwitcherVisibility(true);
             $rootScope.onWorkPage = true;
+            $rootScope.swiping = false;
 
             $timeout( function(){
 
@@ -29,15 +30,19 @@ angular.module('rbApp')
         }
 
         $scope.setCurrent = function(clickedCard){
-            workProvider.setCurrent(clickedCard, true);
+            if( !$rootScope.swiping ){
+                workProvider.setCurrent(clickedCard, true);
+            }
         };
 
         $scope.swipeLeft = function(){
+            $rootScope.swiping = true;
             var newYear = parseInt($scope.year, 10) + 1;
             workProvider.setWorkYear(newYear, false, true);
         };
 
         $scope.swipeRight = function(){
+            $rootScope.swiping = true;
             var newYear = parseInt($scope.year, 10) - 1;
             workProvider.setWorkYear(newYear, false, true);
         };

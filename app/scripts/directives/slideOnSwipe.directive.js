@@ -1,6 +1,6 @@
 'use strict';
-angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe',
-        function($swipe) {
+angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe', '$rootScope',
+        function($swipe,$rootScope) {
 
             return {
 
@@ -20,6 +20,7 @@ angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe',
                         'start': function(coords) {
                             startX = coords.x;
                             pointX = coords.y;
+                            $rootScope.swiping = true;
                         },
 
                         'move': function(coords) {
@@ -29,33 +30,21 @@ angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe',
 
                         'end': function(coords) {
 
-
-                            var halfScreen = screen.width / 2;
-
-                            if( scope.onlyLeft && coords.x <= halfScreen ){
+                            if( scope.onlyLeft && coords.x <= startX ){
                                 angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
                             }
 
-                            if( scope.onlyRight && coords.x >= halfScreen ){
+                            if( scope.onlyRight && coords.x >= startX ){
                                 angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
                             }
+
+                            $rootScope.swiping = false;
 
                         },
 
-                        'cancel': function(coords) {
-
-                            console.log( 'canceled' );
-
-                            var halfScreen = screen.width / 2;
-
-                            if( scope.onlyLeft && coords.x <= halfScreen ){
-                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
-                            }
-
-                            if( scope.onlyRight && coords.x >= halfScreen ){
-                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
-                            }
-
+                        'cancel': function() {
+                            angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                            $rootScope.swiping = false;
                         }
 
                     });
