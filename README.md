@@ -16,3 +16,17 @@ URL: http://romulobordezani.com.br <br/>
 ###Preview
 
 ![roms-og-image](http://romulobordezani.com.br/images/git/rb-index3.jpg)
+
+
+#### Ho to run
+Install all node dependencies 
+> npm install
+
+Install bower dependencies
+> bower install
+
+Run grunt to deploy
+> grunt build
+
+Or run grunt to debug and work on it
+>grunt serve

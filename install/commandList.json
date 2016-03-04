@@ -1,6 +1,6 @@
 {
-	"Run Server" : "start cmd /k grunt serve",
-	"Build" : "start cmd /k grunt build",
-    "Npm Install" : "start cmd /k npm install",
-    "Bower Install" : "start cmd /k bower install"
+	"Run Server" : "grunt serve",
+	"Build" : "grunt build",
+    "Npm Install" : "npm install",
+    "Bower Install" : "bower install"
 }

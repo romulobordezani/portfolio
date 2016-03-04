@@ -14,10 +14,12 @@ angular
         'addClassOnClick',
         'deviceFrame',
         'responsibilities',
-        'slideOnSwipe'
+        'slideOnSwipe',
+        'angularytics'
     ])
+
     .config(
-        function ( $routeProvider, $mdThemingProvider ) {
+        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider ) {
             $routeProvider
 
                 .when('/', {
@@ -33,7 +35,6 @@ angular
                     animation: 'fade',
                     routeclass : 'home'
                 })
-
 
                 .when('/sophia', {
                     templateUrl: 'views/sophia.html',
@@ -95,12 +96,16 @@ angular
                 .primaryPalette('grey')
                 .accentPalette('deep-orange');
 
+            AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+
             //$locationProvider.html5Mode(true);
 
         }
 
 ).run(
-    function ( $rootScope, $timeout, $templateCache, $http ) {
+    function ( $rootScope, $timeout, $templateCache, $http, Angularytics ) {
+
+        Angularytics.init();
 
         $timeout( function(){
             var spinnerParent = document.getElementById('rb-body');
@@ -137,7 +142,7 @@ angular
             '    / ( ()//)(/(() /__)()/ (/(- /_ (//\\//    ',
             '                                             ',
             '                                             ',
-            '                                    2015     ',
+            '                                    2016     ',
             '                                             ',
 
         ].join('\r\n');
