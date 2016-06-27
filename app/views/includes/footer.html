@@ -1,26 +1,43 @@
-<div md-parallax  parallax-ratio="0.07" parallax-css="transform:translateY"  parallax-scroller="ngview-container" >
+<footer>
+    <div md-parallax  parallax-ratio="0.07" parallax-css="transform:translateY"  parallax-scroller="ngview-container"  >
 
-    <div class="pre-footer" hide-sm ></div>
-    <div class="parallax-footer" hide-sm >
+        <div class="pre-footer" hide-sm ></div>
+        <div class="parallax-footer" hide-sm >
 
-        <div class="cloud-1" md-parallax parallax-ratio="0.2" parallax-css="background-position-y" parallax-init-val-md="-146" paralla1-init-val-lg="-546"  parallax-max-val="733"    parallax-scroller="ngview-container" ></div>
-        <div class="cloud-2" md-parallax parallax-ratio="0.7" parallax-css="background-position-y" parallax-init-val-md="-46"  parallax-init-val-lg="-276"  parallax-max-val="733"    parallax-scroller="ngview-container" ></div>
-        <div class="cloud-3" md-parallax parallax-ratio="0.5" parallax-css="background-position-y" parallax-init-val-md="-46"  parallax-init-val-lg="-386"  parallax-max-val="733"    parallax-scroller="ngview-container" ></div>
+            <div class="cloud-1" md-parallax parallax-ratio="0.2" parallax-css="background-position-y" parallax-init-val-md="-146" paralla1-init-val-lg="-546"  parallax-max-val="733"    parallax-scroller="ngview-container" ></div>
+            <div class="cloud-2" md-parallax parallax-ratio="0.7" parallax-css="background-position-y" parallax-init-val-md="-46"  parallax-init-val-lg="-276"  parallax-max-val="733"    parallax-scroller="ngview-container" ></div>
+            <div class="cloud-3" md-parallax parallax-ratio="0.5" parallax-css="background-position-y" parallax-init-val-md="-46"  parallax-init-val-lg="-386"  parallax-max-val="733"    parallax-scroller="ngview-container" ></div>
 
-        <div class="parallax-txt kill-animations"  layout="row" layout-align="space-around center" >
-            <div layout="column" class="noselect" >Creative</div>
-            <div layout="column"  ><span class="parallax-reverse-text noselect" >Logical</span></div>
+            <div class="parallax-txt kill-animations"  layout="row" layout-align="space-around center" >
+                <div layout="column" class="noselect" >Creative</div>
+                <div layout="column"  ><span class="parallax-reverse-text noselect" >Logical</span></div>
+            </div>
+
         </div>
+
+        <md-toolbar id="footer" layout="row" >
+            <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
+                <div hide-sm >Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" ng-if="contactButtonVisibility" >contact</md-button>
+            </div>
+            <div layout="row" layout-align="end center" layout-padding class="footer-right" flex ng-class="{ 'visually-hidden' : onWorkPage }" >
+
+                <div ng-init="player.play()" plangular="http://soundcloud.com/romulo-bordezani/fever-hallucination" >
+
+                    <h3 style="float:left; margin-right: 16px;">{{track.user.username}}'s - {{track.title}}</h3>
+
+                    <a ng-href="{{track.permalink_url}}">View on SoundCloud</a>
+
+                    <md-button class="md-raised md-accent md-hue-2" ng-click="playPause()" >
+                        <md-icon ng-if="player.playing !== track.src" md-svg-src="images/uis/ic_play_circle_outline_black_24px.svg"></md-icon>
+                        <md-icon ng-if="player.playing === track.src" md-svg-src="images/uis/ic_pause_circle_outline_black_24px.svg"></md-icon>
+                    </md-button>
+
+                </div>
+
+                <!-- TODO  https://github.com/jxnblk/plangular -->
+
+            </div>
+        </md-toolbar>
 
     </div>
-
-    <md-toolbar id="footer" layout="row" >
-        <div layout="row" layout-align="start center" layout-padding class="footer-left" flex >
-            <div hide-sm >Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" ng-if="contactButtonVisibility" >contact</md-button>
-        </div>
-        <div layout="row" layout-align="end center" layout-padding class="footer-right" flex ng-class="{ 'visually-hidden' : onWorkPage }" >
-            <div hide-sm >powered by </div><img hide-sm src="images/uis/angular-logo.svg" /><img class="angular-logo-sm" hide-gt-sm src="images/uis/angular-logo-sm.svg" />
-        </div>
-    </md-toolbar>
-
-</div>
+</footer>

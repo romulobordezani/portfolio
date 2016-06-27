@@ -36,26 +36,26 @@
                     {
                         label: 'WORK',
                         alt: 'Work',
-                        href: '/work/2015',
+                        href: '/work/2016',
                         target : '',
                         imgsrc: 'images/menu/work.svg'
                     },
 
-                    {
+                    /*{
                         label: 'SOPHIA\'S PICS',
                         alt: 'Sophia',
                         href: '/sophia',
                         target : '',
                         imgsrc: 'images/menu/sophia.svg'
-                    },
+                    },*/
 
-                    {
+                    /*{
                         label: 'Blog',
                         alt: 'Blog - Modernet',
                         href: 'http://modernet.com.br/',
                         target : '',
                         imgsrc: 'images/menu/blog.svg'
-                    },
+                    },*/
 
                     {
                         label: 'CONTACT',

@@ -19,7 +19,7 @@ angular.module('rbApp')
 
             function attachEvents(){
 
-                $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
+                $rootScope.$on('$routeChangeStart', function(event, currRoute /* , prevRoute */ ){
 
                     menu.selectMenuItemByUrl();
                     favicoProvider.blow();
@@ -28,25 +28,9 @@ angular.module('rbApp')
                     $rootScope.onWorkPage = false;
                     $rootScope.routeclass = currRoute.routeclass;
                     $rootScope.$$listeners.$mdTabsChanged=[];
+                    $scope.animation = currRoute.animation;
 
-                    if( currRoute.animation === 'work' && prevRoute ){
-
-                        var currYear = currRoute.params.year || null;
-                        var prevYear = prevRoute.params.year || null;
-
-                        if( currYear < prevYear ){
-                            $scope.animation = 'right';
-                        }else if( currYear && prevYear ){
-                            $scope.animation = 'left';
-                        }else{
-                            $scope.animation = 'fade';
-                        }
-
-                    }else{
-                        $scope.animation = currRoute.animation;
-                    }
-
-                    if( $scope.animation === undefined || $scope.animation === 'work' ){
+                    if( $scope.animation === undefined ){
                         $scope.animation = 'fade';
                     }
 
@@ -153,7 +137,7 @@ angular.module('rbApp')
                     var alreadyLoaded = 0;
 
                     $scope.workSwitcherVisibility =  workProvider.getWorkSwitcherVisibility();
-                    $scope.yearSlider = 2015;
+                    $scope.yearSlider = 2016;
 
                     $scope.$watch('yearSlider', function(value){
 

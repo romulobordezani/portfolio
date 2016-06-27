@@ -365,8 +365,7 @@ function MdTabsController ($scope, $element, $window, $timeout, $mdConstant, $md
   }
 
   function handleSelectedIndexChange (newValue, oldValue) {
-
-      // console.log( 'romulo? ', newValue);
+      
 
       if (newValue === oldValue) return;
 

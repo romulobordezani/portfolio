@@ -41,7 +41,6 @@ angular.module('rbApp')
 
                 error(function(data) {
                     console.warn( 'Error loading Google Maps API: ', data );
-
                 });
 
         }

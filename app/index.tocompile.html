@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" ng-app="rbApp" ng-cloak >
+
     <head>
 
         <meta charset="utf-8">
@@ -104,15 +105,7 @@
         include "browse-happy.html"
         include "pre-loader.html"
         include "menu-top.html"
-
-        <md-content flex id="ngview-container" style="overflow:auto;"  >
-
-            <div ng-view="" id="ngview" layout="column" class="content-pusher view" ></div>
-
-            include "footer.html"
-
-        </md-content>
-
+        include "ng-view.html"
         include "favicon-cacher.html"
 
         <div id="dependency-injector" >
@@ -131,6 +124,7 @@
             <script src="bower_components/angular-messages/angular-messages.js"></script>
             <script src="bower_components/favico.js/favico.js"></script>
             <script src="bower_components/angularytics/dist/angularytics.min.js"></script>
+            <script src="bower_components/plangular/dist/plangular.js"></script>
             <!-- endbower -->
             <!-- endbuild -->
 
@@ -170,4 +164,5 @@
         </div>
 
     </body>
+
 </html>

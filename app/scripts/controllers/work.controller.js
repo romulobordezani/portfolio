@@ -19,14 +19,6 @@ angular.module('rbApp')
 
             }, 200);
 
-            if( $scope.year === 2015 || $scope.year === '2015' ){
-
-                $timeout( function(){
-                    $rootScope.$broadcast('forceAnimationSet', { animation : 'right' } );
-                }, 1500);
-
-            }
-
         }
 
         $scope.setCurrent = function(clickedCard){

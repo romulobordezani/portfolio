@@ -1,141 +1,146 @@
 @import '../libs/colors';
 @import '../libs/measures';
 
-.pre-footer{
-    width: 100%;
-    height: 66px;
-    background: #FFFFFF;
-    background: -moz-linear-gradient(top, $white  0%, #FFFFFF 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#FFFFFF));
-    background: -webkit-linear-gradient(top,  #FFFFFF 0%, $white 100%);
-    background: -o-linear-gradient(top,  $white 0%,#FFFFFF 100%);
-    background: -ms-linear-gradient(top,  $white 0%,#FFFFFF  100%);
-    background: linear-gradient(to bottom, $white  0%,#FFFFFF 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='$white',GradientType=0 );
+footer{
 
-}
+    .pre-footer{
+        width: 100%;
+        height: 66px;
+        background: #FFFFFF;
+        background: -moz-linear-gradient(top, $white  0%, #FFFFFF 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$white), color-stop(100%,#FFFFFF));
+        background: -webkit-linear-gradient(top,  #FFFFFF 0%, $white 100%);
+        background: -o-linear-gradient(top,  $white 0%,#FFFFFF 100%);
+        background: -ms-linear-gradient(top,  $white 0%,#FFFFFF  100%);
+        background: linear-gradient(to bottom, $white  0%,#FFFFFF 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='$white',GradientType=0 );
 
-.parallax-footer{
-
-    height: 333px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-
-    background: #FFFFFF;
-    background: -moz-linear-gradient(top,  #FFFFFF 0%, #bdbdbd 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#bdbdbd));
-    background: -webkit-linear-gradient(top,  #FFFFFF 0%,#bdbdbd 100%);
-    background: -o-linear-gradient(top,  #FFFFFF 0%,#bdbdbd 100%);
-    background: -ms-linear-gradient(top,  #FFFFFF 0%,#bdbdbd 100%);
-    background: linear-gradient(to bottom,  #FFFFFF 0%,#bdbdbd 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#bdbdbd',GradientType=0 );
-
-
-    @media (min-width: $flex-sm) {
-        height: 533px;
     }
 
+    .parallax-footer{
 
-    .parallax-txt {
+        height: 333px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
 
-        position: absolute;
-        bottom: 47px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        font-size: 2.0em;
-        color: $white;
-        text-shadow: 0px 0px 27px #666;
-        cursor: default;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+        background: #1e5799; /* Old browsers */
+        background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+
+
 
         @media (min-width: $flex-sm) {
-            font-size: 3.7em;
-            text-shadow: 0px 0px 27px #999;
-            bottom: 200px;
+            height: 533px;
+        }
+
+
+        .parallax-txt {
+
+            position: absolute;
+            bottom: 47px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 2.0em;
+            color: $white;
+            text-shadow: 0px 0px 27px #1e5799;
+            cursor: default;
+
+            @media (min-width: $flex-sm) {
+                font-size: 3.7em;
+                text-shadow: 0px 0px 27px #1e5799;
+                bottom: 200px;
+
+            }
+
+            @media (min-width: $flex-lg) {
+                font-size: 4.7em;
+            }
+
+            @media (min-width: $flex-lg + 500) {
+                font-size: 6.7em;
+            }
+
+            .parallax-reverse-text{
+                -webkit-transform:rotateY(180deg);
+                -moz-transform:rotateY(180deg);
+                -o-transform:rotateY(180deg);
+                -ms-transform:rotateY(180deg);
+                transform:rotateY(180deg);
+            }
 
         }
 
-        @media (min-width: $flex-lg) {
-            font-size: 4.7em;
+        .cloud-1{
+            background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
+            background-size: contain;
+            width: 604px;
+            height: 533px;
+            position: absolute;
+            left:0px;
         }
 
-        @media (min-width: $flex-lg + 500) {
-            font-size: 6.7em;
+        .cloud-2{
+            background: url(../images/parallax/cloud-2.png) no-repeat center top;
+            background-size: contain;
+            width: 615px;
+            height: 533px;
+            position: absolute;
+            right: 0px;
         }
 
-        .parallax-reverse-text{
-            -webkit-transform:rotateY(180deg);
-            -moz-transform:rotateY(180deg);
-            -o-transform:rotateY(180deg);
-            -ms-transform:rotateY(180deg);
-            transform:rotateY(180deg);
+        .cloud-3{
+            background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
+            background-size: contain;
+            width: 666px;
+            height: 533px;
+            position: absolute;
+            left: 40%
         }
 
     }
 
-    .cloud-1{
-        background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
-        background-size: contain;
-        width: 604px;
-        height: 533px;
-        position: absolute;
-        left:0px;
-    }
+    md-toolbar#footer{
 
-    .cloud-2{
-        background: url(../images/parallax/cloud-2.png) no-repeat center top;
-        background-size: contain;
-        width: 615px;
-        height: 533px;
-        position: absolute;
-        right: 0px;
-    }
+        background: $black;
+        color: $white;
+        font-size: 11px;
 
-    .cloud-3{
-        background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
-        background-size: contain;
-        width: 666px;
-        height: 533px;
-        position: absolute;
-        left: 40%
-    }
+        .footer-left{
 
+            margin-left: 15px;
 
-}
+            @media(max-width:$flex-md){
+                margin-left: 0px;
+            }
 
-
-md-toolbar#footer{
-
-    background: $black;
-    color: $white;
-    font-size: 11px;
-
-    .footer-left{
-        margin-left: 15px;
-
-        @media(max-width:$flex-md){
-            margin-left: 0px;
         }
 
-    }
 
+        .footer-right{
 
-    .footer-right{
+            img{
+                width: 112px;
+                height:auto;
+                float:right;
+                margin: 0 15px;
 
-        img{
-            width: 112px;
-            height:auto;
-            float:right;
-            margin: 0 15px;
+                &.angular-logo-sm{
+                    width: 36px;
+                }
 
-            &.angular-logo-sm{
-                width: 36px;
             }
 
         }
 
     }
 
+
 }
+

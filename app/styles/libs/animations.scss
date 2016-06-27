@@ -1,9 +1,9 @@
 
-$use-slideInLeft : true;
+/*$use-slideInLeft : true;
 $use-slideOutLeft : true;
 
 $use-slideOutRight : true;
-$use-slideInRight : true;
+$use-slideInRight : true;*/
 
 $use-fadeOut : true;
 $use-fadeIn : true;
@@ -13,58 +13,49 @@ $use-fadeIn : true;
 
 
 /** View Animation **/
-    .right .view.ng-leave{
+/*.right .view.ng-leave{
 
-        -webkit-animation-name: slideOutRight;
-        -moz-animation-name: slideOutRight;
-        -ms-animation-name: slideOutRight;
-        -o-animation-name: slideOutRight;
-        animation-name: slideOutRight;
+    -webkit-animation-name: slideOutRight;
+    -moz-animation-name: slideOutRight;
+    -ms-animation-name: slideOutRight;
+    -o-animation-name: slideOutRight;
+    animation-name: slideOutRight;
 
-        -webkit-animation-duration: 0.25s;
-        -moz-animation-duration: 0.25s;
-        -ms-animation-duration: 0.25s;
-        -o-animation-duration: 0.25s;
-        animation-duration: 0.25s;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
+    animation-duration: 0.25s;
 
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-
-
-    }
-
-    .right .view.ng-enter  {
-
-        visibility:hidden;
-
-        -webkit-animation-name: slideInLeft;
-        -moz-animation-name: slideInLeft;
-        -ms-animation-name: slideInLeft;
-        -o-animation-name: slideInLeft;
-        animation-name: slideInLeft;
-        -webkit-animation-duration: 0.5s;
-        -moz-animation-duration: 0.5s;
-        -ms-animation-duration: 0.5s;
-        -o-animation-duration: 0.5s;
-        animation-duration: 0.5s;
-        -webkit-animation-delay: 0.25s;
-        -moz-animation-delay: 0.25s;
-        -ms-animation-delay: 0.25s;
-        -o-animation-delay: 0.25s;
-        animation-delay: 0.25s;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-
-    }
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
 
+}
 
+.right .view.ng-enter  {
 
+    visibility:hidden;
 
+    -webkit-animation-name: slideInLeft;
+    -moz-animation-name: slideInLeft;
+    -ms-animation-name: slideInLeft;
+    -o-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -ms-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
-
-
-/* ----------------------------------------------------- */
+}
 
 
 
@@ -82,7 +73,6 @@ $use-fadeIn : true;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 
 .left .view.ng-enter {
 
@@ -105,12 +95,14 @@ $use-fadeIn : true;
     animation-delay: 0.25s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}
+}*/
 
 
 
+/* ----------------------------------------------------- */
 
 .fade .view.ng-leave {
+
     -webkit-animation-name: fadeOut;
     -moz-animation-name: fadeOut;
     -ms-animation-name: fadeOut;
@@ -121,21 +113,18 @@ $use-fadeIn : true;
     -ms-animation-duration: 0.5s;
     -o-animation-duration: 0.5s;
     animation-duration: 0.5s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    position:absolute;
+
 }
 
-.fade .view.ng-enter.ng-enter-active{
-    opacity: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;height:100%;
-}
 
 .fade .view.ng-leave.ng-leave-active{
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+
 }
+
+
+
+
 
 .fade .view.ng-enter {
 
@@ -144,19 +133,18 @@ $use-fadeIn : true;
     -ms-animation-name: fadeIn;
     -o-animation-name: fadeIn;
     animation-name: fadeIn;
+
     -webkit-animation-duration: 0.5s;
     -moz-animation-duration: 0.5s;
     -ms-animation-duration: 0.5s;
     -o-animation-duration: 0.5s;
     animation-duration: 0.5s;
 
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -ms-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+}
+
+
+.fade .view.ng-enter.ng-enter-active{
+
 }
 
 

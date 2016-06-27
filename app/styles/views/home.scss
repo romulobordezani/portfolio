@@ -26,7 +26,7 @@ div#home {
                 @media (min-width: $flex-lg ) {
                     background: url(../images/parallax/bg-parallax.jpg) no-repeat center bottom;
                     background-size: cover;
-                    height: 436px;
+                    height: 536px;
                 }
 
             }
@@ -92,7 +92,7 @@ div#home {
     #home-featured{
 
         @media ( min-width : $flex-lg ){
-            margin-top: 90px;
+            margin : 90px 0;
         }
 
         h4{

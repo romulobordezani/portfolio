@@ -15,11 +15,12 @@ angular
         'deviceFrame',
         'responsibilities',
         'slideOnSwipe',
-        'angularytics'
+        'angularytics',
+        'plangular'
     ])
 
     .config(
-        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider ) {
+        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider ) {
             $routeProvider
 
                 .when('/', {
@@ -67,11 +68,11 @@ angular
                         return 'views/work/' + urlattr.year + '/index.html';
                     },
                     controller: 'workController',
-                    animation: 'work'
+                    animation: 'fade'
                 })
 
                 .when('/work/', {
-                    redirectTo: '/work/2015',
+                    redirectTo: '/work/2016',
                     animation: 'fade'
                 })
 
@@ -89,21 +90,25 @@ angular
 
                 .otherwise({
                     redirectTo: '/',
-                    animation: 'fadest'
+                    animation: 'fade'
                 });
 
             $mdThemingProvider.theme('default')
                 .primaryPalette('grey')
                 .accentPalette('deep-orange');
 
-            AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+            AngularyticsProvider.setEventHandlers(['GoogleUniversal']);
+
+
+            plangularConfigProvider.clientId = 'a5f0b5300855bcc76cb9957762d89deb';
+
 
             //$locationProvider.html5Mode(true);
 
         }
 
 ).run(
-    function ( $rootScope, $timeout, $templateCache, $http, Angularytics ) {
+    function ( $rootScope, $timeout, $templateCache, $http, Angularytics, Animator ) {
 
         Angularytics.init();
 
@@ -111,18 +116,13 @@ angular
             var spinnerParent = document.getElementById('rb-body');
             var spinner = document.getElementById('main-pre-loader-wrapper');
             spinnerParent.removeChild(spinner);
-        }, 3000);
+        }, 1000);
 
-
-        /*
 
         $rootScope.$on('$routeChangeSuccess', function () {
-            $timeout(function () {
-                document.getElementById('ngview-container').scrollTop = 0;
-            }, 500);
+            Animator.scrollTo(document.getElementById('ngview-container'), 0, 500);
         });
 
-        */
 
         $http.get('views/contact.html', { cache: $templateCache }).then(function(){
 

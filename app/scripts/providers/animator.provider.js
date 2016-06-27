@@ -111,7 +111,7 @@ angular.module('rbApp')
                     animate({
 
                         delay : 10,
-                        duration : 2000,
+                        duration : 666,
                         delta : quadEaseOut,
 
                         step : function(delta) {
@@ -125,8 +125,27 @@ angular.module('rbApp')
 
                 }
 
+
+                function scrollTo(element, to, duration) {
+                    if (duration <= 0) {
+                        return;
+                    }
+                    var difference = to - element.scrollTop;
+                    var perTick = difference / duration * 10;
+
+                    setTimeout(function() {
+                        element.scrollTop = element.scrollTop + perTick;
+                        if (element.scrollTop === to) {
+                            return;
+                        }
+                        scrollTo(element, to, duration - 10);
+                    }, 10);
+                }
+
+
                 return {
-                    scrollToTabTop : scrollToTabTop
+                    scrollToTabTop : scrollToTabTop,
+                    scrollTo : scrollTo
                 };
 
             };

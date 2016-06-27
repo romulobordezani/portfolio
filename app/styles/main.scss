@@ -3,7 +3,6 @@
 @import 'libs/colors';
 @import 'libs/animations';
 
-
 body {
 
     font-family: Comfortaa, Helvetica, sans-serif;
@@ -17,12 +16,12 @@ body {
 
 
     div#ngview {
+
         @import 'views/home';
         @import 'views/work';
         @import 'views/contact';
         @import 'views/about';
         @import 'views/sophia';
-
 
     }
 

@@ -60,8 +60,8 @@ angular.module('rbApp')
                     newYear = 2002;
                 }
 
-                if( newYear > 2015  ){
-                    newYear = 2015;
+                if( newYear > 2016  ){
+                    newYear = 2016;
                 }
 
                 year = newYear;

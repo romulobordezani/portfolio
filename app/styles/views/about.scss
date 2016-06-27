@@ -3,6 +3,8 @@
 
 div#about {
 
+    min-height: calc(100vh - 1277px);
+
     #home-desktop.parallax{
 
         .parallax-wrapper {
