@@ -13,6 +13,7 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 parallaxInitValSm: '@',
                 parallaxInitValMd: '@',
                 parallaxInitValLg: '@',
+                parallaxInitValRandom: '@',
                 parallaxMaxVal: '@',
                 parallaxRatio: '@',
                 parallaxScroller: '@'
@@ -58,8 +59,19 @@ angular.module('mdParallax', []).directive('mdParallax', [
                     parallaxInitVal = +iScope.parallaxInitValLg;
                 }else{
                     parallaxInitVal = +iScope.parallaxInitVal || 0;
-
                 }
+
+
+                if( iScope.parallaxInitValRandom  ) {
+                    parallaxInitVal = Math.floor((Math.random()*iScope.parallaxInitValRandom)+1);
+                }
+
+
+
+
+
+
+
 
                 parallaxMaxVal  = iScope.parallaxMaxVal ? parseInt( iScope.parallaxMaxVal, 10 ) : null;
                 parallaxScroller = iScope.parallaxScroller;

@@ -27,14 +27,14 @@ angular
                     templateUrl: 'views/home.html',
                     controller: 'homeController',
                     animation: 'fade',
-                    routeclass : 'home'
+                    routeclass : 'home',
+                    showFooter : true
                 })
 
                 .when('/about', {
                     templateUrl: 'views/about.html',
                     controller: 'aboutController',
-                    animation: 'fade',
-                    routeclass : 'home'
+                    animation: 'fade'
                 })
 
                 .when('/sophia', {

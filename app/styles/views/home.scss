@@ -3,88 +3,111 @@
 
 div#home {
 
-    #home-desktop.parallax{
+
+    .parallax-footer{
+
+        height: 333px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+        background: #1e5799; /* Old browsers */
+        background: -moz-linear-gradient(top,  #FFFFFF 0%, #A5D3FA 50%, #A5D3FA 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #FFFFFF 0%,#A5D3FA 50%,#A5D3FA 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #FFFFFF 0%,#A5D3FA 50%,#A5D3FA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#A5D3FA',GradientType=0 ); /* IE6-9 */
+
+
+
+
+        @media (min-width: $flex-sm) {
+            height: 733px;
+        }
+
+
+        .parallax-txt {
+
+            position: absolute;
+            bottom: 147px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            color: #97C3E8;
+            text-shadow: 0px 0px 27px #FFF;
+            cursor: default;
+
+            @media (min-width: $flex-sm) {
+                font-size: 3.7em;
+                bottom: 363px;
+            }
+
+            @media (min-width: $flex-lg) {
+                font-size: 2.7em;
+            }
+
+            @media (min-width: $flex-lg + 500) {
+                font-size: 6.7em;
+            }
+
+            .parallax-reverse-text{
+                -webkit-transform:rotateY(180deg);
+                -moz-transform:rotateY(180deg);
+                -o-transform:rotateY(180deg);
+                -ms-transform:rotateY(180deg);
+                transform:rotateY(180deg);
+            }
+
+        }
+
+        .cloud-1{
+            background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
+            background-size: contain;
+            width: 604px;
+            height: 733px;
+            position: absolute;
+            left:0px;
+        }
+
+        .cloud-2{
+            background: url(../images/parallax/cloud-2.png) no-repeat center top;
+            background-size: contain;
+            width: 615px;
+            height: 733px;
+            position: absolute;
+            right: 0px;
+        }
+
+        .cloud-3{
+            background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
+            background-size: contain;
+            width: 666px;
+            height: 733px;
+            position: absolute;
+            left: 40%;
+        }
+
+
+        .cloud-4{
+            background: url(../images/parallax/cloud-4.png) no-repeat center bottom;
+            background-size: contain;
+            width: 666px;
+            height: 733px;
+            position: absolute;
+            left: 20%;
+        }
+
+    }
+
+    #home-desktop{
 
         .parallax-wrapper {
-
             width:100%;
-
-            .parallax-img {
-
-                background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center bottom;
-                background-size: cover;
-                height: 300px;
-                width: 100%;
-                position: relative;
-
-                @media (min-width: $flex-md ) {
-                    background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center bottom;
-                    background-size: 100%;
-                    height: 400px;
-                }
-
-                @media (min-width: $flex-lg ) {
-                    background: url(../images/parallax/bg-parallax.jpg) no-repeat center bottom;
-                    background-size: cover;
-                    height: 536px;
-                }
-
-            }
-
-            .parallax-txt {
-
-                position: absolute;
-                bottom: 77px;
-                right: 0;
-                left: 0;
-                margin: auto;
-                text-align: center;
-                font-size: 3.0em;
-                color: $discret-black;
-                cursor: default;
-
-
-                @media ( min-width: $flex-sm ) {
-                    font-size: 3.7em;
-                    text-shadow: 0 0 16px #FFFFFF;
-                }
-
-                @media ( min-width: $flex-lg ) {
-                    font-size: 4.7em;
-                }
-
-                @media ( min-width: $flex-lg + 500 ) {
-                    font-size: 6.7em;
-                }
-
-                div{
-
-                    margin: 0 7px;
-
-                    .parallax-subtext1{
-
-                        font-size:0.36em;
-
-                        @media ( min-width: $flex-md ) {
-                            font-size:0.37em;
-                        }
-                    }
-
-                    .parallax-subtext2{
-
-                        font-size:0.52em;
-
-                        @media ( min-width: $flex-md ) {
-                            font-size:0.37em;
-                        }
-
-                    }
-
-                }
-
-
-            }
-
+            height: 536px;
+            background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center center;
+            background-size: cover;
         }
 
     }
@@ -102,7 +125,7 @@ div#home {
 
         #first-featured-item{
 
-            @media ( max-width : $flex-md ) {
+            @media ( max-width : $flex-lg ) {
 
                 font-size: 0.75em;
 
@@ -118,7 +141,7 @@ div#home {
                 font-size: 1.3em;
 
                 h4 {
-                    font-size: 1.6em;
+                    font-size: 1.3em;
                 }
 
             }
@@ -127,6 +150,28 @@ div#home {
 
 
         #third-featured-item{
+
+            @media ( max-width : $flex-lg ) {
+
+                font-size: 0.75em;
+
+                h4 {
+                    font-size: 1.3em;
+                    margin-top: 17px;
+                }
+
+            }
+
+
+            @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
+
+                font-size: 1.3em;
+
+                h4 {
+                    font-size: 1.3em;
+                }
+
+            }
 
             @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
                 margin-top: 33px;

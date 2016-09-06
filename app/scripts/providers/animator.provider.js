@@ -93,11 +93,11 @@ angular.module('rbApp')
                         startedScroll = trueWindow.scrollTop;
 
                     if( windowWidth >= 960 ){
-                        to = 400;
+                        to = 290;
                     }
 
                     if( windowWidth >= 1200 ){
-                        to = 430;
+                        to = 290;
                     }
 
                     if( windowWidth < 960 ){
@@ -145,7 +145,8 @@ angular.module('rbApp')
 
                 return {
                     scrollToTabTop : scrollToTabTop,
-                    scrollTo : scrollTo
+                    scrollTo : scrollTo,
+                    animate : animate
                 };
 
             };

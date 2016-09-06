@@ -1,21 +1,35 @@
 <div id="home"  >
 
-    <div id="home-desktop" class="parallax" layout-fill style="min-height:0;"  >
-        <div layout="row" >
-            <div md-parallax class="parallax-wrapper"  parallax-ratio="0.1" parallax-css="transform:translateY"  parallax-scroller="ngview-container" >
-                <div md-parallax  parallax-ratio="0.3"  parallax-css="background-position-y" parallax-init-val="0" class="parallax-img" parallax-scroller="ngview-container" ></div>
+    <div md-parallax  parallax-ratio="0.07" parallax-css="transform:translateY"  parallax-scroller="ngview-container"  >
+
+        <div class="parallax-footer"  >
+
+            <div class="cloud-1" md-parallax parallax-ratio="0.5" parallax-css="background-position-y" parallax-init-val-random="66"    parallax-max-val="666"    parallax-scroller="ngview-container" ></div>
+            <div class="cloud-2" md-parallax parallax-ratio="0.7" parallax-css="background-position-y" parallax-init-val-random="666"   parallax-max-val="666"    parallax-scroller="ngview-container" ></div>
+            <div class="cloud-3" md-parallax parallax-ratio="0.8" parallax-css="background-position-y" parallax-init-val-random="266"   parallax-max-val="666"    parallax-scroller="ngview-container" ></div>
+            <div class="cloud-4" md-parallax parallax-ratio="0.2" parallax-css="background-position-y" parallax-init-val-random="456"    parallax-max-val="666"    parallax-scroller="ngview-container" ></div>
+
+            <div class="parallax-txt kill-animations"  layout="row" layout-align="space-around center" >
+                <div layout="column" class="noselect" >Creative</div>
+                <div layout="column"  ><span class="parallax-reverse-text noselect" >Logical</span></div>
             </div>
+
+            <div>
+                <img src="images/parallax/bg-parallax.png" alt="" style="width:100%;position:absolute;bottom:0px;">
+            </div>
+
         </div>
     </div>
 
-    <div class="content-splitter" ></div>
+    <div class="content-splitter"></div>
+    <div class="content-splitter"  style="margin-top: 3px; opacity: 0;" ></div>
 
     <div id="home-featured" layout="row" layout-wrap >
 
         <div layout="column" layout-sm="row" layout-md="row" flex class="md-padding" layout-align="center center" >
 
-            <div id="first-featured-item" layout="row" flex layout-fill  clickable-url="#/work/2016" clickable >
-                <div layout="column" flex="40" flex-sm="25" flex-md="25" layout-align="center end" >
+            <div id="first-featured-item" layout="row" flex layout-fill clickable-url="#/work/2016" clickable >
+                <div layout="column" flex="25" layout-align="center center" layout-align-lg="center end" >
                     <img src="images/home/coffee.svg" />
                 </div>
                 <div layout="column" flex layout-margin layout-padding layout-align="center" >
@@ -26,8 +40,8 @@
 
             <div layout="row" hide-sm hide-md  flex class="md-padding" ><img src="images/uis/gradient-line-horizontal.svg" style="height:1px; width: 100%; margin: 30px 0;" /></div>
 
-            <div layout="row" id="second-featured-item" hide-sm hide-md flex layout-fill clickable-url="#/about" clickable >
-                <div layout="column" flex="40" layout-align="center end"  >
+            <div layout="row" id="second-featured-item" hide-sm hide-md flex flex-sm="100" layout-fill clickable-url="#/about" clickable >
+                <div layout="column" flex="25" layout-align="center end"  >
                     <img class="md-avatar" src="images/home/romulobordezani.svg" />
                 </div>
                 <div layout="column" flex layout-margin layout-padding layout-align="center" >
@@ -38,29 +52,60 @@
 
         </div>
 
-        <div layout="column" hide-sm hide-md flex="5" ><img src="images/uis/gradient-line-vertical.svg" style="height:100%; width: 1px; margin: 30px 0;" /></div>
+        <div class="content-splitter" hide-gt-md style="margin-top: 3px; opacity: 0;" ></div>
 
-        <div class="content-splitter" hide-gt-md style="margin-top: 43px;" ></div>
+        <div layout="column" hide-sm hide-md flex="5" layout-align="center center" ><img src="images/uis/gradient-line-vertical.svg" style="height:100%; width: 1px; margin: 30px 0;" /></div>
 
-        <div layout="column" layout-sm="row" layout-md="row" flex="50" flex-sm="100" flex-md="100" >
+        <div layout="column" layout-sm="row" layout-md="row" flex flex-sm="100"  flex-md="100" class="md-padding" layout-align="center center" >
 
-            <div id="third-featured-item" layout="row" flex layout-wrap layout-fill class="md-padding" clickable clickable-url="#/contact" >
+            <div id="third-featured-item" onclick="document.getElementById('radioPlayer').click(); return false;" layout="row" flex layout-fill  clickable >
 
-                <div layout="column" layout-sm="row" layout-align="center start" layout-align-sm="center center" layout-align-md="center center" flex="33" flex-sm="100" flex-md="45" >
-                    <img src="images/home/usb-heart-transparent.svg" class="md-avatar" />
+                <div layout="column" flex="25"  layout-align="center center" >
+                    <img src="images/socials/ico_soundcloud.svg" style="max-width: 60px;"/>
                 </div>
 
-                <div flex="5"></div>
+                <div layout="column" flex layout-margin layout-padding layout-align="center" >
 
-                <div layout="column" layout-sm="row" layout-align="center start" layout-wrap class="md-padding" flex="50" flex-sm="100"  flex-md="50" >
-                    <h4 class="md-title" layout="row" layout-align="center start" >Mobile first  matters </h4>
-                    <div layout="row"  layout-align="center start"  >Now that even Google prefers mobile friendly sites, guess what your users are looking for? </div>
-                    <div layout="row"   layout-align="center start" >Let me to help you make your customers love your site.</div>
+                    <h4 class="md-title" > Listen to my music while navigating</h4>
+                    Hear some blues that I made  directly from my Soundcloud.
+                </div>
+
+            </div>
+
+            <div layout="row" hide-sm hide-md flex class="md-padding" ><img src="images/uis/gradient-line-horizontal.svg" style="height:1px; width: 100%; margin: 30px 0;" /></div>
+
+            <div layout="row" id="fourth-featured-item" hide-sm hide-md flex layout-fill clickable-target="_blank" clickable-url="http://romulobordezani.deviantart.com/gallery/?catpath=%2Fflash" clickable >
+                <div layout="column" flex="25" layout-align="center center" >
+                    <img class="md-avatar" src="images/home/games.svg" />
+                </div>
+                <div layout="column"  layout-margin layout-padding layout-align="center" >
+                    <h4 class="md-title" >Play it!</h4>
+                    Some of my old and trash Flash games to entertain you.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-splitter" hide-gt-md style="margin-top: 3px; opacity: 0;" ></div>
+
+        <div layout="column" layout-sm="row" hide-gt-md layout-md="row" flex flex-sm="100"  flex-md="100" class="md-padding" layout-align="center center" >
+
+            <div id="mobile-featured-item" layout="row" flex layout-fill  clickable-url="#/about" clickable >
+
+                <div layout="column" flex="40" flex-sm="25" flex-md="25" layout-align="center end"  >
+                    <img class="md-avatar" src="images/home/romulobordezani.svg" />
+                </div>
+
+                <div layout="column" flex layout-margin layout-padding layout-align="center" >
+                    <h4 class="md-title" >It's me.</h4>
+                    A little bit about the guy<br> you are looking for.
                 </div>
 
             </div>
 
         </div>
+
+        <div class="content-splitter" hide-gt-md style="margin-top: 3px; opacity: 0;" ></div>
 
     </div>
 

@@ -17,7 +17,13 @@ angular.module('responsibilities', []).directive('responsibilities',
                     headline : '=?',
                     custom : '=?',
                     customImg : '=?',
-                    customLabel : '=?'
+                    customLabel : '=?',
+                    custom1 : '=?',
+                    customImg1 : '=?',
+                    customLabel1 : '=?',
+                    custom2 : '=?',
+                    customImg2 : '=?',
+                    customLabel2 : '=?'
                 }
 
                 // ,link: function(scope, element, attrs) {}

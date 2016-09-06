@@ -28,19 +28,14 @@ angular.module('rbApp')
                     $rootScope.onWorkPage = false;
                     $rootScope.routeclass = currRoute.routeclass;
                     $rootScope.$$listeners.$mdTabsChanged=[];
-                    $scope.animation = currRoute.animation;
-
-                    if( $scope.animation === undefined ){
-                        $scope.animation = 'fade';
-                    }
+                    $scope.animation = currRoute.animation || 'fade';
+                    $scope.showFooter = currRoute.showFooter || false;
 
                 });
 
                 $rootScope.$on('forceAnimationSet', function(event, args) {
                     $scope.animation = args.animation;
                 });
-
-
 
             }
 

@@ -5,41 +5,9 @@ div#about {
 
     min-height: calc(100vh - 1277px);
 
-    #home-desktop.parallax{
-
-        .parallax-wrapper {
-
-            width:100%;
-
-            .parallax-img {
-
-                background: url(../images/parallax/bg-parallax-sm-about.jpg) no-repeat center bottom;
-                background-size: cover;
-                height: 300px;
-                width: 100%;
-                position: relative;
-
-                @media (min-width: $flex-md ) {
-                    background: url(../images/parallax/bg-parallax-sm-about.jpg) no-repeat center bottom;
-                    background-size: 100%;
-                    height: 400px;
-                }
-
-                @media (min-width: $flex-lg ) {
-                    background: url(../images/parallax/bg-parallax-about.jpg) no-repeat center bottom;
-                    background-size: cover;
-                    height: 436px;
-                }
-
-            }
-
-        }
-
-    }
-
-
-
     #home-about-tabs {
+
+        margin-top: 20px;
 
         md-tab-content {
 

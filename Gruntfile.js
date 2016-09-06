@@ -223,6 +223,8 @@ module.exports = function (grunt) {
                     '!<%= yeoman.dist %>/images/work/**/*.{png,jpg,jpeg,gif,webp,svg}',
                     '!<%= yeoman.dist %>/images/menu/**/*.{png,jpg,jpeg,gif,webp,svg}',
                     '!<%= yeoman.dist %>/images/uis/ic_*.svg',
+                    '!<%= yeoman.dist %>/images/uis/back*.svg',
+                    '!<%= yeoman.dist %>/images/contact/*.svg',
                     '!<%= yeoman.dist %>/images/git/*',
                     '<%= yeoman.dist %>/styles/fonts/*'
                 ]
@@ -233,7 +235,7 @@ module.exports = function (grunt) {
         // concat, minify and revision files. Creates configurations in memory so
         // additional tasks can operate on them
         useminPrepare: {
-            html: '<%= yeoman.app %>/index.html',
+            html: [ '<%= yeoman.app %>/index.html', '<%= yeoman.app %>/views/**/*.html' ],
             options: {
                 dest: '<%= yeoman.dist %>',
                 flow: {
@@ -325,6 +327,7 @@ module.exports = function (grunt) {
 
         // Copies remaining files to places other tasks can use
         copy: {
+
             dist: {
                 files: [{
                     expand: true,
@@ -351,11 +354,31 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>'
                 }]
             },
+
             styles: {
                 expand: true,
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+
+            openshift : {
+
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= yeoman.dist %>/',
+                        dest: '../web',
+                        src: '**/*.*'
+                    }/*,
+                    {
+                        expand: true,
+                        cwd: './',
+                        dest: '../web',
+                        src: 'server.js'
+                    }*/
+                ]
+
             }
         },
 
@@ -456,7 +479,8 @@ module.exports = function (grunt) {
         'filerev',
         'usemin',
         'includes:dist',
-        'htmlmin'
+        'htmlmin',
+        'copy:openshift'
     ]);
 
     grunt.registerTask('default', [

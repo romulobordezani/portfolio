@@ -1,112 +1,55 @@
 <section id="work"  >
     <main class="work-description" >
-
         <div layout-margin layout-padding >
 
-            <h1 class="md-title">User experience and design of this site</h1>
-            <div class="work-spacer" ></div>
-            <img src="images/work/2015/1/me-at-google.jpg" class="md-avatar" style="width: 96px;" clickable clickable-url="/images/work/2015/1/me-at-google.jpg" />
-            <p><br>I met Material Design in a Google Developers Group conference at Google Brazil, and the guy who was talking about it was so convincing that inspired me to entirely rebuild my own site using theirs style guide. </p>
-            <div class="work-spacer" ></div>
-            <div class="work-spacer" ></div>
-            <div class="content-splitter" ></div>
+            <div layout="row" layout-wrap >
 
+                <div layout="column" flex flex-sm="100" >
 
-            <div class="work-spacer" ></div>
-            <p><h1 class="md-title">Logo design</h1></p>
-            <div class="work-spacer" ></div>
-            <img ng-src="images/work/2015/1/forsters-and-logo.png" alt="Da Vinci's forsters codex and logo" style="float:left; width: 228px;  margin-right: 33px; ">
-            <p>
-                It's a <a target="_blank" href="https://www.google.com.br/search?q=Da+vinci+Forster+Codex&safe=off&biw=1680&bih=858&source=lnms&tbm=isch&sa=X&ei=r22QVaX1G8bAggSmjYOgCA&ved=0CAcQ_AUoAQ" >Da Vinci's Forster Codex</a> blended with a weather cock, in tribute to Leonardo because he was (de)coder and designer at the same time. This codex is considered one ancient way off cryptography, maybe the first one.
-                The weather cock refers to the wind and to the cloud's services, my new passion.
-            </p>
-            <div class="work-spacer" ></div>
-            <div class="work-spacer" ></div>
-            <div class="content-splitter" ></div>
+                    <h1 class="md-title" >Lofty's e-Shop migration from Magento to Shopify</h1>
 
+                    <p>
+                        The first version of Lofty's site was made using Magento, my main role on this job was to migrate the whole e-shop to Shopify, what required a reconstruction of almost eery HTML and CSS from the scratch, using <a href="https://help.shopify.com/themes/liquid/basics" target="_blank">.liquid</a> and based on Shopify's
+                        <a href="https://shopify.github.io/Timber/" target="_blank">Timber</a> boilerplate.
+                    </p>
 
+                    <h1 class="md-title">Main challenges:</h1>
 
-            <div class="work-spacer" ></div>
-            <p><h1 class="md-title">Cloudy Footer</h1></p>
-            <div class="work-spacer" ></div>
-            <img ng-src="images/work/2015/1/cloudy-footer.png" alt="Cloudy Footer" style="float:left;  width: 300px; margin-right: 33px; ">
-            <p>
-                Inspired on cloud web services as Amazon, Open Shift and Heroku, this cloudy footer is grey as the sky of the city where I live, São Paulo.
-            </p>
-            <p>
-                I kept the same joke about creative and logical sides of brain, I hope you could ready the logical word inverted over there.
-            </p>
-            <div class="work-spacer" ></div>
-            <div class="work-spacer" ></div>
+                    <ul>
+                        <li>To migrate all CDN data from Magento to Shopify, including +10Mb pictures, what required a hard work converting and compressing images in order to upload them using Ruby, via Shopify API.</li>
+                        <li>To convert all products and users stored in the Magento's MySQL database, into Shopify records using theirs Ruby API.</li>
+                        <li>To fight with Form Assembly pre built forms to improve validations, styles and so on conflicting with Timber style.</li>
+                        <li>To reproduce all old design details on a boilerplate already formatted and coded, inheriting a lot of conflicts and incompatibilities between them.</li>
+                        <li>To deal with third party apps and partners, implementing theirs snippets on our site without to wreck all the rest of the code.</li>
+                        <li>To keep the loading time under 10 seconds, even using at least 7 third party services and make the site resilient to possible slow responses or down services.</li>
+                        <li>To track important user's events on different platforms, like Facebook Pixel, Sales Force Marketing Cloud and Google Analytics at the same time. </li>
+                        <li>To fight with Form Assembly pre built forms to improve validations, styles and so on.</li>
+                        <li>To make it responsive.</li>
+                    </ul>
 
+                </div>
 
+                <div layout="column" flex="33" flex-sm="100" >
+                    <responsibilities frontend="true" backend="true"   custom="true" custom-label="'Cross Browsing'" custom-img="'images/uis/ic_test_24px.svg'" custom1="true" custom-label1="'Database Migration'" custom-img1="'images/uis/ic_db_24px.svg'" ></responsibilities>
+                </div>
 
-
-
-            <div class="content-splitter" ></div>
-
-            <p><h1 class="md-title">UX chalenges and requirements:</h1></p>
-            <p>
-                <ul>
-
-                    <li>
-                        To organize my jobs by years, evidencing these 13 years of experience working with web and digital communication.
-                    </li>
-
-                    <li>
-                        To be full responsive to support cellphones and tablets.
-                    </li>
-
-                    <li>
-                        To integrate css animations between pages and user actions, respecting each movement unit.
-                    </li>
-
-                    <li>
-                        To use the <a href="http://paletton.com/palette.php?uid=c0c300F3u0krKw0hhHhmv-HvKrezxln" target="_blank" >collor pallete</a> in all the unit interfaces.
-                    </li>
-
-                    <li>
-                        To keep everything adherent to the Material Design Style Guide, also called <a href="http://www.google.com/design/" target="_blank" >Google's Visual Frame Work</a>.
-                    </li>
-
-                    <li>
-                        To be able to collect any  user feedback, to measure it and start the Lean process with the "Learn" stage, after my first "Hypothesis" launched.
-                    </li>
-
-                    <li>
-                        To build up a form without aggressive error messages, if was possible, without any error messages, just using colors and restricting submit.
-                    </li>
-
-                </ul>
-            </p>
-
+            </div>
 
             <div class="work-spacer" ></div>
-            <div class="content-splitter" ></div>
-
-            <p><h1 class="md-title">Design steps:</h1></p>
-            <p>
-                <ul>
-
-                    <li>
-                        I did the <a href="https://github.com/romulobordezani/portfolio/blob/master/layout/layout-romulobordezani.fw.png" target="_blank" >Layout</a> over a paper made wireframe, using Fireworks.
-                    </li>
-
-                    <li>
-                        Vectorized some icons and draws and exported in .svg format.
-                    </li>
-
-                    <li>
-                        Now I'm still evolving the design and the responsiveness directly into the code.
-                    </li>
-
-                </ul>
-            </p>
-
+            <div layout="row" layout-wrap layout-fill layout-align="center end" >
+                <device-frame  size="lg"    src="images/work/2016/1/lg-thumb.png" ></device-frame>
+                <device-frame  size="gt-lg" src="images/work/2016/1/gt-lg-thumb.png" ></device-frame>
+                <device-frame  size="md"    src="images/work/2016/1/md-thumb.png" ></device-frame>
+                <device-frame  size="sm"    src="images/work/2016/1/sm-thumb.png" ></device-frame>
+            </div>
 
         </div>
 
         <div id="actions" >
+
+            <md-button id="goto-job" class="md-fab md-accent md-hue-2" aria-label="Go to Sophia's Pics" clickable-url="https://lofty.com/" clickable clickable-target="_blank" >
+                <md-icon md-svg-src="images/uis/ic_goto_24px.svg"></md-icon>
+            </md-button>
 
             <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" clickable >
                 <md-icon md-svg-src="images/uis/backTolist-centered.svg"></md-icon>

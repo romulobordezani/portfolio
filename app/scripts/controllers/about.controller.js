@@ -8,14 +8,10 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('aboutController', function ($rootScope, Animator, $timeout){
+    .controller('aboutController', function ($rootScope){
 
-        $rootScope.$on('$mdTabsChanged', function(){
-
-            $timeout( function(){
-                Animator.scrollToTabTop();
-            },500);
-
+        $rootScope.$on('$mdTabsChanged', function(e){
+           console.log(e);
         });
 
     });

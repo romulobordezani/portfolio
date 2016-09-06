@@ -61,8 +61,7 @@ angular.module('rbApp')
 
             var request = $http({
                 method: 'post',
-                url: 'enviangular.php',
-                transformRequest: transformRequestAsFormPost,
+                url: '/sendemail',
                 data:  $scope.user
             });
 
@@ -90,6 +89,7 @@ angular.module('rbApp')
             );
 
         };
+
 
         init();
 

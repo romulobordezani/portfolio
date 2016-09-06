@@ -1,5 +1,5 @@
 #!/bin/env node
-//  OpenShift sample Node application
+
 var express = require('express');
 var fs      = require('fs');
 
@@ -9,18 +9,11 @@ var fs      = require('fs');
  */
 var SampleApp = function() {
 
-    //  Scope.
+
     var self = this;
 
-
-    /*  ================================================================  */
-    /*  Helper functions.                                                 */
-    /*  ================================================================  */
-
-    /**
-     *  Set up server IP address and port # using env variables/defaults.
-     */
     self.setupVariables = function() {
+
         //  Set the environment variables we need.
         self.ipaddress = process.env.OPENSHIFT_NODEJS_IP;
         self.port      = process.env.OPENSHIFT_NODEJS_PORT || 8080;
@@ -31,6 +24,7 @@ var SampleApp = function() {
             console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
             self.ipaddress = "127.0.0.1";
         };
+
     };
 
 
@@ -38,12 +32,14 @@ var SampleApp = function() {
      *  Populate the cache.
      */
     self.populateCache = function() {
+
         if (typeof self.zcache === "undefined") {
             self.zcache = { 'index.html': '' };
         }
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
+
     };
 
 
@@ -61,8 +57,7 @@ var SampleApp = function() {
      */
     self.terminator = function(sig){
         if (typeof sig === "string") {
-            console.log('%s: Received %s - terminating sample app ...',
-                Date(Date.now()), sig);
+            console.log('%s: Received %s - terminating sample app ...', Date(Date.now()), sig);
             process.exit(1);
         }
         console.log('%s: Node server stopped.', Date(Date.now()) );
@@ -93,12 +88,13 @@ var SampleApp = function() {
      *  Create the routing table entries + handlers for the application.
      */
     self.createRoutes = function() {
+
         self.routes = { };
 
-        self.routes['/asciimo'] = function(req, res) {
+        /*self.routes['/asciimo'] = function(req, res) {
             var link = "http://i.imgur.com/kmbjB.png";
             res.send("<html><body><img src='" + link + "'></body></html>");
-        };
+        };*/
 
         self.routes['/'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
@@ -118,11 +114,15 @@ var SampleApp = function() {
         self.app = express.createServer();
 
         //  Add handlers for the app (from the routes).
-        for (var r in self.routes) {
+        for ( var r in self.routes ) {
             self.app.get(r, self.routes[r]);
         }
 
-        self.app.use(express.static(__dirname));
+        self.app.post('/sendemail', function (req, res) {
+            res.status(202).send('Hello World');
+        });
+
+        self.app.use( express.static(__dirname) );
 
     };
 
@@ -131,12 +131,14 @@ var SampleApp = function() {
      *  Initializes the sample application.
      */
     self.initialize = function() {
+
         self.setupVariables();
         self.populateCache();
         self.setupTerminationHandlers();
 
         // Create the express server and routes.
         self.initializeServer();
+
     };
 
 
@@ -146,18 +148,13 @@ var SampleApp = function() {
     self.start = function() {
         //  Start the app on the specific interface (and port).
         self.app.listen(self.port, self.ipaddress, function() {
-            console.log('%s: Node server started on %s:%d ...',
-                Date(Date.now() ), self.ipaddress, self.port);
+            console.log('%s: Node server started on %s:%d ...', Date(Date.now() ), self.ipaddress, self.port);
         });
     };
 
-};   /*  Sample Application.  */
+};
 
 
-
-/**
- *  main():  Main code.
- */
 var zapp = new SampleApp();
 zapp.initialize();
 zapp.start();

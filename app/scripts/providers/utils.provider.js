@@ -24,11 +24,18 @@ angular.module('rbApp')
             };
 
 
-            this.goTo = function(url){
+            this.goTo = function(url,target){
+                
                 var isntAnAngularUrl = url.indexOf('http' ) >= 0 ? true : false || url.indexOf('/images' ) === 0 ;
+
                 if( isntAnAngularUrl ){
 
-                    if( url.indexOf('/images' ) === 0 ){
+                    if( target === '_blank'  ){
+                        window.open( url );
+                        return false;
+                    }
+
+                    if( url.indexOf('/images' ) === 0  ){
                         url = 'http://' + window.location.host + url;
                         window.open( url );
                         return false;

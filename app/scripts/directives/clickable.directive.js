@@ -5,11 +5,7 @@ angular.module('addClassOnClick', []).directive('clickable', [ 'Utils', '$timeou
 
             restrict: 'A',
 
-            scope: {
-                clickableUrl: '@'
-            },
-
-            link: function(scope, element) {
+            link: function(scope, element, attrs) {
 
                 element.addClass('clickable noselect');
 
@@ -18,7 +14,7 @@ angular.module('addClassOnClick', []).directive('clickable', [ 'Utils', '$timeou
                     element.addClass('clicked');
 
                     $timeout(function(){
-                        Utils.goTo(scope.clickableUrl);
+                        Utils.goTo(attrs.clickableUrl, attrs.clickableTarget);
                         element.removeClass('clicked');
                     }, 666 );
 
