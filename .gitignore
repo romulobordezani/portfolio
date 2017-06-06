@@ -1,7 +1,9 @@
 node_modules
 .idea
+dist
 .tmp
-.sass-cachegit
+.sass-cache
+.git
 bower_components
 .DS_Store
 .svn

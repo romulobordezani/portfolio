@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # print outputs and exit on first failure
-set -x
+set -xe
 
 if [ $TRAVIS_BRANCH == "master" ] ; then
 
@@ -13,6 +13,8 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     git config user.email "romulobordezani@gmail.com"
 
     # commit compressed files and push it to remote
+    rm -f .gitignore
+    cp .travis/deployignore .gitignore
     git add .
     git status # debug
     git commit -m "Deploy compressed files"
