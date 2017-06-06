@@ -1,6 +1,18 @@
 node_modules
 .idea
-dist
+app
+test
+.bowerrc
+.editorconfig
+.gitattributes
+.gitignore
+.jshintrc
+.travis.yml
+bower.json
+Gruntfile.js
+package.json
+README.md
+server.js
 .tmp
 .sass-cache
 .git
@@ -11,6 +23,4 @@ log/*.log
 logs/*
 .idea
 npm-debug.log
-enviangular.php
-enviadado
 _notes
