@@ -5,6 +5,17 @@
         "type": "git",
         "url": "https://github.com/romulobordezani/portfolio.git"
     },
+    "author": {
+        "name": "Romulo Bordezanin",
+        "url": "https://romulobordezani.com.br"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT"
+        }
+    ],
+    "homepage": "https://romulobordezani.com.br",
     "dependencies": {},
     "devDependencies": {
         "grunt": "0.4.2",
@@ -31,8 +42,6 @@
         "jshint-stylish": "0.2.0",
         "load-grunt-tasks": "3.1.0",
         "time-grunt": "0.3.1",
-        "karma-junit-reporter": "0.1",
-        "karma-coverage": "0.2.1",
         "grunt-includes": "0.5.1",
         "grunt-notify": "^0.4.1"
     },

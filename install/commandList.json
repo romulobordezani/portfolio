@@ -1,6 +1,0 @@
-{
-	"Run Server" : "grunt serve",
-	"Build" : "grunt build",
-    "Npm Install" : "npm install",
-    "Bower Install" : "bower install"
-}
