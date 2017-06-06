@@ -11,11 +11,10 @@ Made with love and:<br />
 * Node.js
 * Google Geolocation System
 
-URL: http://romulobordezani.com.br <br/>
+URL: https://romulobordezani.com.br <br/>
 
-###Preview
 
-![roms-og-image](http://romulobordezani.com.br/images/git/rb-index3.jpg)
+[![Build Status](https://travis-ci.org/romulobordezani/portfolio.svg?branch=master)](https://travis-ci.org/romulobordezani/portfolio)
 
 
 #### Ho to run

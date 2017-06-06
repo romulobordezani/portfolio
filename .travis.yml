@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '4.3.1'
+- 4.3.1
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
@@ -22,7 +22,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: ".scripts/deploy.sh"
+  script: ".travis/deploy.sh"
   on:
     all_branches: true
 notifications:
