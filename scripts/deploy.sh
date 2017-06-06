@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # print outputs and exit on first failure
-set -xe
+set -x
 
 if [ $TRAVIS_BRANCH == "master" ] ; then
 
