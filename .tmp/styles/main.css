@@ -1,0 +1,1378 @@
+/* line 2, ../../app/styles/libs/browsehappy.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*$use-slideInLeft : true;
+$use-slideOutLeft : true;
+
+$use-slideOutRight : true;
+$use-slideInRight : true;*/
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2015 Daniel Eden
+*/
+/* line 8, ../../bower_components/animate-sass/helpers/_base.scss */
+body {
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 12, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 16, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 20, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/* line 24, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.bounceIn, .animated.bounceOut {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+/* line 29, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.flipOutX, .animated.flipOutY {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 8, ../../bower_components/animate-sass/animations/fade-enter/_fadeIn.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 8, ../../bower_components/animate-sass/animations/fade-exit/_fadeOut.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/** View Animation **/
+/*.right .view.ng-leave{
+
+    -webkit-animation-name: slideOutRight;
+    -moz-animation-name: slideOutRight;
+    -ms-animation-name: slideOutRight;
+    -o-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+
+}
+
+.right .view.ng-enter  {
+
+    visibility:hidden;
+
+    -webkit-animation-name: slideInLeft;
+    -moz-animation-name: slideInLeft;
+    -ms-animation-name: slideInLeft;
+    -o-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -ms-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+
+
+.left .view.ng-leave {
+    -webkit-animation-name: slideOutLeft;
+    -moz-animation-name: slideOutLeft;
+    -ms-animation-name: slideOutLeft;
+    -o-animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.left .view.ng-enter {
+
+    visibility:hidden;
+
+    -webkit-animation-name: slideInRight;
+    -moz-animation-name: slideInRight;
+    -ms-animation-name: slideInRight;
+    -o-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.25s;
+    -moz-animation-delay: 0.25s;
+    -ms-animation-delay: 0.25s;
+    -o-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}*/
+/* ----------------------------------------------------- */
+/* line 104, ../../app/styles/libs/animations.scss */
+.fade .view.ng-leave {
+  -webkit-animation-name: fadeOut;
+  -ms-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  position: absolute;
+}
+
+/* line 128, ../../app/styles/libs/animations.scss */
+.fade .view.ng-enter {
+  -webkit-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+/** Work Switcher  Animation **/
+/* line 155, ../../app/styles/libs/animations.scss */
+.work-switcher-animation.ng-enter {
+  transition: max-height .3s ease-out, opacity .3s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+/* line 166, ../../app/styles/libs/animations.scss */
+.work-switcher-animation.ng-enter.ng-enter-active {
+  max-height: 100px;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 6, ../../app/styles/main.scss */
+body {
+  font-family: Comfortaa, Helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  overflow-y: hidden;
+  background-color: #f6f6f6;
+  font-size: 100%;
+}
+/* line 1, ../../app/styles/assets/menu-top.scss */
+body md-toolbar {
+  min-width: 320px;
+}
+/* line 5, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header {
+  color: #333333;
+  background-color: #f6f6f6;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  z-index: 50;
+}
+/* line 14, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row #social-links {
+  width: 260px;
+  float: right;
+  margin: 0px;
+  position: absolute;
+  right: 26px;
+}
+/* line 22, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row #social-links div {
+  float: right;
+  width: 23px;
+  margin: 20px 7px 0;
+}
+/* line 28, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row #social-links div.linkedin {
+  margin: 18px 5px 0 7px;
+}
+/* line 32, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row #social-links div a {
+  display: block;
+  width: 100%;
+}
+/* line 37, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row #social-links div a img {
+  width: 100%;
+  height: auto;
+}
+/* line 49, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row #menu-splitter {
+  display: block;
+  content: ' ';
+  background: transparent url("../images/uis/gradient-line-vertical-darker.svg") repeat left center;
+  background-size: 1px 31px;
+  height: 31px;
+  width: 1px;
+  margin-top: 16px;
+  float: right;
+}
+/* line 62, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row button.menuBtn {
+  border: none;
+  outline: none;
+  width: 70px;
+  outline: none;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiB4bWw6c3BhY2U9InByZXNlcnZlIj48ZyBpZD0iSGVhZGVyIj4gICAgPGc+ICAgICAgICA8cmVjdCB4PSItNjE4IiB5PSItMjIzMiIgZmlsbD0ibm9uZSIgd2lkdGg9IjE0MDAiIGhlaWdodD0iMzYwMCIvPiAgICA8L2c+PC9nPjxnIGlkPSJMYWJlbCI+PC9nPjxnIGlkPSJJY29uIj4gICAgPGc+ICAgICAgICA8cmVjdCBmaWxsPSJub25lIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4gICAgICAgIDxwYXRoIGQ9Ik0zLDE4aDE4di0ySDNWMTh6IE0zLDEzaDE4di0ySDNWMTN6IE0zLDZ2MmgxOFY2SDN6IiBzdHlsZT0iZmlsbDojMzMzMzMzOyIvPiAgICA8L2c+PC9nPjxnIGlkPSJHcmlkIiBkaXNwbGF5PSJub25lIj4gICAgPGcgZGlzcGxheT0iaW5saW5lIj4gICAgPC9nPjwvZz48L3N2Zz4=) no-repeat center center;
+}
+/* line 72, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row h1.md-toolbar-tools {
+  letter-spacing: 2px !important;
+  max-width: 400px;
+}
+/* line 77, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row h1.md-toolbar-tools a {
+  outline: none;
+  color: #333333;
+  cursor: pointer;
+}
+/* line 83, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row h1.md-toolbar-tools a:link, body md-toolbar#header div#menu-row h1.md-toolbar-tools a:visited, body md-toolbar#header div#menu-row h1.md-toolbar-tools a:hover {
+  color: #333333;
+}
+/* line 87, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row h1.md-toolbar-tools a img {
+  width: 30px;
+  height: auto;
+  margin: 3px 7px 0px 0px;
+  float: left;
+}
+@media (min-width: 960px) {
+  /* line 87, ../../app/styles/assets/menu-top.scss */
+  body md-toolbar#header div#menu-row h1.md-toolbar-tools a img {
+    margin: 3px 7px 0 0;
+    width: 43px;
+  }
+}
+/* line 101, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row h1.md-toolbar-tools a img.spin-blow {
+  -webkit-animation: spin 1.5s ease-out;
+  animation: spin 1.5s ease-out;
+}
+/* line 109, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#menu-row h1.md-toolbar-tools a span {
+  float: left;
+  margin: 6px 9px 0 0;
+  font-size: 17px;
+}
+@media (min-width: 360px) {
+  /* line 109, ../../app/styles/assets/menu-top.scss */
+  body md-toolbar#header div#menu-row h1.md-toolbar-tools a span {
+    margin: 8px 0 0 8px;
+    font-size: 21px;
+  }
+}
+@media (min-width: 960px) {
+  /* line 109, ../../app/styles/assets/menu-top.scss */
+  body md-toolbar#header div#menu-row h1.md-toolbar-tools a span {
+    margin: 13px 7px 0 0;
+    font-size: 23px;
+  }
+}
+/* line 149, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#timeline-row div md-slider .md-slider-wrapper .md-thumb-container .md-thumb::after {
+  background-color: #333333;
+  border-color: #333333;
+}
+/* line 154, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#timeline-row div md-slider .md-slider-wrapper .md-thumb-container .md-thumb .md-focus-thumb {
+  color: #333333;
+}
+/* line 160, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#timeline-row div md-slider .md-slider-wrapper .md-thumb-container .md-sign {
+  background-color: #333333;
+}
+/* line 162, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#timeline-row div md-slider .md-slider-wrapper .md-thumb-container .md-sign::after {
+  border-top-color: #333333;
+}
+/* line 168, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#timeline-row div md-slider .md-slider-wrapper .md-thumb-container .md-sign .md-thumb-text {
+  font-size: 9px;
+  color: #f6f6f6;
+}
+/* line 181, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#timeline-row div .md-thumb-label {
+  font-size: 16px;
+  min-width: 56px;
+  padding: 0 7px;
+}
+@media (min-width: 960px) {
+  /* line 181, ../../app/styles/assets/menu-top.scss */
+  body md-toolbar#header div#timeline-row div .md-thumb-label {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 181, ../../app/styles/assets/menu-top.scss */
+  body md-toolbar#header div#timeline-row div .md-thumb-label {
+    font-size: 21px;
+  }
+}
+/* line 202, ../../app/styles/assets/menu-top.scss */
+body md-toolbar#header div#background-row {
+  display: none;
+}
+/* line 214, ../../app/styles/assets/menu-top.scss */
+body.home md-toolbar#header {
+  background-color: transparent;
+  position: fixed !important;
+  box-shadow: none;
+  transition: all .7s;
+  transition-delay: .7s;
+}
+/* line 232, ../../app/styles/assets/menu-top.scss */
+body.home md-toolbar#header div#menu-row {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  right: 0;
+}
+/* line 241, ../../app/styles/assets/menu-top.scss */
+body.home md-toolbar#header div#background-row {
+  background: #f6f6f6 none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  display: block;
+}
+/* line 261, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list {
+  padding: 0px;
+  height: 99.5%;
+  width: 100%;
+  position: absolute;
+}
+@media (max-height: 500px) {
+  /* line 261, ../../app/styles/assets/menu-top.scss */
+  body md-sidenav md-list {
+    height: 500px;
+  }
+}
+/* line 272, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item {
+  height: 25%;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 600px) {
+  /* line 272, ../../app/styles/assets/menu-top.scss */
+  body md-sidenav md-list md-item {
+    height: 22%;
+  }
+}
+@media (max-width: 320px) {
+  /* line 272, ../../app/styles/assets/menu-top.scss */
+  body md-sidenav md-list md-item {
+    height: 20%;
+  }
+}
+/* line 285, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item .md-button {
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  border-radius: 0px;
+  margin: 0px;
+  height: 100%;
+  padding-left: 15px;
+}
+/* line 296, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item .md-button.md-focused.md-default-theme:not([disabled]) {
+  background-color: transparent;
+}
+/* line 300, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item .md-button .md-item-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 306, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item .md-button .md-item-container img {
+  width: 50px;
+  height: 50px;
+}
+/* line 311, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item .md-button .md-item-container .md-list-item-text {
+  float: left;
+  margin: 18px 0 0 0;
+  font-size: 20px;
+}
+/* line 321, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item .md-button.selected {
+  background-color: rgba(158, 158, 158, 0.33);
+}
+/* line 325, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item #social-links-menu {
+  width: 270px;
+  float: right;
+  margin-right: 5px;
+}
+@media (max-width: 960px) {
+  /* line 325, ../../app/styles/assets/menu-top.scss */
+  body md-sidenav md-list md-item #social-links-menu {
+    margin-top: 10px;
+    margin-right: 22px;
+  }
+}
+/* line 336, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item #social-links-menu div {
+  float: right;
+  width: 23px;
+  margin: 20px 10px 0;
+}
+/* line 342, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item #social-links-menu div a {
+  display: block;
+  width: 100%;
+}
+/* line 347, ../../app/styles/assets/menu-top.scss */
+body md-sidenav md-list md-item #social-links-menu div a img {
+  width: 100%;
+  height: auto;
+}
+/* line 7, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer {
+  height: 333px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+  background: #1e5799;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #FFFFFF 0%, #A5D3FA 50%, #A5D3FA 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#A5D3FA',GradientType=0 );
+  /* IE6-9 */
+}
+@media (min-width: 600px) {
+  /* line 7, ../../app/styles/views/home.scss */
+  body div#ngview div#home .parallax-footer {
+    height: 733px;
+  }
+}
+/* line 29, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer .parallax-txt {
+  position: absolute;
+  bottom: 147px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5em;
+  color: #97C3E8;
+  text-shadow: 0px 0px 27px #FFF;
+  cursor: default;
+}
+@media (min-width: 600px) {
+  /* line 29, ../../app/styles/views/home.scss */
+  body div#ngview div#home .parallax-footer .parallax-txt {
+    font-size: 3.7em;
+    bottom: 363px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 29, ../../app/styles/views/home.scss */
+  body div#ngview div#home .parallax-footer .parallax-txt {
+    font-size: 2.7em;
+  }
+}
+@media (min-width: 1700px) {
+  /* line 29, ../../app/styles/views/home.scss */
+  body div#ngview div#home .parallax-footer .parallax-txt {
+    font-size: 6.7em;
+  }
+}
+/* line 55, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer .parallax-txt .parallax-reverse-text {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 65, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer .cloud-1 {
+  background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
+  background-size: contain;
+  width: 604px;
+  height: 733px;
+  position: absolute;
+  left: 0px;
+}
+/* line 74, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer .cloud-2 {
+  background: url(../images/parallax/cloud-2.png) no-repeat center top;
+  background-size: contain;
+  width: 615px;
+  height: 733px;
+  position: absolute;
+  right: 0px;
+}
+/* line 83, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer .cloud-3 {
+  background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
+  background-size: contain;
+  width: 666px;
+  height: 733px;
+  position: absolute;
+  left: 40%;
+}
+/* line 93, ../../app/styles/views/home.scss */
+body div#ngview div#home .parallax-footer .cloud-4 {
+  background: url(../images/parallax/cloud-4.png) no-repeat center bottom;
+  background-size: contain;
+  width: 666px;
+  height: 733px;
+  position: absolute;
+  left: 20%;
+}
+/* line 106, ../../app/styles/views/home.scss */
+body div#ngview div#home #home-desktop .parallax-wrapper {
+  width: 100%;
+  height: 536px;
+  background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media (min-width: 1200px) {
+  /* line 115, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured {
+    margin: 90px 0;
+  }
+}
+/* line 121, ../../app/styles/views/home.scss */
+body div#ngview div#home #home-featured h4 {
+  margin: 0px;
+}
+@media (max-width: 1200px) {
+  /* line 126, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #first-featured-item {
+    font-size: 0.75em;
+  }
+  /* line 132, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #first-featured-item h4 {
+    font-size: 1.3em;
+    margin-top: 17px;
+  }
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  /* line 126, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #first-featured-item {
+    font-size: 1.3em;
+  }
+  /* line 143, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #first-featured-item h4 {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 152, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item {
+    font-size: 0.75em;
+  }
+  /* line 158, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item h4 {
+    font-size: 1.3em;
+    margin-top: 17px;
+  }
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  /* line 152, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item {
+    font-size: 1.3em;
+  }
+  /* line 170, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item h4 {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 600px) and (max-width: 960px) {
+  /* line 152, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item {
+    margin-top: 33px;
+  }
+}
+/* line 182, ../../app/styles/views/home.scss */
+body div#ngview div#home #home-featured #third-featured-item img.md-avatar {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 960px) {
+  /* line 182, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item img.md-avatar {
+    margin: 0;
+    width: 60%;
+  }
+}
+@media (max-width: 960px) {
+  /* line 195, ../../app/styles/views/home.scss */
+  body div#ngview div#home #home-featured #third-featured-item h4 {
+    margin-top: 15px;
+  }
+}
+/* line 4, ../../app/styles/views/work.scss */
+body div#ngview section#work {
+  min-height: calc(100vh - 1277px);
+  margin: 16px 0;
+}
+/* line 9, ../../app/styles/views/work.scss */
+body div#ngview section#work h1.md-title {
+  margin-bottom: 0px;
+}
+/* line 13, ../../app/styles/views/work.scss */
+body div#ngview section#work md-card {
+  max-height: none;
+  background: #ffffff;
+  min-width: 47%;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 23, ../../app/styles/views/work.scss */
+body div#ngview section#work md-card.no-pointer {
+  cursor: default;
+}
+@media (max-width: 600px) {
+  /* line 13, ../../app/styles/views/work.scss */
+  body div#ngview section#work md-card {
+    margin-bottom: 56px !important;
+  }
+}
+@media (min-width: 960px) {
+  /* line 13, ../../app/styles/views/work.scss */
+  body div#ngview section#work md-card {
+    min-width: 46%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 13, ../../app/styles/views/work.scss */
+  body div#ngview section#work md-card {
+    min-width: 30%;
+  }
+}
+/* line 39, ../../app/styles/views/work.scss */
+body div#ngview section#work md-card .md-card-image {
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  pointer-events: none;
+}
+/* line 51, ../../app/styles/views/work.scss */
+body div#ngview section#work md-card .md-card-image img {
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  pointer-events: none;
+}
+/* line 69, ../../app/styles/views/work.scss */
+body div#ngview section#work md-card md-card-content p {
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+  pointer-events: none;
+}
+/* line 84, ../../app/styles/views/work.scss */
+body div#ngview section#work md-card .md-toolbar-tools {
+  background: #666666;
+  color: #f6f6f6;
+  font-size: 0.9em;
+}
+/* line 95, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description .work-spacer {
+  width: 100%;
+  height: 20px;
+  margin: 20px 0;
+}
+/* line 102, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description ul li {
+  margin-bottom: 25px;
+}
+/* line 107, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description .responsibilityIcon {
+  vertical-align: middle;
+  margin-right: 7px;
+  width: 24px;
+  height: auto;
+}
+/* line 114, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description .no-responsibility {
+  opacity: 0.15;
+}
+/* line 118, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description md-checkbox[disabled] {
+  cursor: default;
+}
+/* line 122, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description md-checkbox[disabled].md-default-theme.md-checked .md-icon {
+  background-color: #18B364;
+}
+/* line 126, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description md-card {
+  cursor: default;
+}
+/* line 130, ../../app/styles/views/work.scss */
+body div#ngview section#work .work-description .md-clickable {
+  cursor: default !important;
+}
+/* line 137, ../../app/styles/views/work.scss */
+body div#ngview section#work #actions {
+  position: fixed;
+  right: 16px;
+  bottom: 0px;
+}
+/* line 8, ../../app/styles/views/contact.scss */
+body div#ngview div#contact #social-contacts div {
+  float: right;
+  width: 23px;
+  margin: 20px 7px 0;
+}
+/* line 14, ../../app/styles/views/contact.scss */
+body div#ngview div#contact #social-contacts div.linkedin {
+  margin: 18px 5px 0 7px;
+}
+/* line 18, ../../app/styles/views/contact.scss */
+body div#ngview div#contact #social-contacts div a {
+  display: block;
+  width: 100%;
+}
+/* line 23, ../../app/styles/views/contact.scss */
+body div#ngview div#contact #social-contacts div a img {
+  width: 100%;
+  height: auto;
+}
+/* line 34, ../../app/styles/views/contact.scss */
+body div#ngview div#contact md-input-container.md-default-theme label, body div#ngview div#contact md-input-container.md-default-theme .md-placeholder {
+  color: #333333;
+}
+/* line 38, ../../app/styles/views/contact.scss */
+body div#ngview div#contact button.md-raised {
+  max-width: 66px;
+}
+/* line 4, ../../app/styles/views/about.scss */
+body div#ngview div#about {
+  min-height: calc(100vh - 1277px);
+}
+/* line 8, ../../app/styles/views/about.scss */
+body div#ngview div#about #home-about-tabs {
+  margin-top: 20px;
+}
+/* line 14, ../../app/styles/views/about.scss */
+body div#ngview div#about #home-about-tabs md-tab-content md-content {
+  margin-top: 33px;
+}
+/* line 18, ../../app/styles/views/about.scss */
+body div#ngview div#about #home-about-tabs md-tab-content md-content p {
+  margin-bottom: 33px;
+}
+/* line 23, ../../app/styles/views/about.scss */
+body div#ngview div#about #home-about-tabs md-tab-content md-content img {
+  width: 86px;
+  height: 86px;
+}
+@media (min-width: 960px) {
+  /* line 23, ../../app/styles/views/about.scss */
+  body div#ngview div#about #home-about-tabs md-tab-content md-content img {
+    width: 133px;
+    height: 133px;
+  }
+}
+/* line 39, ../../app/styles/views/about.scss */
+body div#ngview div#about #home-about-tabs md-tab-content md-content .home-brands .home-brand img {
+  width: 100%;
+  height: auto;
+}
+/* line 4, ../../app/styles/views/sophia.scss */
+body div#ngview div#sophia {
+  min-height: calc(100vh - 64px);
+}
+/* line 10, ../../app/styles/views/sophia.scss */
+body div#ngview div#sophia .home-desktop.parallax .parallax-wrapper {
+  width: 100%;
+}
+/* line 14, ../../app/styles/views/sophia.scss */
+body div#ngview div#sophia .home-desktop.parallax .parallax-wrapper .parallax-img {
+  background: url(../images/parallax/bg-parallax-sophia.gif) no-repeat center bottom;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 960px) {
+  /* line 14, ../../app/styles/views/sophia.scss */
+  body div#ngview div#sophia .home-desktop.parallax .parallax-wrapper .parallax-img {
+    background: url(../images/parallax/bg-parallax-sophia.gif) no-repeat center bottom;
+    background-size: 100%;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 14, ../../app/styles/views/sophia.scss */
+  body div#ngview div#sophia .home-desktop.parallax .parallax-wrapper .parallax-img {
+    background: url(../images/parallax/bg-parallax-sophia.gif) no-repeat center bottom;
+    background-size: cover;
+    height: 436px;
+  }
+}
+/* line 6, ../../app/styles/assets/footer.scss */
+body footer .pre-footer {
+  width: 100%;
+  height: 66px;
+  background: #FFFFFF;
+  background: linear-gradient(to bottom, #f6f6f6 0%, #FFFFFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='$white',GradientType=0 );
+}
+/* line 19, ../../app/styles/assets/footer.scss */
+body footer md-toolbar#footer {
+  background: #333333;
+  color: #f6f6f6;
+  font-size: 11px;
+}
+/* line 25, ../../app/styles/assets/footer.scss */
+body footer md-toolbar#footer .footer-left {
+  margin-left: 25px;
+}
+@media (max-width: 960px) {
+  /* line 25, ../../app/styles/assets/footer.scss */
+  body footer md-toolbar#footer .footer-left {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 960px) {
+  /* line 38, ../../app/styles/assets/footer.scss */
+  body footer md-toolbar#footer .footer-right .md-button.md-icon-button {
+    width: 27px;
+  }
+}
+/* line 46, ../../app/styles/assets/footer.scss */
+body footer md-toolbar#footer .footer-right img {
+  width: 112px;
+  height: auto;
+  float: right;
+  margin: 0 15px;
+}
+/* line 52, ../../app/styles/assets/footer.scss */
+body footer md-toolbar#footer .footer-right img.angular-logo-sm {
+  width: 36px;
+}
+
+/* line 5, ../../app/styles/libs/materialExtensions.scss */
+:focus {
+  outline: none;
+}
+
+/* line 6, ../../app/styles/libs/materialExtensions.scss */
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 9, ../../app/styles/libs/materialExtensions.scss */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 20, ../../app/styles/libs/materialExtensions.scss */
+.md-avatar {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 22px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  float: left;
+}
+
+/* line 29, ../../app/styles/libs/materialExtensions.scss */
+md-card {
+  outline: none !important;
+}
+
+/* line 34, ../../app/styles/libs/materialExtensions.scss */
+md-content.md-default-theme {
+  background-color: #f6f6f6;
+}
+
+/* line 39, ../../app/styles/libs/materialExtensions.scss */
+.content-splitter {
+  background: url("../images/uis/content-splitter.jpg") no-repeat center top transparent;
+  background-size: 97%;
+  height: 49px;
+  width: 100%;
+}
+
+/* line 46, ../../app/styles/libs/materialExtensions.scss */
+.content-splitter-inverted {
+  background: url("../images/uis/content-splitter-inverted.jpg") no-repeat center bottom transparent;
+  background-size: 97%;
+  height: 49px;
+  width: 100%;
+}
+
+/* line 53, ../../app/styles/libs/materialExtensions.scss */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: #ff5722;
+}
+
+/* line 58, ../../app/styles/libs/materialExtensions.scss */
+a:hover, a:active {
+  color: #ffa040;
+}
+
+/* line 63, ../../app/styles/libs/materialExtensions.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 74, ../../app/styles/libs/materialExtensions.scss */
+md-backdrop .md-sidenav-backdrop {
+  overflow: hidden;
+}
+
+/* line 80, ../../app/styles/libs/materialExtensions.scss */
+.content-pusher {
+  min-height: calc(100vh - 194px);
+}
+
+/* line 84, ../../app/styles/libs/materialExtensions.scss */
+.kill-animations {
+  transition-property: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2015 Daniel Eden
+*/
+/* line 8, ../../bower_components/animate-sass/helpers/_base.scss */
+body {
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 12, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* line 16, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 20, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/* line 24, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.bounceIn, .animated.bounceOut {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+/* line 29, ../../bower_components/animate-sass/helpers/_base.scss */
+.animated.flipOutX, .animated.flipOutY {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 17, ../../bower_components/animate-sass/animations/attention-seekers/_pulse.scss */
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+  }
+}
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+/* line 19, ../../bower_components/animate-sass/animations/attention-seekers/_tada.scss */
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 8, ../../bower_components/animate-sass/animations/fade-enter/_fadeIn.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 8, ../../bower_components/animate-sass/animations/fade-exit/_fadeOut.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/* line 6, ../../app/styles/directives/clickable.directive.scss */
+.clickable {
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+}
+/* line 12, ../../app/styles/directives/clickable.directive.scss */
+.clickable:hover {
+  -webkit-animation-name: pulse;
+  -ms-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.66s;
+  -ms-animation-duration: 0.66s;
+  animation-duration: 0.66s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 100%;
+}
+/* line 27, ../../app/styles/directives/clickable.directive.scss */
+.clickable.clicked {
+  -webkit-animation-name: tada;
+  -ms-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 0.66s;
+  -ms-animation-duration: 0.66s;
+  animation-duration: 0.66s;
+}
+
+/* line 4, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame {
+  height: 300px;
+  min-width: 290px;
+}
+@media (min-width: 600px) {
+  /* line 4, ../../app/styles/directives/device-frame.directive.scss */
+  .device-frame {
+    margin: 0 13px;
+    min-width: 0;
+  }
+}
+/* line 15, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame a {
+  position: relative;
+  display: block;
+}
+/* line 19, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame a:before {
+  content: ' ';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-image: url("../images/uis/ic_launch_24px.svg");
+  background-size: 46px 46px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: none;
+  height: 121px;
+  width: 200px;
+  opacity: 1;
+}
+/* line 40, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame a:hover:before {
+  display: block;
+  opacity: 0.7;
+}
+/* line 49, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame a:active:before {
+  display: none;
+}
+/* line 55, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame a img {
+  position: absolute;
+}
+/* line 62, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-sm {
+  background: transparent url("../images/uis/device-sm.svg") no-repeat top center;
+  background-size: contain;
+  width: 69px;
+  height: 129px;
+}
+/* line 70, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-sm a.df-sm-screen {
+  width: 60px;
+  height: 107px;
+  margin: 7px auto 0;
+}
+/* line 76, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-sm a.df-sm-screen img {
+  position: absolute;
+  max-width: 60px;
+  height: 107px;
+  clip: rect(0px, 60px, 107px, 0px);
+}
+/* line 83, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-sm a.df-sm-screen:before {
+  width: 60px;
+  height: 107px;
+}
+/* line 92, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-md {
+  background: transparent url("../images/uis/device-md.svg") no-repeat top center;
+  background-size: contain;
+  width: 138px;
+  height: 171px;
+}
+/* line 99, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-md a.df-md-screen {
+  width: 120px;
+  height: 150px;
+  margin: 10px auto 0;
+}
+/* line 105, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-md a.df-md-screen img {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  clip: rect(0px, 120px, 150px, 0px);
+}
+/* line 113, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-md a.df-md-screen:before {
+  width: 120px;
+  height: 150px;
+}
+/* line 122, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-lg {
+  background: transparent url("../images/uis/device-lg.svg") no-repeat top center;
+  background-size: contain;
+  width: 274px;
+  height: 160px;
+}
+/* line 130, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-lg a.df-lg-screen {
+  width: 200px;
+  height: 121px;
+  margin: 15px auto 0;
+}
+/* line 136, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-lg a.df-lg-screen img {
+  position: absolute;
+  max-width: 200px;
+  height: auto;
+  clip: rect(0px, 200px, 120px, 0px);
+}
+/* line 148, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-gt-lg {
+  background: transparent url("../images/uis/device-gt-lg.svg") no-repeat top center;
+  background-size: contain;
+  width: 295px;
+  height: 239px;
+}
+/* line 155, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-gt-lg a.df-gt-lg-screen {
+  width: 280px;
+  height: 180px;
+  margin: 15px auto 0;
+}
+/* line 161, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-gt-lg a.df-gt-lg-screen img {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  clip: rect(0px, 280px, 180px, 0px);
+}
+/* line 169, ../../app/styles/directives/device-frame.directive.scss */
+.device-frame .df-gt-lg a.df-gt-lg-screen:before {
+  width: 280px;
+  height: 180px;
+}

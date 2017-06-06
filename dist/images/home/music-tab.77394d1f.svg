@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="musicIcon.fw-Page%201" viewBox="0 0 448 448" style="background-color:#e4e4e4" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="448px" height="448px"
+>
+	<defs>
+		<linearGradient id="gradient1" x1="50%" y1="0%" x2="50%" y2="100%">
+			<stop stop-color="#a32901" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#d93602" stop-opacity="1" offset="100%"/>
+		</linearGradient>
+		<linearGradient id="gradient2" x1="50%" y1="0%" x2="50%" y2="100%">
+			<stop stop-color="#3b85b0" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#327094" stop-opacity="1" offset="100%"/>
+		</linearGradient>
+		<linearGradient id="gradient3" x1="50%" y1="0%" x2="50%" y2="100%">
+			<stop stop-color="#e17c00" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#ff9c22" stop-opacity="1" offset="100%"/>
+		</linearGradient>
+	</defs>
+	<g id="Layer%201">
+		<image visibility="hidden" x="-307" y="-644" width="1483" height="1112" xlink:href="music-tab.svg.images/image1.png"/>
+		<g>
+			<path d="M 376.8983 252.558 C 360.2868 281.8176 248.6755 360.6974 216.1982 341.9088 C 208.0762 337.21 202.1901 309.7744 199.4617 299.466 C 192.7453 258.5313 196.2132 188.8761 214.0105 158.0867 C 240.1434 112.8768 291.7253 127.7694 327.1118 148.3141 C 354.4422 164.1816 404.482 203.9717 376.8983 252.558 Z" fill="url(#gradient1)"/>
+			<path d="M 315.433 216.4416 C 306.8824 249.0711 219.4397 353.8398 183.3664 344.0515 C 174.3553 341.6064 161.6217 316.7427 156.3411 307.5324 C 139.3203 269.8985 124.627 201.9687 133.7346 167.6663 C 147.1361 117.1915 200.6956 118.0057 240.2116 128.5659 C 270.7849 136.7362 329.6622 162.143 315.433 216.4416 Z" fill="url(#gradient2)"/>
+			<path d="M 239.0588 190.2353 C 247.8319 222.7563 224.1386 357.0396 188.099 366.7426 C 179.0891 369.1683 155.708 354.1459 146.5505 348.8596 C 113.037 324.9374 66.3193 273.563 57.0588 239.2353 C 43.4118 188.6471 90.4554 162.4158 130.099 151.7426 C 160.7327 143.495 224.437 136.0336 239.0588 190.2353 Z" fill="url(#gradient3)"/>
+		</g>
+	</g>
+</svg>
