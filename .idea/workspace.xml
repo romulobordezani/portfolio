@@ -2,344 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a50fbc7-c126-4176-a5dd-20c9cc26dc36" name="Default" comment="Ddding Travis Deploy debuging">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0364ea2b1871eeb42f4b58ecf76415cc00437a4d/_animate.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0bedab1a70c6760adcef73ceea1e33ec4426edaa/_base.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0bedab1a70c6760adcef73ceea1e33ec4426edaa/_mixins.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/0bedab1a70c6760adcef73ceea1e33ec4426edaa/_settings.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_bounce.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_flash.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_pulse.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_shake.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_swing.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_tada.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_wiggle.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_wobble.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomIn.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/about.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/contact.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/home.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/sophia.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/work.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceIn.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOut.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/4f64bb12012a2532c534e56ac8ee589063c21ba5/clickable.directive.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/4f64bb12012a2532c534e56ac8ee589063c21ba5/device-frame.directive.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/58b0dc0e0d1554e70a3e218f58774c3e9a02801f/footer.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/58b0dc0e0d1554e70a3e218f58774c3e9a02801f/menu-top.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateIn.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInDownLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInDownRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInUpLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInUpRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOut.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutDownLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutDownRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutUpLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutUpRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/animations.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/browsehappy.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/colors.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/materialExtensions.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/measures.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOut.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOut.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutDownBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutLeftBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutRightBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutUpBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/b6d2bb6a24dfa8c36a1d5b5787155d12f92e838b/_lightSpeedIn.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/b6d2bb6a24dfa8c36a1d5b5787155d12f92e838b/_lightSpeedOut.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flip.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipInX.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipInY.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipOutX.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipOutY.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/d31e207af1128e04d766910e329d7a31ff29f8d1/main.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/e5b404fc2b992a761f6b1062dc7a1f06477c30d0/_hinge.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/e5b404fc2b992a761f6b1062dc7a1f06477c30d0/_rollIn.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/e5b404fc2b992a761f6b1062dc7a1f06477c30d0/_rollOut.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeIn.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInDown.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInDownBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInLeft.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInLeftBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInRight.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInRightBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInUp.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInUpBig.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/americanas.45bcf188.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/bol.3cd33698.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/claro.7cb978c7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/folha.c70d06ed.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/hands-on.8cbfafce.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/hotec.50cb3f7b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/ht.7befe2f2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/itau.afeef418.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/oas.1f41dc6b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/sky.b3d06741.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/unip.9912d851.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/uol.c9429860.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/zip.43bd5fe8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/git/rb-index.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/avatar.c3c8990e.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/girl.f5b82117.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/ogimage.a6017641.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax-about.bc6416ec.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax-bkp.03d98817.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax-sm-about.1699247c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax-sm.57ac83b3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax-sophia.6b1aed77.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax.22e74d58.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/bg-parallax.4f15fca1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/cloud-1.5f503bfb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/cloud-2.569fccf9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/cloud-3.ec8f7921.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/cloud-4.fe5a6288.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/cock1.f855ace2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/cock2.be1a0f9f.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/content-splitter-inverted.155d144f.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/content-splitter.bb1a8a8b.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/gt-lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/gt-lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/gt-lg2-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/gt-lg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/md-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/sm-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2014/2/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/1/cloudy-footer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/1/forsters-and-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/1/me-at-google.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/gt-lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/gt-lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/md-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/sm-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/3/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/gt-lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/gt-lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/md-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/sm-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/4/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/5/gt-lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/5/gt-lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/5/gt-lg2-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/5/gt-lg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/5/lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/5/lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/index/laad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/index/own-portfolio-creative.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/index/own-portfolio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/index/pipeline.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/index/sac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2015/index/sacbol.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/gt-lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/gt-lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/lg-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/lg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/md-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/md.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/sm-thumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/1/sm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/index/lofty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/index/lofty1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/index/lofty2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/index/lofty3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/2016/index/lofty4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/appendit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/clubeuol.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/criato.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/executioner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/extranet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/firefox-extension.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/lcb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/linklist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/martha-gabriel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/medial.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/modernet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/natal-veriz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/odebrecht.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/priefert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/sac-architecture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/saca.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/saca2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/semac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/sophie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/work/tupperware.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/portfolio_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/concat/scripts/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/concat/scripts/vendor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tmp/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/americanas.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/bol.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/claro.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/folha.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/hotec.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/ht.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/itau.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/oas.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/sky.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/unip.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/uol.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/brands/_notes/zip.jpg.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/contact/ic_email_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/contact/ic_person_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/contact/ic_phone_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/contact/ic_place_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/coding-img-tab.07830b32.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/coffee.ed60f959.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/education-icon.f0a80984.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/games.f7854ac7.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/music-tab.77394d1f.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/romulobordezani.6befa565.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/usb-heart-transparent.60df7d4e.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/home/usb-heart.f4f08e86.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/about.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/blog.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/contact.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/flash.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/home.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/sophia.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/menu/work.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/_notes/cloud-2.png.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/parallax/_notes/cloud-3.png.mno" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico-github.2cd7f1a7.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico_facebook.c5070d88.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico_google.1e8eb305.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico_linkedin.5ca4db0d.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico_soundcloud.30cccbde.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico_soundcloud_orange.f84b6b9e.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/socials/ico_twitter.7a50b05a.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/angular-logo-sm.0ad1113f.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/angular-logo.74797531.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/backTolist-centered.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/backTolist.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/device-gt-lg.9d21854f.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/device-lg.35adeb8e.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/device-md.d308e534.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/device-sm.4a9064c5.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/gradient-line-horizontal.6486df94.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/gradient-line-vertical-darker.62fca891.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/gradient-line-vertical.1c7233ea.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_close_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_cloud_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_code_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_db_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_eye_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_goto_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_launch_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_launch_black_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_paper_plane_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_pause_circle_outline_black_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_play_circle_outline_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_play_circle_outline_black_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_radio_black_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_skip_next_black_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_skip_previous_black_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_test_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/ic_ux_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/logo.d14158ef.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/images/uis/menu-icon.c42b098c.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index.tocompile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/scripts.d6a39c37.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/scripts/vendor.e264eb3f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/main.ae661f15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/styles/vendor.93887055.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/contact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/games.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/includes/browse-happy.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/includes/favicon-cacher.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/includes/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/includes/menu-top.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/includes/ng-view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/includes/pre-loader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/sophia.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/templates/deviceFrame.directive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/templates/responsibilities.directive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2002/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2003/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2004/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2005/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2006/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2007/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2008/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2009/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2010/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2011/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2012/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2013/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/03.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/04.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/05.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/06.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2014/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2015/01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2015/02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2015/03.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2015/04.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2015/05.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2015/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2016/01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2016/02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2016/03.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2016/04.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2016/05.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/views/work/2016/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0364ea2b1871eeb42f4b58ecf76415cc00437a4d/_animate.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0bedab1a70c6760adcef73ceea1e33ec4426edaa/_base.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0bedab1a70c6760adcef73ceea1e33ec4426edaa/_mixins.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/0bedab1a70c6760adcef73ceea1e33ec4426edaa/_settings.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_bounce.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_flash.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_pulse.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_shake.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_swing.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_tada.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_wiggle.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/11c9945883d545c37e45c982f42ac0531df95f82/_wobble.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomIn.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/1b86202e78aac752ae455559c60f59dab67f95a6/_zoomInUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/about.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/contact.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/home.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/sophia.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/3170a913caf2b7e488dc93bef9b494e7db8f3a60/work.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceIn.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/32010ac2c8200a004a27e90db9f64755b56b0b48/_bounceInUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOut.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/43b571e9be246d4a89d294c69f44957b14e7f0f8/_zoomOutUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/4f64bb12012a2532c534e56ac8ee589063c21ba5/clickable.directive.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/4f64bb12012a2532c534e56ac8ee589063c21ba5/device-frame.directive.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/58b0dc0e0d1554e70a3e218f58774c3e9a02801f/footer.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/58b0dc0e0d1554e70a3e218f58774c3e9a02801f/menu-top.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateIn.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInDownLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInDownRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInUpLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/5dcd9b515e0a1850e0fb7fba90702aa12e975b21/_rotateInUpRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/736ae06d896c545d48093e910533875e57ef8e6b/_slideOutUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOut.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutDownLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutDownRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutUpLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9579d59607bdd06c6d5f8a277de463653f6412b6/_rotateOutUpRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/animations.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/browsehappy.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/colors.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/materialExtensions.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/9ed49f909384647c85bff0aac15dbe1dae398054/measures.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOut.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a4fe5efa86d0385d11a6d63c0f54b2c4480f0554/_bounceOutUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOut.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutDownBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutLeftBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutRightBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/a5cbffbaae804c418603b7d550a23fa29dffe1f0/_fadeOutUpBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b6d2bb6a24dfa8c36a1d5b5787155d12f92e838b/_lightSpeedIn.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/b6d2bb6a24dfa8c36a1d5b5787155d12f92e838b/_lightSpeedOut.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flip.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipInX.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipInY.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipOutX.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/bb818b4974fed961c213e3abca87dbcf991b555e/_flipOutY.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/d31e207af1128e04d766910e329d7a31ff29f8d1/main.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/deec9fe8944544c6308c5476108cb76a4ce0519a/_slideInUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e5b404fc2b992a761f6b1062dc7a1f06477c30d0/_hinge.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e5b404fc2b992a761f6b1062dc7a1f06477c30d0/_rollIn.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/e5b404fc2b992a761f6b1062dc7a1f06477c30d0/_rollOut.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeIn.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInDown.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInDownBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInLeft.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInLeftBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInRight.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInRightBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInUp.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.sass-cache/eaf981a0cae7e15023f5079efe9f79b064e946aa/_fadeInUpBig.scssc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.tmp/concat/scripts/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.tmp/concat/scripts/vendor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.tmp/styles/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/deploy.sh" afterPath="$PROJECT_DIR$/scripts/deploy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -383,8 +143,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -648,7 +408,7 @@
       <workItem from="1473953848606" duration="862000" />
       <workItem from="1495203849179" duration="781000" />
       <workItem from="1496769067861" duration="11023000" />
-      <workItem from="1496784336337" duration="198000" />
+      <workItem from="1496784336337" duration="422000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the dist">
       <created>1495203947708</created>
@@ -710,7 +470,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97576000" />
+    <option name="totallyTimeSpent" value="97800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
@@ -1095,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
