@@ -6,9 +6,9 @@ before_script:
 - npm install -g bower grunt-cli
 - bower install
 before_install:
-- rvm install 2.2.2
 - openssl aes-256-cbc -K $encrypted_ca2cf7ff4d4e_key -iv $encrypted_ca2cf7ff4d4e_iv
   -in travis_rsa.enc -out travis_rsa -d
+- rvm install 2.2.2
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
@@ -16,13 +16,13 @@ addons:
   ssh_known_hosts: romulobordezani.com.br
 branches:
   only:
-    - master
+  - master
 script:
-  - grunt build
+- grunt build
 deploy:
   skip_cleanup: true
   provider: script
-  script: .scripts/deploy.sh
+  script: ".scripts/deploy.sh"
   on:
     all_branches: true
 notifications:
