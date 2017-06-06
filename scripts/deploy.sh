@@ -7,7 +7,7 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
 
     # setup ssh agent, git config and remote
     eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/travis_rsa
+    ssh-add ~/.ssh/digitalocean
     git remote add deploy "travis@romulobordezani.com.br:/var/www/romulobordezani.com.br"
     git config user.name "travis"
     git config user.email "romulobordezani@gmail.com"
