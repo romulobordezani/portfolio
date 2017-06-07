@@ -360,25 +360,6 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
-            },
-
-            openshift : {
-
-                files: [
-                    {
-                        expand: true,
-                        cwd: '<%= yeoman.dist %>/',
-                        dest: '../web',
-                        src: '**/*.*'
-                    }/*,
-                    {
-                        expand: true,
-                        cwd: './',
-                        dest: '../web',
-                        src: 'server.js'
-                    }*/
-                ]
-
             }
         },
 
@@ -479,8 +460,7 @@ module.exports = function (grunt) {
         'filerev',
         'usemin',
         'includes:dist',
-        'htmlmin',
-        'copy:openshift'
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [

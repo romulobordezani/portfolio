@@ -1,0 +1,16 @@
+node_modules
+.idea
+dist
+.tmp
+.sass-cache
+.git
+bower_components
+.DS_Store
+.svn
+log/*.log
+logs/*
+.idea
+npm-debug.log
+enviangular.php
+enviadado
+_notes
