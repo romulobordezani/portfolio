@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- 4.3.1
+- 4.0.0
 addons:
   ssh_known_hosts: romulobordezani.com.br
 branches:
@@ -14,6 +14,7 @@ before_install:
 - chmod 600 ~/.ssh/travis_rsa
 before_script:
 - gem install compass
+- npm install
 - npm install -g bower grunt-cli
 - bower install
 script:
