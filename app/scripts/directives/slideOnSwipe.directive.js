@@ -31,12 +31,12 @@ angular.module('slideOnSwipe', []).directive( 'slideOnSwipe', [ 'swipe', '$rootS
 
                             var delta = coords.x - pointX;
 
-                            if( scope.onlyLeft && coords.x >= ( startX + 66 ) ){
+                            if( scope.onlyLeft && coords.x <= ( startX + 66 ) ){
                                 comeBackToInitialPosition();
                                 return null;
                             }
 
-                            if( scope.onlyRight && coords.x <= ( startX - 66 ) ){
+                            if( scope.onlyRight && coords.x >= ( startX - 66 ) ){
                                 comeBackToInitialPosition();
                                 return null;
                             }
@@ -47,24 +47,24 @@ angular.module('slideOnSwipe', []).directive( 'slideOnSwipe', [ 'swipe', '$rootS
 
                         'end': function(coords) {
 
-                            if( scope.onlyLeft && coords.x >= startX ){
+                            if( scope.onlyLeft && coords.x <= startX ){
                                 comeBackToInitialPosition();
                                 $rootScope.swiping = false;
                                 return null;
                             }
 
-                            if( scope.onlyRight && coords.x <= startX ){
+                            if( scope.onlyRight && coords.x >= startX ){
                                 comeBackToInitialPosition();
                                 $rootScope.swiping = false;
                                 return null;
                             }
 
 
-                            if( coords.x <= startX ){
+                            if( coords.x >= startX ){
                                 scope.$parent.swipeRight();
                             }
 
-                            if( coords.x >= startX ){
+                            if( coords.x <= startX ){
                                 scope.$parent.swipeLeft();
                             }
 

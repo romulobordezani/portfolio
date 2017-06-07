@@ -14,21 +14,25 @@ body {
 
     @import 'assets/menu-top.scss';
 
+    md-content#ngview-container{
 
-    div#ngview {
+        div#ngview {
 
-        @import 'views/home';
-        @import 'views/work';
-        @import 'views/contact';
-        @import 'views/about';
-        @import 'views/sophia';
+            @import 'views/home';
+            @import 'views/work';
+            @import 'views/contact';
+            @import 'views/about';
+            @import 'views/sophia';
+
+        }
+
+        @import 'assets/footer';
 
     }
-
-    @import 'assets/footer';
 
 }
 
 @import 'libs/materialExtensions';
+@import 'libs/content_pusher';
 @import 'directives/clickable.directive';
 @import 'directives/device-frame.directive';

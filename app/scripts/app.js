@@ -19,7 +19,7 @@ angular
     ])
 
     .config(
-        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider ) {
+        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider, $locationProvider ) {
             $routeProvider
 
                 .when('/', {
@@ -34,12 +34,6 @@ angular
                     templateUrl: 'views/about.html',
                     controller: 'aboutController',
                     animation: 'fade'
-                })
-
-                .when('/sophia', {
-                    templateUrl: 'views/sophia.html',
-                    animation: 'fade',
-                    routeclass : 'home'
                 })
 
                 .when('/work/:year/:current', {
@@ -59,7 +53,8 @@ angular
                     },
 
                     controller: 'workController',
-                    animation: 'fade'
+                    animation: 'fade',
+                    routeclass : 'work'
                 })
 
                 .when('/work/:year', {
@@ -67,12 +62,14 @@ angular
                         return 'views/work/' + urlattr.year + '/index.html';
                     },
                     controller: 'workController',
-                    animation: 'fade'
+                    animation: 'fade',
+                    routeclass : 'work'
                 })
 
                 .when('/work/', {
                     redirectTo: '/work/2016',
-                    animation: 'fade'
+                    animation: 'fade',
+                    routeclass : 'work'
                 })
 
                 .when('/contact', {
@@ -102,7 +99,7 @@ angular
             plangularConfigProvider.clientId = 'a5f0b5300855bcc76cb9957762d89deb';
 
 
-            //$locationProvider.html5Mode(true);
+            $locationProvider.html5Mode(true);
 
         }
 
@@ -125,9 +122,9 @@ angular
 
         $http.get('views/contact.html', { cache: $templateCache }).then(function(){
 
-            $http.get('views/work/2015/index.html', { cache: $templateCache }).then(function() {
+            $http.get('views/work/2016/index.html', { cache: $templateCache }).then(function() {
 
-                $http.get('views/home.html', { cache: $templateCache });
+                $http.get('views/about.html', { cache: $templateCache });
 
             });
 
@@ -147,7 +144,7 @@ angular
         ].join('\r\n');
 
 
-        console.log('%c'+signature, 'font-size: 13px; color: #333333; background: #F6F6F6; ');
+        console.log('%c'+signature, 'font-size: 11px; color: #333333; background: #F6F6F6; ');
 
     }
 );
