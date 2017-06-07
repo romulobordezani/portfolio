@@ -1,6 +1,6 @@
 'use strict';
-angular.module('slideOnSwipe', []).directive( 'slideOnSwipe', [ '$swipe', '$rootScope',
-        function( $swipe, $rootScope ) {
+angular.module('slideOnSwipe', []).directive( 'slideOnSwipe', [ 'swipe', '$rootScope',
+        function( swipe, $rootScope ) {
 
             return {
 
@@ -15,30 +15,61 @@ angular.module('slideOnSwipe', []).directive( 'slideOnSwipe', [ '$swipe', '$root
 
                     var startX, pointX;
 
-                    $swipe.bind(ele, {
+                    function comeBackToInitialPosition(){
+                        angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                    }
 
-                        'start': function(coords) {
+                    swipe.bind(ele, {
+
+                        'start': function( coords ){
                             startX = coords.x;
-                            pointX = coords.y;
+                            pointX = coords.x;
                             $rootScope.swiping = true;
                         },
 
-                        'move': function(coords) {
+                        'move': function( coords ){
+
                             var delta = coords.x - pointX;
+
+                            /*if( scope.onlyLeft && coords.x >= startX ){
+                                comeBackToInitialPosition();
+                                return null;
+                            }
+
+                            if( scope.onlyRight && coords.x <= startX ){
+                                comeBackToInitialPosition();
+                                return null;
+                            }*/
+
                             angular.element(ele).parent().css('transform','translate3d(' + delta + 'px,0,0)');
+
                         },
 
                         'end': function(coords) {
 
-                            if( scope.onlyLeft && coords.x <= startX ){
-                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                            if( scope.onlyLeft && coords.x >= startX ){
+                                comeBackToInitialPosition();
+                            }
+
+                            if( scope.onlyRight && coords.x <= startX ){
+                                comeBackToInitialPosition();
+                            }
+
+
+
+                            console.log( coords.x , startX );
+
+
+                            if( scope.onlyLeft &&  coords.x <= startX ){
+                                scope.$parent.swipeRight();
                             }
 
                             if( scope.onlyRight && coords.x >= startX ){
-                                angular.element(ele).parent().css('transform','translate3d(0px,0,0)');
+                                scope.$parent.swipeLeft();
                             }
 
                             $rootScope.swiping = false;
+
 
                         },
 

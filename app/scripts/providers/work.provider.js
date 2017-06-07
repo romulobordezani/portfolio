@@ -9,6 +9,8 @@ angular.module('rbApp')
 
             this.rebuildUrl = function(){
 
+                console.log( year );
+
                 $timeout( function(){
                     var currentValue = current ? '/' + current : '';
                     $location.path( '/work/' + year +  currentValue );
@@ -98,7 +100,7 @@ angular.module('rbApp')
 
 /* jshint ignore:start */
 
-angular.module('rbApp').factory('$swipe', [function() {
+angular.module('rbApp').factory('swipe', [function() {
     // The total distance in any direction before we make the call on swipe vs. scroll.
     var MOVE_BUFFER_RADIUS = 10;
 
