@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Hello World"
+
 # print outputs and exit on first failure
 set -xe
 
