@@ -112,18 +112,19 @@ md-toolbar {
                         margin: 6px 9px 0 0;
                         font-size: 17px;
 
-                        @media ( min-width : 360px ){
+                        @media ( max-width : 360px ){
+                            margin: 11px 0 0 8px;
+                            font-size: 16px;
+                        }
 
+                        @media ( min-width : 361px ){
                             margin: 8px 0 0 8px;
                             font-size: 21px;
-
                         }
 
                         @media ( min-width : $flex-md ){
-
                             margin: 13px 7px 0 0;
                             font-size: 23px;
-
                         }
 
                     }

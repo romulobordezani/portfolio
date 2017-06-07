@@ -1,6 +1,6 @@
 'use strict';
-angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe', '$rootScope',
-        function($swipe,$rootScope) {
+angular.module('slideOnSwipe', []).directive( 'slideOnSwipe', [ '$swipe', '$rootScope',
+        function( $swipe, $rootScope ) {
 
             return {
 
@@ -11,7 +11,7 @@ angular.module('slideOnSwipe', []).directive('slideOnSwipe', [ '$swipe', '$rootS
                     onlyRight : '='
                 },
 
-                link: function(scope, ele /* , attrs, ctrl */ ) {
+                link: function(scope,ele /*   , attrs, ctrl */ ) {
 
                     var startX, pointX;
 

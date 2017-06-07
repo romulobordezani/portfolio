@@ -25,7 +25,7 @@ angular.module('rbApp')
 
 
             this.goTo = function(url,target){
-                
+
                 var isntAnAngularUrl = url.indexOf('http' ) >= 0 ? true : false || url.indexOf('/images' ) === 0 ;
 
                 if( isntAnAngularUrl ){
@@ -45,6 +45,7 @@ angular.module('rbApp')
 
                 }else{
                     url = url.replace('#', '');
+                    console.log( url );
                     $location.path(url);
                 }
             };

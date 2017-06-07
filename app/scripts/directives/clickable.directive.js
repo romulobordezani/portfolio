@@ -14,7 +14,7 @@ angular.module('addClassOnClick', []).directive('clickable', [ 'Utils', '$timeou
                     element.addClass('clicked');
 
                     $timeout(function(){
-                        Utils.goTo(attrs.clickableUrl, attrs.clickableTarget);
+                        Utils.goTo( attrs.clickableUrl, attrs.clickableTarget );
                         element.removeClass('clicked');
                     }, 666 );
 

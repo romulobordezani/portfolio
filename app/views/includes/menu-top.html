@@ -12,7 +12,7 @@
             <a alt="Home" ng-click="blowOnClick();" ><img ng-class=" { 'spin-blow' : blow }" src="images/uis/logo.svg" /><span>Rômulo Bordezani</span></a>
         </h1>
 
-        <div id="social-links" class="noselect" hide-sm >
+        <div id="social-links" class="noselect" hide-xs >
             <div><a ng-href="https://www.facebook.com/romulobordezani" target="_BLANK" ><img src="images/socials/ico_facebook.svg"  /></a></div>
             <div><a href ng-href="https://soundcloud.com/romulo-bordezani" target="_BLANK" ><img src="images/socials/ico_soundcloud.svg" /></a></div>
             <div><a href ng-href="https://plus.google.com/104483918654914497308/posts" target="_BLANK" ><img src="images/socials/ico_google.svg"  /></a></div>
@@ -42,7 +42,7 @@
     <md-list layout="column" layout-align="space-around right"    >
 
         <md-item ng-repeat="item in leftMenuList"  >
-            <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" ng-swipe-left="swipeLeftMenu()" >
+            <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" md-swipe-left="swipeLeftMenu()" >
                 <div class="md-item-container"  >
                     <img ng-src="{{item.imgsrc}}" class="md-avatar" alt="{{item.alt}}" />
                     <div class="md-list-item-text">{{item.label}}</div>

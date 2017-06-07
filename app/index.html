@@ -125,7 +125,7 @@
                     <a alt="Home" ng-click="blowOnClick();" ><img ng-class=" { 'spin-blow' : blow }" src="images/uis/logo.svg" /><span>Rômulo Bordezani</span></a>
                 </h1>
 
-                <div id="social-links" class="noselect" hide-sm >
+                <div id="social-links" class="noselect" hide-xs >
                     <div><a ng-href="https://www.facebook.com/romulobordezani" target="_BLANK" ><img src="images/socials/ico_facebook.svg"  /></a></div>
                     <div><a href ng-href="https://soundcloud.com/romulo-bordezani" target="_BLANK" ><img src="images/socials/ico_soundcloud.svg" /></a></div>
                     <div><a href ng-href="https://plus.google.com/104483918654914497308/posts" target="_BLANK" ><img src="images/socials/ico_google.svg"  /></a></div>
@@ -155,7 +155,7 @@
             <md-list layout="column" layout-align="space-around right"    >
 
                 <md-item ng-repeat="item in leftMenuList"  >
-                    <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" ng-swipe-left="swipeLeftMenu()" >
+                    <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" md-swipe-left="swipeLeftMenu()" >
                         <div class="md-item-container"  >
                             <img ng-src="{{item.imgsrc}}" class="md-avatar" alt="{{item.alt}}" />
                             <div class="md-list-item-text">{{item.label}}</div>
@@ -188,7 +188,7 @@
                     <md-toolbar id="footer" layout="row" >
 
                         <div layout="row" layout-align="start center" layout-padding class="footer-left" flex flex-sm="30" >
-                            <div hide-sm > &nbsp; Rômulo Bordezani </div><md-button class="md-primary" ng-href="#/contact" ng-if="contactButtonVisibility" >contact</md-button>
+                            <div hide-sm > &nbsp; Rômulo Bordezani </div><md-button class="md-primary" ng-href="#!/contact" ng-if="contactButtonVisibility" >contact</md-button>
                         </div>
 
                         <div layout="row" layout-align="end center" layout-padding class="footer-right" flex ng-class="{ 'visually-hidden' : onWorkPage }" >
@@ -199,16 +199,16 @@
 
                                 <a ng-href="{{track.permalink_url}}"><img src="images/socials/ico_soundcloud_orange.svg" style="width: 30px; margin-top: 10px;" /></a>
 
-                                <md-button class="md-icon-button md-hue-1" ng-click="previous()" >
+                                <md-button class="md-icon-button md-hue-1" ng-click="previous()" aria-label="previous">
                                     <md-icon md-svg-src="images/uis/ic_skip_previous_black_24px.svg"></md-icon>
                                 </md-button>
 
-                                <md-button class="md-icon-button md-accent" ng-click="playPause(index)" id="radioPlayer" >
+                                <md-button class="md-icon-button md-accent" ng-click="playPause(index)" id="radioPlayer" aria-label="play / pause"  >
                                     <md-icon ng-if="player.playing !== track.src" md-svg-src="images/uis/ic_play_circle_outline_black_24px.svg"></md-icon>
                                     <md-icon ng-if="player.playing === track.src" md-svg-src="images/uis/ic_pause_circle_outline_black_24px.svg"></md-icon>
                                 </md-button>
 
-                                <md-button class="md-icon-button md-accent" ng-click="next()" >
+                                <md-button class="md-icon-button md-accent" ng-click="next()" aria-label="next"  >
                                     <md-icon md-svg-src="images/uis/ic_skip_next_black_24px.svg"></md-icon>
                                 </md-button>
 
@@ -238,12 +238,11 @@
             <!-- bower:js -->
             <script src="bower_components/angular/angular.js"></script>
             <script src="bower_components/angular-animate/angular-animate.js"></script>
+            <script src="bower_components/angular-aria/angular-aria.js"></script>
             <script src="bower_components/angular-cookies/angular-cookies.js"></script>
             <script src="bower_components/angular-resource/angular-resource.js"></script>
             <script src="bower_components/angular-route/angular-route.js"></script>
             <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-            <script src="bower_components/angular-touch/angular-touch.js"></script>
-            <script src="bower_components/angular-aria/angular-aria.js"></script>
             <script src="bower_components/angular-messages/angular-messages.js"></script>
             <script src="bower_components/angular-material/angular-material.js"></script>
             <script src="bower_components/favico.js/favico.js"></script>
@@ -284,7 +283,7 @@
             <script src="scripts/filters/randomize.filter.js"></script>
 
 
-            <script src="scripts/extendedMaterial/tabs.js"></script>
+            <!--script src="scripts/extendedMaterial/tabs.js"></script-->
 
             <!-- endbuild -->
 
