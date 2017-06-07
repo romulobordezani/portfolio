@@ -1,9 +1,6 @@
 language: node_js
 node_js:
 - 4.3.1
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 addons:
   ssh_known_hosts: romulobordezani.com.br
 branches:
@@ -17,9 +14,6 @@ before_install:
 - chmod 600 ~/.ssh/travis_rsa
 script:
 - gem install compass
-- npm install -g bower grunt-cli
-- bower install
-- grunt build
 deploy:
   skip_cleanup: true
   provider: script
