@@ -157,7 +157,7 @@
                 <md-item ng-repeat="item in leftMenuList"  >
                     <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" md-swipe-left="swipeLeftMenu()" >
                         <div class="md-item-container"  >
-                            <img ng-src="{{item.imgsrc}}" class="md-avatar" alt="{{item.alt}}" />
+                            <img ng-src="{{item.imgsrc}}" class="round-crop" alt="{{item.alt}}" />
                             <div class="md-list-item-text">{{item.label}}</div>
                         </div>
                     </md-button>
@@ -183,15 +183,13 @@
 
             <footer>
 
-                    <div class="pre-footer" hide-sm hide-xs ></div>
-
                     <md-toolbar id="footer" layout="row" >
 
-                        <div layout="row" layout-align="start center" layout-padding class="footer-left" flex flex-sm="30" flex-xs="30" >
-                            <div hide-sm  hide-xs > &nbsp; Rômulo Bordezani </div><md-button class="md-primary" ng-href="#!/contact" ng-if="contactButtonVisibility" >contact</md-button>
+                        <div layout="row" layout-align="start center" layout-padding class="footer-left" flex flex-sm="30" flex-xs="30" hide-sm  hide-xs >
+                            <div  > &nbsp; Rômulo Bordezani </div><md-button class="md-primary" ng-href="#!/contact" ng-if="contactButtonVisibility" >contact</md-button>
                         </div>
 
-                        <div layout="row" layout-align="end center" layout-padding class="footer-right" flex ng-class="{ 'visually-hidden' : onWorkPage }" >
+                        <div layout="row" layout-align="end center" layout-padding class="footer-right" flex  >
 
                             <div plangular="https://soundcloud.com/romulo-bordezani/sets/my-music" >
 

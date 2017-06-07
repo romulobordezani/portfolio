@@ -93,7 +93,7 @@ md-toolbar {
 
                         @media ( min-width : $flex-md ){
 
-                            margin: 3px 7px 0 0;
+                            margin: 10px 7px 0 0;
                             width: 43px;
 
                         }
@@ -123,7 +123,7 @@ md-toolbar {
                         }
 
                         @media ( min-width : $flex-md ){
-                            margin: 13px 7px 0 0;
+                            margin: 20px 7px 0 0;
                             font-size: 23px;
                         }
 
@@ -303,6 +303,7 @@ md-sidenav{
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
+                    margin-left: 30px;
 
                     img {
                         width: 50px;
@@ -331,7 +332,7 @@ md-sidenav{
 
                 @media (max-width: $flex-md){
                     margin-top:10px;
-                    margin-right: 22px;
+
                 }
 
                 div {

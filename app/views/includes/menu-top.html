@@ -44,7 +44,7 @@
         <md-item ng-repeat="item in leftMenuList"  >
             <md-button ng-click="menuClick(item, $event)" target="{{item.target}}" ng-class="{'selected' : item === selected }" md-swipe-left="swipeLeftMenu()" >
                 <div class="md-item-container"  >
-                    <img ng-src="{{item.imgsrc}}" class="md-avatar" alt="{{item.alt}}" />
+                    <img ng-src="{{item.imgsrc}}" class="round-crop" alt="{{item.alt}}" />
                     <div class="md-list-item-text">{{item.label}}</div>
                 </div>
             </md-button>

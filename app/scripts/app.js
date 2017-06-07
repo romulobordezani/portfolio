@@ -59,7 +59,7 @@ angular
                     },
 
                     controller: 'workController',
-                    animation: 'none'
+                    animation: 'fade'
                 })
 
                 .when('/work/:year', {
@@ -67,12 +67,12 @@ angular
                         return 'views/work/' + urlattr.year + '/index.html';
                     },
                     controller: 'workController',
-                    animation: 'none'
+                    animation: 'fade'
                 })
 
                 .when('/work/', {
                     redirectTo: '/work/2016',
-                    animation: 'none'
+                    animation: 'fade'
                 })
 
                 .when('/contact', {
