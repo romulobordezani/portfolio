@@ -139,7 +139,7 @@
             <div id="timeline-row" ng-if="workSwitcherVisibility" class="work-switcher-animation" >
 
                 <div layout style="margin: 0 15px 15px;" >
-                    <div flex="10" layout layout-align="center center">
+                    <div flex="10" flex-xs="15" layout layout-align="center center" >
                         <span class="md-thumb-label" ng-bind="yearSlider" ></span>
                     </div>
                     <md-slider flex  class="md-primary md-hue-7" md-discrete ng-model="$parent.yearSlider" step="1" min="2008" max="2016" aria-label="rating" ></md-slider>
@@ -183,12 +183,12 @@
 
             <footer>
 
-                    <div class="pre-footer" hide-sm ></div>
+                    <div class="pre-footer" hide-sm hide-xs ></div>
 
                     <md-toolbar id="footer" layout="row" >
 
-                        <div layout="row" layout-align="start center" layout-padding class="footer-left" flex flex-sm="30" >
-                            <div hide-sm > &nbsp; Rômulo Bordezani </div><md-button class="md-primary" ng-href="#!/contact" ng-if="contactButtonVisibility" >contact</md-button>
+                        <div layout="row" layout-align="start center" layout-padding class="footer-left" flex flex-sm="30" flex-xs="30" >
+                            <div hide-sm  hide-xs > &nbsp; Rômulo Bordezani </div><md-button class="md-primary" ng-href="#!/contact" ng-if="contactButtonVisibility" >contact</md-button>
                         </div>
 
                         <div layout="row" layout-align="end center" layout-padding class="footer-right" flex ng-class="{ 'visually-hidden' : onWorkPage }" >
@@ -199,7 +199,7 @@
 
                                 <a ng-href="{{track.permalink_url}}"><img src="images/socials/ico_soundcloud_orange.svg" style="width: 30px; margin-top: 10px;" /></a>
 
-                                <md-button class="md-icon-button md-hue-1" ng-click="previous()" aria-label="previous">
+                                <md-button class="md-icon-button md-hue-1" ng-click="previous()" aria-label="previous" >
                                     <md-icon md-svg-src="images/uis/ic_skip_previous_black_24px.svg"></md-icon>
                                 </md-button>
 

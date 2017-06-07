@@ -1,102 +1,9 @@
 
-/*$use-slideInLeft : true;
-$use-slideOutLeft : true;
-
-$use-slideOutRight : true;
-$use-slideInRight : true;*/
-
 $use-fadeOut : true;
 $use-fadeIn : true;
 
 
 @import "../bower_components/animate-sass/animate";
-
-
-/** View Animation **/
-/*.right .view.ng-leave{
-
-    -webkit-animation-name: slideOutRight;
-    -moz-animation-name: slideOutRight;
-    -ms-animation-name: slideOutRight;
-    -o-animation-name: slideOutRight;
-    animation-name: slideOutRight;
-
-    -webkit-animation-duration: 0.25s;
-    -moz-animation-duration: 0.25s;
-    -ms-animation-duration: 0.25s;
-    -o-animation-duration: 0.25s;
-    animation-duration: 0.25s;
-
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-
-}
-
-.right .view.ng-enter  {
-
-    visibility:hidden;
-
-    -webkit-animation-name: slideInLeft;
-    -moz-animation-name: slideInLeft;
-    -ms-animation-name: slideInLeft;
-    -o-animation-name: slideInLeft;
-    animation-name: slideInLeft;
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-delay: 0.25s;
-    -moz-animation-delay: 0.25s;
-    -ms-animation-delay: 0.25s;
-    -o-animation-delay: 0.25s;
-    animation-delay: 0.25s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-
-}
-
-
-
-.left .view.ng-leave {
-    -webkit-animation-name: slideOutLeft;
-    -moz-animation-name: slideOutLeft;
-    -ms-animation-name: slideOutLeft;
-    -o-animation-name: slideOutLeft;
-    animation-name: slideOutLeft;
-    -webkit-animation-duration: 0.25s;
-    -moz-animation-duration: 0.25s;
-    -ms-animation-duration: 0.25s;
-    -o-animation-duration: 0.25s;
-    animation-duration: 0.25s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.left .view.ng-enter {
-
-    visibility:hidden;
-
-    -webkit-animation-name: slideInRight;
-    -moz-animation-name: slideInRight;
-    -ms-animation-name: slideInRight;
-    -o-animation-name: slideInRight;
-    animation-name: slideInRight;
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s;
-    -webkit-animation-delay: 0.25s;
-    -moz-animation-delay: 0.25s;
-    -ms-animation-delay: 0.25s;
-    -o-animation-delay: 0.25s;
-    animation-delay: 0.25s;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}*/
-
 
 
 /* ----------------------------------------------------- */
@@ -114,6 +21,7 @@ $use-fadeIn : true;
     -o-animation-duration: 0.5s;
     animation-duration: 0.5s;
     position:absolute;
+
 }
 
 
@@ -139,6 +47,10 @@ $use-fadeIn : true;
     -o-animation-duration: 0.5s;
     animation-duration: 0.5s;
 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+
 }
 
 
@@ -149,14 +61,15 @@ $use-fadeIn : true;
 
 
 
+
 /** Work Switcher  Animation **/
 .work-switcher-animation{
 
     &.ng-enter {
-        -moz-transition:    max-height .3s ease-out, opacity .3s ease-out;
-        -webkit-transition: max-height .3s ease-out, opacity .3s ease-out;
-        -o-transition:      max-height .3s ease-out, opacity .3s ease-out;
-        transition:         max-height .3s ease-out, opacity .3s ease-out;
+        -moz-transition:    max-height .3s ease-out, opacity .3s ease-in;
+        -webkit-transition: max-height .3s ease-out, opacity .3s ease-in;
+        -o-transition:      max-height .3s ease-out, opacity .3s ease-in;
+        transition:         max-height .3s ease-out, opacity .3s ease-in;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         max-height: 0;

@@ -26,7 +26,7 @@
     <div id="timeline-row" ng-if="workSwitcherVisibility" class="work-switcher-animation" >
 
         <div layout style="margin: 0 15px 15px;" >
-            <div flex="10" layout layout-align="center center">
+            <div flex="10" flex-xs="15" layout layout-align="center center" >
                 <span class="md-thumb-label" ng-bind="yearSlider" ></span>
             </div>
             <md-slider flex  class="md-primary md-hue-7" md-discrete ng-model="$parent.yearSlider" step="1" min="2008" max="2016" aria-label="rating" ></md-slider>

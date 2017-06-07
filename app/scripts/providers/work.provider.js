@@ -9,8 +9,6 @@ angular.module('rbApp')
 
             this.rebuildUrl = function(){
 
-                console.log( year );
-
                 $timeout( function(){
                     var currentValue = current ? '/' + current : '';
                     $location.path( '/work/' + year +  currentValue );

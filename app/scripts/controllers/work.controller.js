@@ -31,14 +31,12 @@ angular.module('rbApp')
             $rootScope.swiping = true;
             var newYear = parseInt($scope.year, 10) + 1;
             workProvider.setWorkYear(newYear, true, false);
-            console.log( 'swipeLeft', newYear);
         };
 
         $scope.swipeRight = function(){
             $rootScope.swiping = true;
             var newYear = parseInt($scope.year, 10) - 1;
             workProvider.setWorkYear(newYear, true, false);
-            console.log( 'swipeRight', newYear);
         };
 
         init();

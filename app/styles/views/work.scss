@@ -59,6 +59,7 @@ section#work {
                 -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
                 user-drag: none;
                 pointer-events: none;
+                touch-action: none;
 
             }
 
