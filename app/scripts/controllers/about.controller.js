@@ -10,8 +10,6 @@
 angular.module('rbApp')
     .controller('aboutController', function ($rootScope){
 
-        $rootScope.$on('$mdTabsChanged', function(e){
-           console.log(e);
-        });
+        
 
     });
