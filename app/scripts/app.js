@@ -99,7 +99,7 @@ angular
             plangularConfigProvider.clientId = 'a5f0b5300855bcc76cb9957762d89deb';
 
 
-            $locationProvider.html5Mode(true);
+            // $locationProvider.html5Mode(true);
 
         }
 
