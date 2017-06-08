@@ -1,0 +1,16 @@
+.content-pusher{
+    min-height: calc(100vh - 128px);
+}
+
+.work{
+
+    .content-pusher{
+        min-height: calc(100vh - 207px)!important;
+
+        @media(max-width:$flex-md){
+            min-height: calc(100vh - 190px)!important;
+        }
+
+    }
+
+}
