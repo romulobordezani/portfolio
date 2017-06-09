@@ -37,6 +37,11 @@ angular.module('rbApp')
             workProvider.setWorkYear(newYear, true, false);
         };
 
+        $scope.cancelMaterial = function( event ){
+            console.log( event );
+            event.stopPropagation();
+        };
+
         init();
 
     }
