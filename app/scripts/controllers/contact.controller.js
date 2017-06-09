@@ -62,7 +62,7 @@ angular.module('rbApp')
             $http(
                 {
                     method: 'post',
-                    url: 'https://sendmail.romulobordezani.com.br/sendemail',
+                    url: '/api/sendemail',
                     data:  $scope.user
                 }
             ).then(
@@ -88,8 +88,17 @@ angular.module('rbApp')
                 }
             ).catch(
 
-                function(e){
-                    console.log( 'Something went wrong, buddy...', e);
+                function(){
+
+                    $mdDialog.show(
+                        $mdDialog.alert()
+                            .parent(angular.element(document.body))
+                            .title('Oh no.')
+                            .content('Something went wrong with our server. Your message wasn\'t send. Please email me at romulobordezani@gmail.com.' )
+                            .ariaLabel('Something went wrong with our server. Your message wasn\'t send. Please email me at romulobordezani@gmail.com.')
+                            .ok('Dammit')
+                    );
+
                 }
 
             );
