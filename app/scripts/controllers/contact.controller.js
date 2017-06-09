@@ -62,7 +62,7 @@ angular.module('rbApp')
             $http(
                 {
                     method: 'post',
-                    url: 'https://web-romulobordezani.rhcloud.com/sendemail',
+                    url: 'https://sendmail.romulobordezani.com.br/sendemail',
                     data:  $scope.user
                 }
             ).then(
