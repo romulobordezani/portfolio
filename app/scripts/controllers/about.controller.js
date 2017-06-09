@@ -8,8 +8,8 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('aboutController', function ($rootScope){
+    .controller('aboutController', function (){
 
-        
+
 
     });

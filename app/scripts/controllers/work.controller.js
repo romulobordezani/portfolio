@@ -21,10 +21,8 @@ angular.module('rbApp')
 
         }
 
-        $scope.setCurrent = function(clickedCard){
-            if( !$rootScope.swiping ){
-                workProvider.setCurrent(clickedCard, true);
-            }
+        $scope.setCurrent = function( clickedCard ){
+            workProvider.setCurrent( clickedCard, true );
         };
 
         $scope.swipeLeft = function(){

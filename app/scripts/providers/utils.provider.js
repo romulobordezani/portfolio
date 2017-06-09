@@ -24,7 +24,7 @@ angular.module('rbApp')
             };
 
 
-            this.goTo = function(url,target){
+            this.goTo = function( url, target ){
 
                 if( url === undefined ){
                     return null;

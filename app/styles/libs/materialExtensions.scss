@@ -52,11 +52,12 @@ md-content{
 
 a, a:link, a:visited{
     text-decoration: none;
-    color: rgb(255,87,34);
+    color: rgb(6,69,173);
 }
 
 a:hover, a:active{
-    color: rgb(255,160,64);
+    color: rgb(52, 116, 173);
+    text-decoration: underline;
 }
 
 
@@ -94,3 +95,7 @@ md-backdrop{
     animation: none !important;
 }
 
+
+md-checkbox.md-default-theme[disabled].md-checked .md-icon, md-checkbox[disabled].md-checked .md-icon{
+    background-color: rgba(24,179,100,0.87);
+}

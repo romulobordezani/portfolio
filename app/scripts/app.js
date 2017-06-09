@@ -13,13 +13,12 @@ angular
         'addClassOnClick',
         'deviceFrame',
         'responsibilities',
-        'slideOnSwipe',
         'angularytics',
         'plangular'
     ])
 
     .config(
-        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider, $locationProvider ) {
+        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider ) {
             $routeProvider
 
                 .when('/', {
