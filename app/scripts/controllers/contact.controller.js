@@ -31,7 +31,7 @@ angular.module('rbApp')
 
             var coordinates = position.coords.latitude + ',' + position.coords.longitude;
 
-            $http.get('http://maps.googleapis.com/maps/api/geocode/json?latlng=' + coordinates ).
+            $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + coordinates ).
 
                 success(function(data) {
                     /*jshint camelcase: false */
@@ -59,13 +59,13 @@ angular.module('rbApp')
                 return false;
             }
 
-            var request = $http({
-                method: 'post',
-                url: '/sendemail',
-                data:  $scope.user
-            });
-
-            request.success(
+            $http(
+                {
+                    method: 'post',
+                    url: 'http://web-romulobordezani.rhcloud.com/sendemail',
+                    data:  $scope.user
+                }
+            ).then(
                 function() {
 
                     $mdDialog.show(
@@ -86,6 +86,12 @@ angular.module('rbApp')
                     };
 
                 }
+            ).catch(
+
+                function(e){
+                    console.log( 'Something went wrong, buddy...', e);
+                }
+
             );
 
         };
