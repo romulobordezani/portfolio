@@ -33,13 +33,13 @@ angular.module('rbApp')
 
             $http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + coordinates ).
 
-                success(function(data) {
+                then( function( data ){
                     /*jshint camelcase: false */
                     $scope.user.address = data.results[0].formatted_address;
                     addressFullFilled = true;
                 }).
 
-                error(function(data) {
+                catch( function( data ){
                     console.warn( 'Error loading Google Maps API: ', data );
                 });
 
