@@ -12,7 +12,7 @@ var httpServer = http.Server( app );
 
 app.post('/api/sendemail', function (req, res) {
 
-    var transporter = nodeMailer.createTransport( process.env.SMTP_TRANSPORT );
+    var transporter = nodeMailer.createTransport( process.env.SMTP_TRANSPORT.replace('\'', '') );
 
     var mailOptions = {
         from: '"' + req.body.name + ' 👥" <' + req.body.email + '>',
@@ -20,14 +20,15 @@ app.post('/api/sendemail', function (req, res) {
         subject: 'Contact from romulobordezani.com.br ✔',
         text: req.body.message + '\r\n\r\n\r\n' + req.body.phone + '\r\n\r\n\r\n' + req.body.address
     };
-    
+
     transporter.sendMail( mailOptions, function( error, info ){
 
-        if(error){
+        if( error ){
             return console.log(error);
         }
 
-        console.log('Message sent: ' + info.response);
+        console.log('Message sent: ' + info.response );
+
 
     });
 
