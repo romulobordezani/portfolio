@@ -35,7 +35,7 @@ app.post('/api/sendemail', function (req, res) {
 
     });
 
-    res.send( 'Sent' );
+    res.send( 'Sent'  );
 
 });
 
