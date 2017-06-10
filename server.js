@@ -7,6 +7,9 @@ var http = require('http');
 var app = express();
 app.use( bodyParser.json() );
 
+var pjson = require('./node_modules/nodemailer/package.json');
+console.log( 'node mailer version: ', pjson.version);
+
 
 var httpServer = http.Server( app );
 
