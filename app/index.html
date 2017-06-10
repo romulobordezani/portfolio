@@ -162,7 +162,7 @@
                     <div flex="10" flex-xs="15" layout layout-align="center center" >
                         <span class="md-thumb-label" ng-bind="yearSlider" ></span>
                     </div>
-                    <md-slider flex  class="md-primary md-hue-7" md-discrete ng-model="$parent.yearSlider" step="1" min="2008" max="2016" aria-label="rating" ></md-slider>
+                    <md-slider flex  class="md-primary md-hue-7" md-discrete ng-model="$parent.yearSlider" step="1" min="{{ FIRST_YEAR }}" max="{{ LAST_YEAR }}" aria-label="rating" ></md-slider>
                 </div>
 
             </div>
@@ -297,6 +297,8 @@
 
 
             <script src="scripts/filters/randomize.filter.js"></script>
+
+            <script src="scripts/config/config.constants.js"></script>
 
 
             <!-- endbuild -->

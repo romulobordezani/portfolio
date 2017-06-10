@@ -3,7 +3,7 @@
     'use strict';
 
     angular.module('rbApp')
-        .service('leftMenuService', ['$q', LeftMenuService]);
+        .service('leftMenuService', ['$q', 'CONFIG', LeftMenuService ]);
 
             /**
              * Users DataService
@@ -13,7 +13,7 @@
              * @returns {{loadAll: Function}}
              * @constructor
              */
-            function LeftMenuService($q){
+            function LeftMenuService($q, CONFIG){
                 var leftMenu = [
 
                     {
@@ -34,28 +34,12 @@
 
 
                     {
-                        label: 'WORK',
+                        label: 'JOBS',
                         alt: 'Work',
-                        href: '/work/2016',
+                        href: '/work/' + CONFIG.LAST_YEAR,
                         target : '',
                         imgsrc: 'images/menu/work.svg'
                     },
-
-                    /*{
-                        label: 'SOPHIA\'S PICS',
-                        alt: 'Sophia',
-                        href: '/sophia',
-                        target : '',
-                        imgsrc: 'images/menu/sophia.svg'
-                    },*/
-
-                    /*{
-                        label: 'Blog',
-                        alt: 'Blog - Modernet',
-                        href: 'http://modernet.com.br/',
-                        target : '',
-                        imgsrc: 'images/menu/blog.svg'
-                    },*/
 
                     {
                         label: 'CONTACT',

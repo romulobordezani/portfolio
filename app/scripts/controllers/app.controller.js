@@ -8,37 +8,8 @@
  * Controller of the rbApp
  */
 angular.module('rbApp')
-    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider', 'favicoProvider', '$timeout',
-        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider, favicoProvider, $timeout ){
-
-            function init(){
-                attachEvents();
-                menu.loadService();
-                workSwitcher.init();
-            }
-
-            function attachEvents(){
-
-                $rootScope.$on('$routeChangeStart', function(event, currRoute /* , prevRoute */ ){
-
-                    menu.selectMenuItemByUrl();
-                    favicoProvider.blow();
-                    menu.blowHome();
-                    $rootScope.contactButtonVisibility = true;
-                    $rootScope.onWorkPage = false;
-                    $rootScope.routeclass = currRoute.routeclass;
-                    $rootScope.$$listeners.$mdTabsChanged=[];
-                    $scope.animation = currRoute.animation || 'fade';
-                    $scope.showFooter = currRoute.showFooter || false;
-
-                });
-
-                $rootScope.$on('forceAnimationSet', function(event, args) {
-                    $scope.animation = args.animation;
-                });
-
-            }
-
+    .controller('appController', ['$scope', '$mdSidenav','leftMenuService', '$location', '$rootScope', 'workProvider', 'favicoProvider', '$timeout', 'CONFIG',
+        function( $scope, $mdSidenav, leftMenuService, $location, $rootScope, workProvider, favicoProvider, $timeout, CONFIG ){
 
 
             var blowingTimeout;
@@ -125,6 +96,33 @@ angular.module('rbApp')
 
             };
 
+            $scope.FIRST_YEAR = CONFIG.FIRST_YEAR;
+            $scope.LAST_YEAR = CONFIG.LAST_YEAR;
+
+            function attachEvents(){
+
+                $rootScope.$on('$routeChangeStart', function(event, currRoute /* , prevRoute */ ){
+
+                    menu.selectMenuItemByUrl();
+                    favicoProvider.blow();
+                    menu.blowHome();
+                    $rootScope.contactButtonVisibility = true;
+                    $rootScope.onWorkPage = false;
+                    $rootScope.routeclass = currRoute.routeclass;
+                    $rootScope.$$listeners.$mdTabsChanged=[];
+                    $scope.animation = currRoute.animation || 'fade';
+                    $scope.showFooter = currRoute.showFooter || false;
+
+                });
+
+                $rootScope.$on('forceAnimationSet', function(event, args) {
+                    $scope.animation = args.animation;
+                });
+
+            }
+
+
+
             var workSwitcher = {
 
                 init : function(){
@@ -132,7 +130,7 @@ angular.module('rbApp')
                     var alreadyLoaded = 0;
 
                     $scope.workSwitcherVisibility =  workProvider.getWorkSwitcherVisibility();
-                    $scope.yearSlider = 2016;
+                    $scope.yearSlider = CONFIG.LAST_YEAR;
 
                     $scope.$watch('yearSlider', function(value){
 
@@ -177,6 +175,12 @@ angular.module('rbApp')
                 }
 
             };
+
+            function init(){
+                attachEvents();
+                menu.loadService();
+                workSwitcher.init();
+            }
 
             init();
 

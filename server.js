@@ -1,21 +1,24 @@
 #!/bin/env node
 
 var express = require('express');
-var nodeMailer = require('nodemailer');
+var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var http = require('http');
 var app = express();
 app.use( bodyParser.json() );
-
-var pjson = require('./node_modules/nodemailer/package.json');
-console.log( 'node mailer version: ', pjson.version);
 
 
 var httpServer = http.Server( app );
 
 app.post('/api/sendemail', function (req, res) {
 
-    var transporter = nodeMailer.createTransport( process.env.SMTP_TRANSPORT.replace('\'', '') );
+    var transporter = nodemailer.createTransport( {
+        service:  'Mailgun',
+        auth: {
+            user: 'postmaster@sandbox9d71bdc8ab7f446ba6952142af86409c.mailgun.org',
+            pass: process.env.SMTP_TRANSPORT
+        }
+    });
 
     var mailOptions = {
         from: '"' + req.body.name + ' 👥" <' + req.body.email + '>',

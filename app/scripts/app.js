@@ -18,7 +18,7 @@ angular
     ])
 
     .config(
-        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider ) {
+        function ( $routeProvider, $mdThemingProvider, AngularyticsProvider, plangularConfigProvider, CONFIG ) {
             $routeProvider
 
                 .when('/', {
@@ -66,7 +66,9 @@ angular
                 })
 
                 .when('/work/', {
-                    redirectTo: '/work/2016',
+                    redirectTo: function(){
+                        return '/work/' + CONFIG.LAST_YEAR;
+                    },
                     animation: 'fade',
                     routeclass : 'work'
                 })
@@ -103,7 +105,7 @@ angular
         }
 
 ).run(
-    function ( $rootScope, $timeout, $templateCache, $http, Angularytics, Animator ) {
+    function ( $rootScope, $timeout, $templateCache, $http, Angularytics, Animator, CONFIG ) {
 
         Angularytics.init();
 
@@ -121,7 +123,7 @@ angular
 
         $http.get('views/contact.html', { cache: $templateCache }).then(function(){
 
-            $http.get('views/work/2016/index.html', { cache: $templateCache }).then(function() {
+            $http.get('views/work/' + CONFIG.LAST_YEAR + '/index.html', { cache: $templateCache }).then(function() {
 
                 $http.get('views/about.html', { cache: $templateCache });
 
@@ -137,7 +139,7 @@ angular
             '    / ( ()//)(/(() /__)()/ (/(- /_ (//\\//    ',
             '                                             ',
             '                                             ',
-            '                                    2016     ',
+            '                                    ' + CONFIG.LAST_YEAR + '     ',
             '                                             ',
 
         ].join('\r\n');

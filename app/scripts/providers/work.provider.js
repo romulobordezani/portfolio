@@ -1,7 +1,7 @@
 'use strict';
 angular.module('rbApp')
     .provider('workProvider', function WorkProvider() {
-        this.$get = ['$rootScope', '$location', '$timeout', 'Utils', function($rootScope, $location, $timeout) {
+        this.$get = ['$rootScope', '$location', '$timeout', 'Utils', 'CONFIG', function( $rootScope, $location, $timeout, CONFIG ){
 
             var workSwitcherVisibility = false;
             var dialogAlreadySeem = false;
@@ -47,7 +47,6 @@ angular.module('rbApp')
                 $rootScope.$broadcast( 'changeCurrentVal' );
             };
 
-
             this.getWorkYear = function() {
                 return year;
             };
@@ -56,12 +55,12 @@ angular.module('rbApp')
 
                 newYear = parseInt( newYear, 10 );
 
-                if( newYear < 2002  ){
-                    newYear = 2002;
+                if( newYear < CONFIG.FIRST_YEAR  ){
+                    newYear = CONFIG.FIRST_YEAR;
                 }
 
-                if( newYear > 2016  ){
-                    newYear = 2016;
+                if( newYear > CONFIG.LAST_YEAR  ){
+                    newYear = CONFIG.LAST_YEAR;
                 }
 
                 year = newYear;
