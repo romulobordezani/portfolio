@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg viewBox="0 0 50 50" style="background-color:#ff9c22;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px" width="100%" height="100%">
+	<g id="Layer%201">
+		<g id="work">
+			<path d="M 34 22 C 39.4 22 39 26 39 26 C 39 30.9 34 29.9 34 29.9 L 34 22 ZM 15.9 20.8 L 15 21.6 L 15 35 C 15 37 18 37 18 37 L 31 37 C 33.1 36.9 33 35 33 35 L 33 32 L 35 32 C 39.8 32 41 26.6 41 26.6 C 40.8 20.6 36 20 36 20 L 16.8 20 L 15.9 20.8 Z" stroke="#ffffff00" stroke-width="1" fill="#ffffff"/>
+			<path d="M 8 40.5 C 8 41.9 9.1 43 10.5 43 L 39.5 43 C 40.9 43 42 41.9 42 40.5 C 42 40.3 42 40.2 42 40 L 8.1 40 C 8 40.2 8 40.3 8 40.5 Z" stroke="#ffffff00" stroke-width="1" fill="#ffffff"/>
+			<path d="M 24 18 C 24 18 20.8 15.3 21 14 C 21 14 21.1 11.1 23 11 C 24.9 10.9 25.9 7 24.1 5.9 " stroke="#ffffff" stroke-width="1" fill="none"/>
+			<path d="M 28.2 17 C 28.2 17 25.8 15.2 26 14.3 C 26 14.3 26.1 12.4 27.5 12.4 C 28.9 12.3 29.6 9.7 28.3 9 " stroke="#ffffff" stroke-width="1" fill="none"/>
+		</g>
+	</g>
+</svg>
