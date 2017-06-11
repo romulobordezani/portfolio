@@ -6,19 +6,11 @@ var bodyParser = require('body-parser');
 var http = require('http');
 var app = express();
 app.use( bodyParser.json() );
-
-
 var httpServer = http.Server( app );
 
 app.post('/api/sendemail', function (req, res) {
 
-    var transporter = nodemailer.createTransport( {
-        service:  'Mailgun',
-        auth: {
-            user: 'postmaster@sandbox9d71bdc8ab7f446ba6952142af86409c.mailgun.org',
-            pass: process.env.SMTP_TRANSPORT
-        }
-    });
+    var transporter = nodemailer.createTransport( process.env.SMTP_TRANSPORT );
 
     var mailOptions = {
         from: '"' + req.body.name + ' 👥" <' + req.body.email + '>',
@@ -38,7 +30,7 @@ app.post('/api/sendemail', function (req, res) {
 
     });
 
-    res.send( 'Sent'  );
+    res.send( 'Sent' );
 
 });
 
