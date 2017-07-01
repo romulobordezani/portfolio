@@ -48,7 +48,7 @@ angular.module('rbApp')
                     document.location.href = url;
 
                 }else{
-                    url = url.replace('#', '');
+                    url = url.replace('#!', '');
                     $location.path(url);
                 }
             };
