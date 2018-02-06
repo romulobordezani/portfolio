@@ -50,6 +50,12 @@
     "grunt-includes": "0.5.1",
     "grunt-notify": "^0.4.1"
   },
+  "scripts": {
+    "dev": "bower install; grunt serve",
+    "start": "grunt serve",
+    "test": "grunt test",
+    "build": "grunt build"
+  },
   "engines": {
     "node": ">=0.10.0"
   }
