@@ -331,30 +331,34 @@ module.exports = function (grunt) {
         copy: {
 
             dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= yeoman.app %>',
-                    dest: '<%= yeoman.dist %>',
-                    src: [
-                        '*.{ico,png,txt}',
-                        '.htaccess',
-                        '*.html',
-                        'views/**/*.html',
-                        'images/**/*.**',
-                        'fonts/{,*/}*.*'
-                    ]
-                }, {
-                    expand: true,
-                    cwd: '.tmp/images',
-                    dest: '<%= yeoman.dist %>/images',
-                    src: ['generated/*']
-                }, {
-                    expand: true,
-                    cwd: '.',
-                    src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-                    dest: '<%= yeoman.dist %>'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        dot: true,
+                        cwd: '<%= yeoman.app %>',
+                        dest: '<%= yeoman.dist %>',
+                        src: [
+                            '*.{ico,png,txt}',
+                            '.htaccess',
+                            '*.html',
+                            'views/**/*.html',
+                            'images/**/*.**',
+                            'fonts/{,*/}*.*'
+                        ]
+                    },
+                    {
+                        expand: true,
+                        cwd: '.tmp/images',
+                        dest: '<%= yeoman.dist %>/images',
+                        src: ['generated/*']
+                    },
+                    {
+                        expand: true,
+                        cwd: '.',
+                        src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+                        dest: '<%= yeoman.dist %>'
+                    }
+                ]
             },
 
             styles: {
