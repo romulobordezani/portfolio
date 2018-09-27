@@ -149,6 +149,7 @@ module.exports = function (grunt) {
                     src: [
                         '.tmp',
                         '<%= yeoman.dist %>/{,*/}*',
+                        'docs/{,*/}*',
                         '!<%= yeoman.dist %>/.git{,*/}*'
                     ]
                 }]
@@ -218,6 +219,7 @@ module.exports = function (grunt) {
             dist: {
                 src: [
                     '<%= yeoman.dist %>/scripts/{,*/}*.js',
+                    '!<%= yeoman.dist %>/sw.js',
                     '<%= yeoman.dist %>/styles/{,*/}*.css',
                     '<%= yeoman.dist %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
                     '!<%= yeoman.dist %>/images/work/**/*.{png,jpg,jpeg,gif,webp,svg}',
@@ -226,7 +228,7 @@ module.exports = function (grunt) {
                     '!<%= yeoman.dist %>/images/ogimage.png',
                     '!<%= yeoman.dist %>/images/uis/ic_*.svg',
                     '!<%= yeoman.dist %>/images/uis/back*.svg',
-                    '!<%= yeoman.dist %>/images/contact/*.svg',
+                    '!<%= yeoman.dist %>/images/contact/*.{png,.svg}',
                     '!<%= yeoman.dist %>/images/git/*',
                     '<%= yeoman.dist %>/styles/fonts/*'
                 ]
@@ -314,7 +316,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '.tmp/concat/scripts',
-                    src: ['*.js', '!oldieshim.js'],
+                    src: ['*.js', '!oldieshim.js', '!sw.js'],
                     dest: '.tmp/concat/scripts'
                 }]
             }
@@ -340,10 +342,13 @@ module.exports = function (grunt) {
                         src: [
                             '*.{ico,png,txt}',
                             '.htaccess',
+                            'manifest.json',
+                            'CNAME',
                             '*.html',
                             'views/**/*.html',
                             'images/**/*.**',
-                            'fonts/{,*/}*.*'
+                            'fonts/{,*/}*.*',
+                            'sw.js',
                         ]
                     },
                     {
@@ -359,6 +364,18 @@ module.exports = function (grunt) {
                         dest: '<%= yeoman.dist %>'
                     }
                 ]
+            },
+
+            docs: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.dist %>',
+                    dest: 'docs',
+                    src: [
+                        '**'
+                    ]
+                }]
             },
 
             styles: {
@@ -466,7 +483,8 @@ module.exports = function (grunt) {
         'filerev',
         'usemin',
         'includes:dist',
-        'htmlmin'
+        'htmlmin',
+        'copy:docs'
     ]);
 
     grunt.registerTask('default', [
