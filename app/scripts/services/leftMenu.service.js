@@ -34,7 +34,7 @@
 
 
                     {
-                        label: 'JOBS',
+                        label: 'Experience',
                         alt: 'Work',
                         href: '/work/' + CONFIG.LAST_YEAR,
                         target : '',
