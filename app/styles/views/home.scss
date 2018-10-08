@@ -1,30 +1,25 @@
 @import '../libs/colors.scss';
 @import '../libs/measures.scss';
+@import '../libs/breakpoints';
 
 div#home {
 
-
-    .parallax-footer{
+    .parallax-clouds{
 
         height: 333px;
         width: 100%;
         position: relative;
         overflow: hidden;
 
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
         background: #1e5799; /* Old browsers */
         background: -moz-linear-gradient(top,  #FFFFFF 0%, #A5D3FA 50%, #A5D3FA 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top,  #FFFFFF 0%,#A5D3FA 50%,#A5D3FA 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom,  #FFFFFF 0%,#A5D3FA 50%,#A5D3FA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#A5D3FA',GradientType=0 ); /* IE6-9 */
 
-
-
-
-        @media (min-width: $flex-sm) {
+        @include breakpoint($large) {
             height: 733px;
         }
-
 
         .parallax-txt {
 
@@ -39,7 +34,17 @@ div#home {
             text-shadow: 0px 0px 27px #FFF;
             cursor: default;
 
-            @media (min-width: $flex-sm) {
+            @include breakpoint($large) {
+                font-size: 3.7em;
+                bottom: 363px;
+            }
+
+            @include breakpoint($extra-large) {
+                font-size: 5.7em;
+                bottom: 363px;
+            }
+
+            /*@media (min-width: $flex-sm) {
                 font-size: 3.7em;
                 bottom: 363px;
             }
@@ -50,7 +55,7 @@ div#home {
 
             @media (min-width: $flex-lg + 500) {
                 font-size: 6.7em;
-            }
+            }*/
 
             .parallax-reverse-text{
                 -webkit-transform:rotateY(180deg);
@@ -62,7 +67,7 @@ div#home {
 
         }
 
-        .cloud-1{
+        .cloud-1 {
             background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
             background-size: contain;
             width: 604px;
@@ -71,7 +76,7 @@ div#home {
             left:0px;
         }
 
-        .cloud-2{
+        .cloud-2 {
             background: url(../images/parallax/cloud-2.png) no-repeat center top;
             background-size: contain;
             width: 615px;
@@ -80,7 +85,7 @@ div#home {
             right: 0px;
         }
 
-        .cloud-3{
+        .cloud-3 {
             background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
             background-size: contain;
             width: 666px;
@@ -89,14 +94,24 @@ div#home {
             left: 40%;
         }
 
-
-        .cloud-4{
+        .cloud-4 {
             background: url(../images/parallax/cloud-4.png) no-repeat center bottom;
             background-size: contain;
             width: 666px;
             height: 733px;
             position: absolute;
             left: 20%;
+        }
+
+        .image-overlay {
+            background: transparent url("../../images/parallax/bg-parallax.png") no-repeat;
+            background-size: contain;
+            background-position: center bottom;
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            bottom: 0;
+            z-index: 3000;
         }
 
     }

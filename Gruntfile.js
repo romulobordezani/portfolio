@@ -7,6 +7,8 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
+var serveStatic = require('serve-static');
+
 module.exports = function (grunt) {
 
     // Load grunt tasks automatically
@@ -77,23 +79,13 @@ module.exports = function (grunt) {
             livereload: {
                 options: {
                     open: true,
-                    middleware:
-                        function (connect) {
-                            return [
-
-                                connect.static('.tmp'),
-
-                                connect().use(
-                                    '/bower_components',
-                                    connect.static('./bower_components')
-                                ),
-
-                                connect.static(appConfig.app)
-
-                            ];
-
-                        }
-
+                    middleware: function(connect) {
+                        return [
+                            serveStatic('.tmp'),
+                            connect().use('/bower_components', serveStatic('./bower_components')),
+                            serveStatic(appConfig.app)
+                        ];
+                    }
                 }
             },
             test: {
