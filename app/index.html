@@ -5,7 +5,7 @@
     <head>
 
         <meta charset="utf-8">
-        <!--<title>Rômulo Bordezani</title>-->
+        <title>Rômulo Bordezani</title>
 
         <META NAME="robots" CONTENT="index, follow">
         <META NAME="description" CONTENT="Turning ideas into code.">
@@ -301,7 +301,7 @@
         <script>
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function() {
-                    navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    navigator.serviceWorker.register('sw.js?v=2').then(function(registration) {
                         // Registration was successful
                         console.log('ServiceWorker registration successful with scope: ', registration.scope);
                     }).catch(function(err) {
