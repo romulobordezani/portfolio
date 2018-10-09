@@ -12,6 +12,8 @@ $small: (max-width 480px) (orientation portrait); /* Anything smaller than a Nok
 $medium: 768px; /* Ipads and smallers */
 $medium-hd: ( min-width $medium + $viewportIncrement ) (orientation portrait); /* Large screens on Tablets, at least an ipad Pro */
 $large: ( min-width 1024px );
-$extra-large: min-width 1200px; /* Usually desktop computers and High definition LapTops, untill TVS */
-$ultra-hd: min-width 2400px;
+$extra-large: ( min-width 1200px ); /* Usually desktop computers and High definition LapTops, untill TVS */
+$hidpi: ( min-width 1440px )( max-width 1980px );
+$hd: (min-width 1980px);
+$ultra-hd: (min-width 2400px);
 

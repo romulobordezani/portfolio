@@ -11,14 +11,26 @@ div#home {
         position: relative;
         overflow: hidden;
 
-        background: #1e5799; /* Old browsers */
-        background: -moz-linear-gradient(top,  #FFFFFF 0%, #A5D3FA 50%, #A5D3FA 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #FFFFFF 0%,#A5D3FA 50%,#A5D3FA 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #FFFFFF 0%,#A5D3FA 50%,#A5D3FA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#A5D3FA',GradientType=0 ); /* IE6-9 */
+        background: #A5D3FA; /* Old browsers */
+        background: -moz-linear-gradient(top,  #FFFFFF 0%, #A5D3FA 50%, #FAFAFA 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #FFFFFF 0%,#A5D3FA 50%,#FAFAFA 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #FFFFFF 0%,#A5D3FA 50%, #FAFAFA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FAFAFA',GradientType=0 ); /* IE6-9 */
 
         @include breakpoint($large) {
-            height: 733px;
+            height: 800px;
+        }
+
+        @include breakpoint(min-height 900px) {
+            height: 900px;
+        }
+
+        @include breakpoint(min-height 950px) {
+            height: 950px;
+        }
+
+        @include breakpoint(min-height 1080px) {
+            height: 1080px;
         }
 
         .parallax-txt {
@@ -31,31 +43,19 @@ div#home {
             text-align: center;
             font-size: 1.5em;
             color: #97C3E8;
-            text-shadow: 0px 0px 27px #FFF;
+            text-shadow: 0 0 27px #FFF;
             cursor: default;
+            z-index: 2000;
 
             @include breakpoint($large) {
-                font-size: 3.7em;
+                font-size: 2.7em;
                 bottom: 363px;
             }
 
             @include breakpoint($extra-large) {
-                font-size: 5.7em;
-                bottom: 363px;
+                font-size: 4.7em;
+                bottom: 60%;
             }
-
-            /*@media (min-width: $flex-sm) {
-                font-size: 3.7em;
-                bottom: 363px;
-            }
-
-            @media (min-width: $flex-lg) {
-                font-size: 2.7em;
-            }
-
-            @media (min-width: $flex-lg + 500) {
-                font-size: 6.7em;
-            }*/
 
             .parallax-reverse-text{
                 -webkit-transform:rotateY(180deg);
@@ -73,7 +73,8 @@ div#home {
             width: 604px;
             height: 733px;
             position: absolute;
-            left:0px;
+            left:0;
+            z-index: 2500;
         }
 
         .cloud-2 {
@@ -82,7 +83,8 @@ div#home {
             width: 615px;
             height: 733px;
             position: absolute;
-            right: 0px;
+            right: 0;
+            z-index: 2501;
         }
 
         .cloud-3 {
@@ -92,6 +94,7 @@ div#home {
             height: 733px;
             position: absolute;
             left: 40%;
+            z-index: 2502;
         }
 
         .cloud-4 {
@@ -104,14 +107,19 @@ div#home {
         }
 
         .image-overlay {
-            background: transparent url("../../images/parallax/bg-parallax.png") no-repeat;
-            background-size: contain;
+            background: transparent url("../images/parallax/bg-parallax.png") no-repeat;
+            background-size: cover;
             background-position: center bottom;
             width: 100%;
-            height: 300px;
+            height: 400px;
             position: absolute;
             bottom: 0;
             z-index: 3000;
+
+            @include breakpoint($ultra-hd) {
+                height: 500px;
+            }
+
         }
 
     }
