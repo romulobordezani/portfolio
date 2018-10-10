@@ -41,7 +41,7 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 cssValue = cssValArray[1];
                 width = Utils.getBootstrapGridSize();
 
-                isSpecialVal = cssValue ? true : false;
+                isSpecialVal = !!cssValue;
 
                 if (!cssValue) {
                     cssValue = cssKey;
@@ -111,7 +111,7 @@ angular.module('mdParallax', []).directive('mdParallax', [
                         cssKey = 'background-position';
                         resultVal = 'center ' + resultVal;
                     }else if( pureCssVal === 'opacity' ) {
-                        resultVal = 0 + ( calcVal / 500 ) ;
+                        resultVal = ( calcVal / 500 ) ;
                     }
 
                     iElem.css(cssKey, resultVal);
@@ -122,10 +122,9 @@ angular.module('mdParallax', []).directive('mdParallax', [
 
                 //if( window.screen.width > 360 ){
 
-                //if( window.screen.width > 360 || pureCssVal === 'opacity' ){
-
+                if( window.screen.width > 1024 || pureCssVal === 'opacity' ){
                     trueWindow.addEventListener('scroll', _onScroll);
-                //}
+                }
 
             }
         };
