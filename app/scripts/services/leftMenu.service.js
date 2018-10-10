@@ -29,7 +29,7 @@
         alt: 'About',
         href: '/about',
         target : '',
-        imgsrc: 'images/home/romulobordezani.svg'
+        imgsrc: 'images/menu/romulobordezani.svg'
       },
 
 
