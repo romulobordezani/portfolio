@@ -164,6 +164,7 @@ md-toolbar {
                 .md-thumb-text {
                   font-size: 9px;
                   color: $white;
+                  user-select: none;
                 }
 
               }
@@ -255,10 +256,10 @@ md-sidenav {
 
   md-list {
 
-    padding: 0px;
+    padding: 0;
     height: 99.5%;
     width: 100%;
-    position: absolute;
+    position: relative;
 
     @media (max-height: 500px) {
       height: 500px;
@@ -266,14 +267,10 @@ md-sidenav {
 
     md-item {
 
-      height: 25%;
+      height: 19%;
       border-top: 1px solid rgba(0, 0, 0, 0.12);
 
-      @media (max-width: $flex-sm) {
-        height: 22%;
-      }
-
-      @media (max-width: $flex-xs) {
+      @media (min-width: 1024px) {
         height: 20%;
       }
 
@@ -283,8 +280,8 @@ md-sidenav {
         font-weight: 500;
         text-align: left;
         width: 100%;
-        border-radius: 0px;
-        margin: 0px;
+        border-radius: 0;
+        margin: 0;
         height: 100%;
         padding-left: 15px;
 
@@ -318,16 +315,15 @@ md-sidenav {
         background-color: rgba(158, 158, 158, 0.33);
       }
 
+      .md-button .md-item-container .md-list-item-text {
+        font-size: 0.9em;
+      }
+
       #social-links-menu {
 
         width: 270px;
-        float: right;
-        margin-right: 5px;
-
-        @media (max-width: $flex-md) {
-          margin-top: 10px;
-
-        }
+        margin: 0 auto;
+        height: 60px;
 
         div {
 
@@ -349,6 +345,11 @@ md-sidenav {
 
         }
 
+      }
+
+      #plangular {
+        padding: 20px;
+        text-align: center;
       }
 
     }

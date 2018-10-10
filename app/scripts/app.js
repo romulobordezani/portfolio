@@ -13,6 +13,7 @@ angular
         'addClassOnClick',
         'deviceFrame',
         'responsibilities',
+        'timelineTip',
         'angularytics',
         'plangular'
     ])
@@ -100,8 +101,6 @@ angular
             plangularConfigProvider.clientId = 'a5f0b5300855bcc76cb9957762d89deb';
 
 
-            // $locationProvider.html5Mode(true);
-
         }
 
 ).run(
@@ -113,7 +112,7 @@ angular
             var spinnerParent = document.getElementById('rb-body');
             var spinner = document.getElementById('main-pre-loader-wrapper');
             spinnerParent.removeChild(spinner);
-        }, 1000);
+        }, 700);
 
 
         $rootScope.$on('$routeChangeSuccess', function () {

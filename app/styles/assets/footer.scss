@@ -5,8 +5,6 @@ footer {
 
   md-toolbar#footer {
 
-    display: none;
-
     background: $black;
     color: $white;
     font-size: 11px;
@@ -19,7 +17,6 @@ footer {
         margin-left: 0;
       }
     }
-
 
     .footer-right {
       img{

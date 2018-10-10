@@ -1,6 +1,6 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('v3').then(function(cache) {
+        caches.open('v5').then(function(cache) {
             return cache.addAll([
                 '/',
                 '/index.html'
@@ -8,6 +8,7 @@ self.addEventListener('install', function(event) {
         })
     );
 });
+
 
 self.addEventListener('fetch', function(event) {
     event.respondWith(caches.match(event.request).then(function(response) {
@@ -27,7 +28,7 @@ self.addEventListener('fetch', function(event) {
                 // and serve second one
                 let responseClone = response.clone();
 
-                caches.open('v3').then(function (cache) {
+                caches.open('v5').then(function (cache) {
                     cache.put(event.request, responseClone);
                 });
                 return response;

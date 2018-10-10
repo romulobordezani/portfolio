@@ -1,0 +1,44 @@
+<section id="work"  >
+  <main class="work-description" >
+    <div layout-margin layout-padding >
+
+      <div layout="row" layout-wrap >
+
+        <div layout="column" flex flex-xs="100" >
+
+          <h1 class="md-title" >UOL: form filling extension</h1>
+          <p>While working at UOL's platform, to test our systems was really pain full and we used to create new users all the time, full filling a signup form, repeatedly.</p>
+          <p>There was also an out of date full fill form extension to help out generating new users, but within the years it didn't follow all the rules updates.</p>
+          <div class="work-spacer" ></div>
+          <h1 class="md-title">Results:</h1>
+          <p>
+            <ul>
+              <li>The extension became able to generate user again and came back to life.</li>
+              <li>Had a algorithm to only generates odd CPF (IDs) numbers, which were accepted without validation at the staging environment.</li>
+              <li>Works with different Xpaths covering sign-up forms of different products.</li>
+              <li>Generates valid e-mails on @mailinator, prefixed with the creation date and the product in use to easy debugging.</li>
+              <li>Creates valid but fake Credit Cards using LUHN algorithm</li>
+              <li>Generates random and funny names and last names, including famous UOL colleagues nick names easily customizable locally</li>
+            </ul>
+          </p>
+
+          <div class="work-spacer" ></div>
+
+        </div>
+
+        <div layout="column" flex="33" flex-xs="100" >
+          <responsibilities frontend="true" ux="true" design="true" tests="true"></responsibilities>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="actions" >
+      <md-button id="close-job" ng-if="current" class="md-fab md-warn " aria-label="Job List" ng-click="setCurrent(false)" clickable >
+        <md-icon md-svg-src="images/uis/backTolist-centered.svg"></md-icon>
+      </md-button>
+    </div>
+
+  </main>
+</section>
