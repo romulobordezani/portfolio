@@ -2,8 +2,6 @@
 @import '../libs/measures.scss';
 @import '../libs/breakpoints';
 
-$base-z-index: 1;
-
 div#home {
 
   .parallax-clouds{
@@ -44,9 +42,9 @@ div#home {
       text-align: center;
       font-size: 1.5em;
       color: #97C3E8;
-      text-shadow: 0 0 27px #FFF;
+      text-shadow: 0 0 37px #FFF;
       cursor: default;
-      z-index: $base-z-index + 1;
+      opacity: 0.5;
 
       @include breakpoint((min-width 460px)(max-width 1024px)) {
         font-size: 1.5em;
@@ -88,7 +86,6 @@ div#home {
       height: 400px;
       position: absolute;
       bottom: 0;
-      z-index: $base-z-index + 10;
 
       @include breakpoint($desktop) {
         height: 530px;
@@ -110,7 +107,6 @@ div#home {
       height: 733px;
       position: absolute;
       left:0;
-      z-index: $base-z-index + 2;
     }
 
     .cloud-2 {
@@ -120,7 +116,6 @@ div#home {
       height: 733px;
       position: absolute;
       right: 0;
-      z-index: $base-z-index + 3;
     }
 
     .cloud-3 {
@@ -130,7 +125,6 @@ div#home {
       height: 733px;
       position: absolute;
       left: 40%;
-      z-index: $base-z-index + 4;
     }
 
     .cloud-4 {
@@ -140,20 +134,17 @@ div#home {
       height: 733px;
       position: absolute;
       left: 20%;
-      z-index: $base-z-index + 5;
     }
 
   }
 
   #home-desktop{
-
     .parallax-wrapper {
       width:100%;
       height: 536px;
       background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center center;
       background-size: cover;
     }
-
   }
 
   #home-featured{
@@ -234,7 +225,6 @@ div#home {
           width: 60%;
         }
 
-
       }
 
       h4 {
@@ -242,7 +232,6 @@ div#home {
           margin-top : 15px;
         }
       }
-
 
     }
 

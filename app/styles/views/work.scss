@@ -3,149 +3,141 @@
 
 section#work {
 
-    min-height: calc(100vh - 1277px);
-    margin: 16px 0;
+  min-height: calc(100vh - 1277px);
+  margin-top: 15px;
 
-    h1.md-title {
-        margin-bottom: 0px;
-        color: rgb(255,87,34);
+  h1.md-title {
+    margin-bottom: 0;
+    color: rgb(255,87,34);
+  }
+
+  md-card {
+
+    max-height: none;
+    background:#ffffff;
+    min-width: 47%;
+    cursor: pointer;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    &.no-pointer{
+      cursor: default;
     }
 
-    md-card {
+    @media (max-width:$flex-sm){
+      margin-bottom: 56px!important;
+    }
 
-        max-height: none;
-        background:#ffffff;
-        min-width: 47%;
-        cursor: pointer;
+    @media (min-width:$flex-md){
+      min-width: 46%;
+    }
 
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+    @media (min-width:$flex-lg){
+      min-width: 30%;
+    }
 
-        &.no-pointer{
-            cursor: default;
-        }
-
-        @media (max-width:$flex-sm){
-            margin-bottom: 56px!important;
-        }
-
-        @media (min-width:$flex-md){
-            min-width: 46%;
-        }
-
-        @media (min-width:$flex-lg){
-            min-width: 30%;
-        }
-
-        .md-card-image{
+    .md-card-image{
 
 
-            -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
-            -webkit-user-select: none;
-            -ms-user-select: none; /* From IE10 only */
-            user-select: none; /* Not valid CSS yet, as of July 2012 */
+      -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+      -webkit-user-select: none;
+      -ms-user-select: none; /* From IE10 only */
+      user-select: none; /* Not valid CSS yet, as of July 2012 */
 
-            -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
-            user-drag: none;
-            pointer-events: none;
+      -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+      user-drag: none;
+      pointer-events: none;
 
-            img {
+      img {
 
 
-                -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
-                -webkit-user-select: none;
-                -ms-user-select: none; /* From IE10 only */
-                user-select: none; /* Not valid CSS yet, as of July 2012 */
+        -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+        -webkit-user-select: none;
+        -ms-user-select: none; /* From IE10 only */
+        user-select: none; /* Not valid CSS yet, as of July 2012 */
 
-                -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
-                user-drag: none;
-                pointer-events: none;
-                touch-action: none;
+        -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+        user-drag: none;
+        pointer-events: none;
+        touch-action: none;
 
-            }
-
-        }
-
-        md-card-content {
-
-            p{
-                -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
-                -webkit-user-select: none;
-                -ms-user-select: none; /* From IE10 only */
-                user-select: none; /* Not valid CSS yet, as of July 2012 */
-
-                -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
-                user-drag: none;
-
-                pointer-events: none;
-
-            }
-
-        }
-
-        .md-toolbar-tools {
-            background: $discret-black;
-            color:$white;
-            font-size: 0.9em;
-        }
+      }
 
     }
 
+    md-card-content {
 
-    .work-description{
+      p{
+        -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+        -webkit-user-select: none;
+        -ms-user-select: none; /* From IE10 only */
+        user-select: none; /* Not valid CSS yet, as of July 2012 */
 
-        .work-spacer{
-            width: 100%;
-            height: 20px;
-            margin: 20px 0;
-        }
+        -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+        user-drag: none;
 
-        ul {
-            li{
-                margin-bottom: 25px;
-            }
-        }
+        pointer-events: none;
 
-        .responsibilityIcon{
-           vertical-align:  middle;
-            margin-right: 7px;
-            width: 24px;
-            height: auto;
-        }
-
-        .no-responsibility{
-            opacity: 0.15;
-        }
-
-        md-checkbox[disabled]{
-            cursor: default;
-        }
-
-        md-checkbox[disabled].md-default-theme.md-checked .md-icon{
-            background-color: #18B364;
-        }
-
-        md-card{
-            cursor: default;
-        }
-
-        .md-clickable{
-            cursor: default!important;
-        }
+      }
 
     }
 
-
-    #actions{
-
-        position: fixed;
-        right: 16px;
-        bottom: 0px;
-
+    .md-toolbar-tools {
+      background: $discret-black;
+      color:$white;
+      font-size: 0.9em;
     }
 
+  }
 
+  .work-description{
 
+    .work-spacer{
+      width: 100%;
+      height: 20px;
+      margin: 20px 0;
+    }
 
+    ul {
+      li{
+        margin-bottom: 25px;
+      }
+    }
+
+    .responsibilityIcon{
+      vertical-align:  middle;
+      margin-right: 7px;
+      width: 24px;
+      height: auto;
+    }
+
+    .no-responsibility{
+      opacity: 0.15;
+    }
+
+    md-checkbox[disabled]{
+      cursor: default;
+    }
+
+    md-checkbox[disabled].md-default-theme.md-checked .md-icon {
+      background-color: #18B364;
+    }
+
+    md-card{
+      cursor: default;
+    }
+
+    .md-clickable {
+      cursor: default!important;
+    }
+
+  }
+
+  #actions {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+  }
 
 }
