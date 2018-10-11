@@ -1,12 +1,16 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('v5').then(function(cache) {
+        caches.open('v5.1').then(function(cache) {
             return cache.addAll([
-                '/',
-                '/index.html'
+                '/'
             ]);
         })
     );
+});
+
+caches.keys().then(function(names) {
+  for (let name of names)
+    caches.delete(name);
 });
 
 
@@ -28,7 +32,7 @@ self.addEventListener('fetch', function(event) {
                 // and serve second one
                 let responseClone = response.clone();
 
-                caches.open('v5').then(function (cache) {
+                caches.open('v5.1').then(function (cache) {
                     cache.put(event.request, responseClone);
                 });
                 return response;
@@ -38,3 +42,4 @@ self.addEventListener('fetch', function(event) {
         }
     }));
 });
+

@@ -46,7 +46,7 @@
       to {transform:rotate(360deg);}
     } </style> </head> <body id="rb-body" layout="column" ng-controller="appController" ng-class="[animation, routeclass]"> include "browse-happy.html" include "pre-loader.html" include "menu-top.html" include "ng-view.html" <div id="dependency-injector"> <script src="scripts/vendor.0d48e60e.js"></script> <script src="scripts/scripts.40e06483.js"></script> </div> <script> if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('sw.js?v=5').then(function(registration) {
+        navigator.serviceWorker.register('sw.js?v=5.1').then(function(registration) {
           // Registration was successful
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
         }).catch(function(err) {
