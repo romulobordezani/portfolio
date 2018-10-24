@@ -33,6 +33,7 @@ angular
                 .when('/about', {
                     templateUrl: 'views/about.html',
                     controller: 'aboutController',
+                    routeclass : 'home',
                     animation: 'fade'
                 })
 
@@ -77,6 +78,7 @@ angular
                 .when('/contact', {
                     templateUrl: 'views/contact.html',
                     controller: 'contactController',
+                    routeclass : 'home',
                     animation: 'fade'
                 })
 

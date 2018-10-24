@@ -98,9 +98,30 @@ section#work {
       margin: 20px 0;
     }
 
+    md-divider {
+      &:last-of-type {
+        display: none;
+      }
+    }
+
     ul {
       li{
         margin-bottom: 25px;
+      }
+    }
+
+    .md-banner {
+      transform: translateY(-15px);
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+      &-image {
+        max-width: 50%;
+        height: 100%;
+        display: block;
+        box-shadow: 9px 0px 35px 0px rgba(0, 0, 0, 0.2);
+        @media (max-width: 720px) {
+          max-width: 100%;
+        }
       }
     }
 

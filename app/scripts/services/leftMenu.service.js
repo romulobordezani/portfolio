@@ -38,7 +38,7 @@
         alt: 'Work',
         href: '/work/' + CONFIG.LAST_YEAR,
         target : '',
-        imgsrc: 'images/menu/work.svg'
+        imgsrc: 'images/menu/coffee.svg'
       },
 
       {
