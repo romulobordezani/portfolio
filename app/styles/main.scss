@@ -4,7 +4,6 @@
 @import 'libs/animations';
 
 body {
-
     font-family: Comfortaa, Helvetica, sans-serif;
     font-weight: 200;
     letter-spacing: 0.3px;
@@ -15,9 +14,12 @@ body {
 
     @import 'assets/menu-top.scss';
 
-    md-content#ngview-container{
+    md-content#ngview-container {
+      overflow-x: hidden;
 
         div#ngview {
+
+            height: 100%;
 
             @import 'views/home';
             @import 'views/work';
@@ -38,3 +40,4 @@ body {
 @import 'directives/clickable.directive';
 @import 'directives/device-frame.directive';
 @import 'directives/timeline-tip.directive';
+@import 'directives/parallax-clouds.directive';

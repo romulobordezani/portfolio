@@ -1,31 +1,33 @@
 # Personal Portfolio
-This is my personal portfolio repository.<br /><br />
-Usefull to share how I did some features and directives. 
-
-> If you want to use anything, you can do it, just put some comment lines on your code mentioning me, please.
-
-###Languages and Frameworks
-Made with love and:<br />
-* Angular
-* Angular Material
-* Node.js
-* Google Geolocation System
-
-URL: https://romulobordezani.com.br <br/>
-
-
 [![Build Status](https://travis-ci.org/romulobordezani/portfolio.svg?branch=master)](https://travis-ci.org/romulobordezani/portfolio)
 
+![Logo](https://raw.githubusercontent.com/romulobordezani/portfolio/master/app/images/uis/logo.svg) This is my personal portfolio repository.
+
+> Fell free to use anything from here, but I higly recommend you to use something newer 🤭
+
+Made with ❤️ and:<br />
+* [Angular JS](https://angularjs.org/)
+* [Angular Material](https://material.angularjs.org/)
+
+URL: [https://romulobordezani.com.br](https://romulobordezani.com.br) <br/>
 
 #### Ho to run
 Install all node dependencies 
-> npm install
+```bash
+npm install
+```
 
 Install bower dependencies
-> bower install
+```bash
+bower install
+```
 
-Run grunt to deploy
-> grunt build
+Building to production
+```bash
+npm run build
+```
 
-Or run grunt to debug and work on it
->grunt serve
+Run it locally
+```bash
+npm run dev
+```

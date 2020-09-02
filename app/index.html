@@ -217,7 +217,7 @@
     </md-list>
   </md-sidenav>
 
-  <md-content flex id="ngview-container" style="overflow:auto;"  >
+  <md-content flex id="ngview-container">
 
       <div ng-view="" id="ngview" layout="column" class="content-pusher view" ></div>
 
@@ -277,7 +277,7 @@
   </div>
 
   <script>
-    if ('serviceWorker' in navigator) {
+    /*if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('sw.js?v=5.1').then(function(registration) {
           // Registration was successful
@@ -287,7 +287,7 @@
           console.log('ServiceWorker registration failed: ', err);
         });
       });
-    }
+    }*/
   </script>
 
 </body>

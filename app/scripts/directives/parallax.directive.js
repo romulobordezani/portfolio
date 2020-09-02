@@ -67,32 +67,19 @@ angular.module('mdParallax', []).directive('mdParallax', [
                 }
 
 
-
-
-
-
-
-
                 parallaxMaxVal  = iScope.parallaxMaxVal ? parseInt( iScope.parallaxMaxVal, 10 ) : null;
                 parallaxScroller = iScope.parallaxScroller;
                 var trueWindow = document.getElementById(parallaxScroller) || $window ;
 
-                if( pureCssVal === 'background-position-y' ) {
-                    cssKey = 'background-position';
-                    toFirefoxParallaxInitVal = 'center ' + parallaxInitVal + 'px';
-
-                }else if(pureCssVal === 'opacity'){
+                if (pureCssVal === 'opacity'){
                     toFirefoxParallaxInitVal = parallaxInitVal;
-                }else{
+                } else {
                     toFirefoxParallaxInitVal = parallaxInitVal + 'px';
                 }
 
                 iElem.css( cssKey, toFirefoxParallaxInitVal );
 
-
-
                 function _onScroll() {
-
                     var resultVal;
 
                     var calcVal = trueWindow.scrollTop * parallaxRatio + parallaxInitVal;
@@ -107,10 +94,7 @@ angular.module('mdParallax', []).directive('mdParallax', [
                         resultVal = calcVal + 'px';
                     }
 
-                    if( pureCssVal === 'background-position-y' ){
-                        cssKey = 'background-position';
-                        resultVal = 'center ' + resultVal;
-                    }else if( pureCssVal === 'opacity' ) {
+                    if ( pureCssVal === 'opacity' ) {
                         resultVal = ( calcVal / 500 ) ;
                     }
 
@@ -122,9 +106,11 @@ angular.module('mdParallax', []).directive('mdParallax', [
 
                 //if( window.screen.width > 360 ){
 
-                if( window.screen.width > 1024 || pureCssVal === 'opacity' ){
+              trueWindow.addEventListener('scroll', _onScroll);
+
+               /* if( window.screen.width > 1024 || pureCssVal === 'opacity' ){
                     trueWindow.addEventListener('scroll', _onScroll);
-                }
+                }*/
 
             }
         };

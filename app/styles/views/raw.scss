@@ -1,0 +1,243 @@
+#home{
+
+  .combo-box {
+
+    border-radius: 6px;
+    opacity: 0.9;
+    cursor: default !important;
+    min-height: 200px;
+    min-width: 310px;
+    max-width: 310px;
+
+    .plus-icon {
+      color: #cfff42;
+      font-size: 1.7em;
+      padding: 0 2px;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    .md-headline {
+      font-size: 1.5em;
+      color: #d66836;
+      text-shadow: 1px 0px 2px rgba(79,34,34,0.59);
+    }
+
+    .md-subhead {
+      line-height: 20px;
+      font-size: 1.1em;
+    }
+
+    md-card-title-text {
+      position: relative;
+    }
+
+    .price {
+      color: #cfff42;
+      font-size: 1.7em;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .translucent {
+    background: inherit;
+    height: 350px;
+    position: absolute;
+    overflow: hidden;
+    padding: 60px;
+
+    &:before {
+      content: " ";
+      background: inherit;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
+      filter: blur(10px);
+    }
+  }
+
+  .footer-display {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: black;
+    opacity: 0.8;
+    padding: 40px 2em 2em 2em;
+    .title {
+      color: #cfff42;
+      font-size: 2.4em;
+    }
+    .description {
+      font-size: 1.4em;
+    }
+
+    .call-to-action {
+      color: #ec6937;
+      font-size: 1.6em;
+    }
+  }
+
+  .post {
+    padding: 0;
+    background: 50% 50% / cover no-repeat;
+    height: calc(96vh);
+    @media (max-width: $flex-md){
+      height: auto;
+    }
+  }
+
+  .stick {
+    background-attachment: fixed;
+  }
+
+  #post0 {
+    background-image: url("../images/home/desconstrucao.jpg");
+    background-size: contain;
+    background-color: black;
+
+    @media (max-width: $flex-md){
+      background-size: 390%;
+      background-position: left;
+      height: calc(95vh);
+    }
+
+    .right-display {
+
+      padding: 2em;
+      height: 100%;
+      letter-spacing: -0.06em;
+
+      @media (max-width: $flex-md){
+        padding: 0;
+      }
+
+      > .layout-column {
+        height: calc(99vh) !important;
+        padding: 0 1em 0;
+      }
+
+      img {
+        max-width: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      .title {
+        font-size: 2.6em;
+        color: #cfff42;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.99);
+        opacity: 0.7;
+
+        @media (max-width: $flex-md){
+          font-size: 1.6em;
+          max-width: 60%;
+        }
+      }
+
+      .description {
+        font-size: 2.5em;
+        color: #727272;
+        text-shadow: 1px 0 1px rgba(0, 0, 0, 0.89);
+
+        @media (max-width: $flex-md){
+          font-size: 1.2em;
+          max-width: 50%;
+        }
+      }
+
+      .contacts {
+        margin-top: 33px;
+        font-size: 1.1em;
+        width: 100%;
+        min-width: 700px;
+
+        @media (max-width: $flex-md){
+          min-width: unset;
+        }
+
+        > div > div {
+          margin: 20px 0;
+          width: 30%;
+          @media (max-width: $flex-md){
+            width: 100%;
+            background: rgba(0,0,0,0.6);
+            padding: 10px;
+          }
+
+        }
+      }
+    }
+  }
+
+  #post-cards {
+    padding: 2em;
+
+    .clickable {
+      height: unset;
+    }
+  }
+
+  #post-combos {
+    background-image: url("../images/home/post2.jpg");
+    padding: 2em 0.6em;
+  }
+
+  #post-hearts {
+    position: relative;
+    background-image: url("../images/home/banner.jpg");
+    background-size: cover;
+
+    @media (max-width: $flex-md){
+      height: calc(50vh);
+    }
+  }
+
+  #post-fidelidade {
+    position: relative;
+    background-image: url("../images/home/post3.jpg");
+
+    @media (max-width: $flex-md){
+      height: calc(160vh);
+    }
+
+    .footer-display {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: black;
+      opacity: 0.8;
+      padding: 40px 2em 2em 2em;
+
+      .title {
+        color: #cfff42;
+        font-size: 2.4em;
+        @media (max-width: $flex-md){
+          font-size: 1.4em;
+        }
+      }
+
+      .description {
+        font-size: 1.4em;
+        @media (max-width: $flex-md){
+          font-size: 1.2em;
+        }
+      }
+
+      .call-to-action {
+        color: #ec6937;
+        font-size: 1.6em;
+      }
+    }
+  }
+
+}

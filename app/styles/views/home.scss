@@ -1,239 +1,80 @@
 @import '../libs/colors.scss';
 @import '../libs/measures.scss';
 @import '../libs/breakpoints';
+@import '../libs/effects';
 
 div#home {
 
-  .parallax-clouds{
+  height: 100%;
 
-    height: 333px;
-    width: 100%;
+  #clouds-wrapper {
+    height: 100%;
     position: relative;
-    overflow: hidden;
-    background: #A5D3FA; /* Old browsers */
-    background: -moz-linear-gradient(top,  #FFFFFF 0%, #A5D3FA 50%, #FAFAFA 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #FFFFFF 0%,#A5D3FA 50%,#FAFAFA 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #FFFFFF 0%,#A5D3FA 50%, #FAFAFA 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#FAFAFA',GradientType=0 ); /* IE6-9 */
+  }
 
-    @include breakpoint($large) {
-      height: 800px;
-    }
+  #home-featured {
 
-    @include breakpoint((min-height 900px)(orientation landscape)) {
-      height: 900px;
-    }
-
-    @include breakpoint((min-height 950px)(orientation landscape)) {
-      height: 950px;
-    }
-
-    @include breakpoint((min-height 1080px)(orientation landscape)) {
-      height: 1080px;
-    }
-
-    .parallax-txt {
-
-      position: absolute;
-      bottom: 167px;
-      right: 0;
-      left: 0;
-      margin: auto;
-      text-align: center;
-      font-size: 1.5em;
-      color: #97C3E8;
-      text-shadow: 0 0 37px #FFF;
-      cursor: default;
-      opacity: 0.5;
-
-      @include breakpoint((min-width 460px)(max-width 1024px)) {
-        font-size: 1.5em;
-        bottom: 45%;
-        left: 42%;
-      }
-
-      @include breakpoint($large) {
-        font-size: 2.7em;
-        bottom: 363px;
-      }
-
-      @include breakpoint($desktop) {
-        font-size: 4.7em;
-        bottom: 66%;
-      }
-
-      @include breakpoint($ultra-hd) {
-        font-size: 5.7em;
-        bottom: 45%;
-        left: 42%;
-      }
-
-      .parallax-reverse-text{
-        -webkit-transform:rotateY(180deg);
-        -moz-transform:rotateY(180deg);
-        -o-transform:rotateY(180deg);
-        -ms-transform:rotateY(180deg);
-        transform:rotateY(180deg);
-      }
-
-    }
-
-    .image-overlay {
-      background: transparent url("../images/parallax/bg-parallax.png") no-repeat;
-      background-size: contain;
-      background-position: center bottom;
+    .post {
+      padding: 0;
+      background: 50% 50% / cover no-repeat;
       width: 100%;
-      height: 400px;
-      position: absolute;
-      bottom: 0;
+      height: calc(110vh);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.75em;
 
-      @include breakpoint($desktop) {
-        height: 530px;
-        background-size: cover;
-        background-position: center top;
+      @media (max-width: $flex-md){
+        height: auto;
       }
 
-      @include breakpoint($ultra-hd) {
-        height: 800px;
-        background-size: cover;
-        background-position: center top;
+      .clickable {
+
+        display: flex;
+
+        .icon {
+          width: 10%;
+          margin: 0 60px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .title {
+          h4 {
+            font-size: 1.3em;
+            margin: 17px 0;
+          }
+        }
       }
     }
 
-    .cloud-1 {
-      background: url(../images/parallax/cloud-1.png) no-repeat center bottom;
-      background-size: contain;
-      width: 604px;
-      height: 733px;
-      position: absolute;
-      left:0;
+    .stick {
+      background-attachment: fixed;
     }
 
-    .cloud-2 {
-      background: url(../images/parallax/cloud-2.png) no-repeat center top;
-      background-size: contain;
-      width: 615px;
-      height: 733px;
-      position: absolute;
-      right: 0;
+
+    #first-featured-item {
+      background-image: url("../../images/home/horizon1.jpeg");
     }
 
-    .cloud-3 {
-      background: url(../images/parallax/cloud-3.png) no-repeat center bottom;
-      background-size: contain;
-      width: 666px;
-      height: 733px;
-      position: absolute;
-      left: 40%;
+    #second-featured-item {
+      background-image: url("../../images/home/horizon2.jpeg");
     }
 
-    .cloud-4 {
-      background: url(../images/parallax/cloud-4.png) no-repeat center bottom;
-      background-size: contain;
-      width: 666px;
-      height: 733px;
-      position: absolute;
-      left: 20%;
+
+    #third-featured-item {
+      background-image: url("../../images/home/horizon3.jpeg");
+    }
+
+    #fourth-featured-item {
+      background-image: url("../../images/home/horizon4.jpeg");
     }
 
   }
 
-  #home-desktop{
-    .parallax-wrapper {
-      width:100%;
-      height: 536px;
-      background: url(../images/parallax/bg-parallax-sm.jpg) no-repeat center center;
-      background-size: cover;
-    }
-  }
-
-  #home-featured{
-
-    @media ( min-width : $flex-lg ){
-      margin : 90px 0;
-    }
-
-    h4{
-      margin: 0px;
-      padding-left: 0px;
-    }
-
-
-    #first-featured-item{
-
-      @media ( max-width : $flex-lg ) {
-
-        font-size: 0.75em;
-
-        h4 {
-          font-size: 1.3em;
-          margin-top: 17px;
-        }
-
-      }
-
-      @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
-
-        font-size: 1.3em;
-
-        h4 {
-          font-size: 1.3em;
-        }
-
-      }
-
-    }
-
-
-    #third-featured-item, #mobile-featured-item{
-
-      @media ( max-width : $flex-lg ) {
-
-        font-size: 0.75em;
-
-        h4 {
-          font-size: 1.3em;
-          margin-top: 17px;
-        }
-
-      }
-
-
-      @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
-
-        font-size: 1.3em;
-
-        h4 {
-          font-size: 1.3em;
-        }
-
-      }
-
-      @media ( min-width : $flex-sm ) and ( max-width : $flex-md ) {
-        margin-top: 33px;
-      }
-
-
-
-      img.md-avatar{
-
-        width:100%;
-        height:auto;
-
-        @media ( max-width : $flex-md ) {
-          margin: 0;
-          width: 60%;
-        }
-
-      }
-
-      h4 {
-        @media ( max-width : $flex-md ) {
-          margin-top : 15px;
-        }
-      }
-
-    }
+  #home-parallax-hole {
 
   }
 

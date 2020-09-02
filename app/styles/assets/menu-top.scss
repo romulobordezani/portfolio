@@ -48,7 +48,7 @@ md-toolbar {
 
         display: block;
         content: ' ';
-        background: transparent url('../images/uis/gradient-line-vertical-darker.svg') repeat left center;
+        background: transparent url('../../images/uis/gradient-line-vertical-darker.svg') repeat left center;
         background-size: 1px 31px;
         height: 31px;
         width: 1px;
@@ -197,6 +197,7 @@ md-toolbar {
 
     div#background-row {
       display: none;
+      transition: opacity 0.7s ease;
     }
 
   }
