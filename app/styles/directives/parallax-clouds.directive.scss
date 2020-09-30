@@ -3,49 +3,6 @@
 @import '../libs/breakpoints';
 
 
-@keyframes cloud_1 {
-  0% {
-    left:80%
-  }
-
-  100% {
-    left:-200%;
-    display: none;
-  }
-}
-
-@keyframes cloud_2 {
-  0% {
-    left:60%
-  }
-
-  100% {
-    left:-200%;
-    display: none;
-  }
-}
-
-@keyframes cloud_3 {
-  0% {
-    left:40%
-  }
-
-  100% {
-    left:-200%;
-    display: none;
-  }
-}
-
-@keyframes cloud_4 {
-  0% {
-    left:100%
-  }
-
-  100% {
-    left:-200%
-  }
-}
-
 @keyframes scroll_down_icon_anim {
   0% {
     opacity: 0
