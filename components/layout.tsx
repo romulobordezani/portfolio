@@ -8,9 +8,9 @@ const name = 'Romulo Bordezani'
 export const siteTitle = 'Turning ideas into code.'
 
 export default function Layout({
-                                   children,
-                                   home
-                               }: {
+   children,
+   home
+}: {
     children: React.ReactNode
     home?: boolean
 }) {
