@@ -9,6 +9,6 @@ bower_components
 .svn
 log/*.log
 logs/*
-.idea
 npm-debug.log
 _notes
+old
