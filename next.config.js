@@ -5,7 +5,7 @@ const optimizedImages = require('next-optimized-images');
 
 const nextConfig = {
   reactStrictMode: true/*,
-  basePath: '/portfolio',*/
+  basePath: '/',*/
 };
 
 module.exports = withPlugins([
