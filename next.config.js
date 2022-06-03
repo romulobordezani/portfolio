@@ -4,12 +4,9 @@ const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
 
 const nextConfig = {
-  reactStrictMode: true/*,
-  basePath: '/',*/
+  reactStrictMode: true
 };
 
 module.exports = withPlugins([
-  [optimizedImages, {
-    /* config for next-optimized-images */
-  }]
+  [optimizedImages, {}]
 ], nextConfig);
