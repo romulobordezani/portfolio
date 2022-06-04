@@ -3,6 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
+import Script from 'next/script';
 
 export default class MyDocument extends Document {
   render() {
@@ -19,6 +20,17 @@ export default class MyDocument extends Document {
             {/* Inject MUI styles first to match with the prepend: true configuration. */}
             {(this.props as any).emotionStyleTags}
           </Head>
+            <Script strategy="lazyOnload" id="ga">
+                {`
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                        ga('create', 'UA-8748449-1', 'auto');
+                        ga('send', 'pageview');
+                    `}
+            </Script>
           <body>
           <Main />
           <NextScript />
