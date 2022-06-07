@@ -100,14 +100,18 @@ const Home: NextPage = () => {
                     <Typography sx={{
                         color: '#FFF'
                     }} component="div">
-                        <Avatar sx={{
-                            width: 133,
-                            height: 133,
-                            [theme.breakpoints.down('lg')]: {
-                                width: 66,
-                                height: 66,
-                            }
-                        }} alt="Rômulo E. Bordezani" src="/images/romulo-bordezani-picture.png" />
+                        <Avatar
+                            sx={{
+                                width: 133,
+                                height: 133,
+                                [theme.breakpoints.down('lg')]: {
+                                    width: 66,
+                                    height: 66,
+                                }
+                            }}
+                            alt="Rômulo E. Bordezani"
+                            src="/images/romulo-bordezani-picture.png"
+                        />
 
                         <Typography variant="body1" component="p" sx={{ ...responsiveFont, my: 4 }}>
                             Hello! My name is <Typography component="span" sx={{ ...responsiveFont, color: 'orange' }}>Romulo Bordezani</Typography>, I&apos;m a full-stack developer who has been working to make the Web more than just videos, memes and weird dances, since 2001.
@@ -118,7 +122,7 @@ const Home: NextPage = () => {
                         </Typography>
 
                         <Typography variant="body1" component="p" sx={{ ...responsiveFont, my: 4 }}>
-                            Can I be useful to your business? Please let me know via any one of these profiles down below. ☎️
+                            Can I be useful to your business? Please let me know via any one of these profiles down below. ✉️️
                         </Typography>
                     </Typography>
                     <SocialBar />
@@ -134,20 +138,32 @@ const Home: NextPage = () => {
                     color: 'white',
                     zIndex: 9
                 }}>
-                <Box sx={{ ...sun() }}  />
+                <Box sx={{ ...sun() }} />
             </ParallaxLayer>
 
             <ParallaxLayer
                 style={{
                     ...cloudStl,
                     zIndex: 1100,
-                    backgroundColor: 'rgba(63,54,71,1)'
+                    backgroundColor: 'rgb(44,38,50)'
                 }}
                 offset={2}
-                speed={1}
+                speed={1.5}
                 factor={1}
             >
-                <ReactPlayer url='https://soundcloud.com/romulo-bordezani' controls={true} />
+                <Box>
+                    <Typography variant="body1" component="div" sx={{
+                        [theme.breakpoints.up('xl')]: {
+                            fontSize: '1.6rem',
+                        },
+                        padding: '10px',
+                        color: 'white',
+                        mb: 3
+                    }}>
+                        What about some of my blues to hear for a while?
+                    </Typography>
+                    <ReactPlayer width="100%" url='https://soundcloud.com/romulo-bordezani' controls={true} />
+                </Box>
             </ParallaxLayer>
         </Parallax>
     );

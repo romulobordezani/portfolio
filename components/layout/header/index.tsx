@@ -14,31 +14,32 @@ const Header: FC = () => {
 
     return (
         <MuiAppBar position="fixed" elevation={0} sx={{ backgroundColor: 'transparent' }}>
-            <Container maxWidth="xl">
-                <Toolbar>
+            <Toolbar>
+                <Box sx={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    margin: '30px',
+                    [theme.breakpoints.down('md')]: {
+                        margin: '5px',
+                    },
+                }}>
                     <Box sx={{
-                        width: '100%',
                         display: 'flex',
-                        justifyContent: 'space-between',
-                        mt: '30px'
-                    }}>
-                        <Box sx={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                width: '60px',
-                                [theme.breakpoints.up('xl')]: {
-                                    width: '200px'
-                                },
-                            }}
-                        >
-                            <img src={Logo} alt="Romulo Bordezani Logo" height="100%" width="100%" />
-                        </Box>
-                        <Box>
-                            <SocialBar />
-                        </Box>
+                        alignItems: 'center',
+                        width: '60px',
+                        [theme.breakpoints.up('xl')]: {
+                            width: '200px'
+                        },
+                    }}
+                    >
+                        <img src={Logo} alt="Romulo Bordezani Logo" height="100%" width="100%" />
                     </Box>
-                </Toolbar>
-            </Container>
+                    <Box>
+                        <SocialBar />
+                    </Box>
+                </Box>
+            </Toolbar>
         </MuiAppBar>
     );
 };
