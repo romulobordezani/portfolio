@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Mail';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { styled } from '@mui/system';
 
 interface IconButtonLinkProps extends IconButtonProps {
@@ -41,6 +42,10 @@ const SocialBar: React.FC = () => {
 
             <IconButton href="https://github.com/romulobordezani" target="_BLANK" rel="noreferrer">
                 <GitHubIcon />
+            </IconButton>
+
+            <IconButton href="https://www.instagram.com/mulo.art/" target="_BLANK" rel="noreferrer">
+                <InstagramIcon />
             </IconButton>
         </Box>
     );

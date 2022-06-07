@@ -2,20 +2,14 @@ import React, { FC } from 'react';
 import MuiAppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import { Typography, Container } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Container } from '@mui/material';
 
 import SocialBar from '../../social-bar';
 import Link from '../../../src/Link';
+import Logo from  '../../../public/logo-romulo-bordezani.svg';
 import { useTheme } from '@mui/system';
 
-interface HeaderProps {
-    open?: boolean;
-    toggleDrawer: () => void;
-}
-
-const Header: FC<HeaderProps> = ({ open, toggleDrawer}) => {
+const Header: FC = () => {
     const theme = useTheme();
 
     return (
@@ -25,27 +19,21 @@ const Header: FC<HeaderProps> = ({ open, toggleDrawer}) => {
                     <Box sx={{
                         width: '100%',
                         display: 'flex',
-                        justifyContent: 'space-between'
+                        justifyContent: 'space-between',
+                        mt: '30px'
                     }}>
-                        <Box sx={{ display: 'flex', alignItems: 'center'}} >
-                            <Link href="/" sx={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                                <img src="/logo-romulo-bordezani.svg" alt="Romulo Bordezani Logo" height={40} />
-                                <Typography
-                                    component="h1"
-                                    variant="h1"
-                                    color="#FFF"
-                                    sx={{ ml: '7px' }}
-                                >
-                                    <Typography sx={{ [theme.breakpoints.down('sm')]: { display: 'none'} }} >
-                                        Rômulo Bordezani
-                                    </Typography>
-                                    <Typography sx={{ [theme.breakpoints.up('sm')]: { display: 'none'} }} >
-                                        R&B
-                                    </Typography>
-                                </Typography>
-                            </Link>
+                        <Box sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                width: '60px',
+                                [theme.breakpoints.up('xl')]: {
+                                    width: '200px'
+                                },
+                            }}
+                        >
+                            <img src={Logo} alt="Romulo Bordezani Logo" height="100%" width="100%" />
                         </Box>
-                        <Box sx={{ [theme.breakpoints.down('sm')]: { display: 'none'} }}>
+                        <Box>
                             <SocialBar />
                         </Box>
                     </Box>
