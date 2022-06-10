@@ -20,7 +20,7 @@ export const sun = () => {
 
 export const cloud = (id: number) => {
     return {
-        background: `transparent url("../../images/parallax/cloud-${id}.png") no-repeat`,
+        background: `transparent url("../../images/parallax/cloud-${id}-min.png") no-repeat`,
         backgroundSize: 'contain',
         opacity: `0.9`,
         width: '100%',
