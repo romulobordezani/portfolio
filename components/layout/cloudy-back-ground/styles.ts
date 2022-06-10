@@ -9,6 +9,7 @@ export const sun = () => {
         left: 'unset!important',
         top: '100px',
         right: '200px',
+        color: '#2C2632',
         boxShadow:
             `inset 0 0 50px #ffffff,
              0 0 50px #fff,

@@ -16,10 +16,7 @@ module.exports = withPlugins([
         {
             pwa: {
                 dest: 'public',
-                disable: false,
-                register: true,
-                scope: '/',
-                sw: 'service-worker.js',
+                runtimeCaching
             },
         },
     ],
