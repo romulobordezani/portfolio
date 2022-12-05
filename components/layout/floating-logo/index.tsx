@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Logo from '../../../public/images/mulo _logo_vertical-sun.svg'
+import Logo from '../../../public/images/mulo_logo_vertical-sun.svg'
 import { Box } from '@mui/material'
 
 export const FloatingLogo: FC = () => {
