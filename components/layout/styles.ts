@@ -1,7 +1,5 @@
 export const cloudyBackGround = {
-    background: 'transparent url("../images/parallax/sky-bg-min.jpg") no-repeat',
-    backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
+    background: 'rgba(63,54,71,1)',
     height: '100vh',
     width: '100%'
 }

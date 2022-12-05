@@ -2,14 +2,14 @@
 
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
+const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
 
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
 };
 
-module.exports = withPlugins([
+const plugins = [
     [optimizedImages, {}],
     [
         withPWA,
@@ -20,4 +20,7 @@ module.exports = withPlugins([
             },
         },
     ],
-], nextConfig);
+];
+
+module.exports = async (phase, { defaultConfig }) =>
+    withPlugins(plugins, nextConfig)(phase, { ...defaultConfig, ...nextConfig });

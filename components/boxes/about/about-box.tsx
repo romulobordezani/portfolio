@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
-import SocialBar from '../../social-bar';
+import SocialBar from '../../layout/social-bar';
 import { useTheme } from '@mui/system';
 
 const AboutBox: React.FC = () => {

@@ -4,10 +4,11 @@ import ReactPlayer from 'react-player/soundcloud'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
-import { cloud, sun } from '../components/layout/cloudy-back-ground/styles';
+import {cloud, cloudyBackGround, sun} from '../components/layout/cloudy-back-ground/styles';
 import Header from '../components/layout/header';
 import { useTheme } from '@mui/system';
 import AboutBox from '../components/boxes/about/about-box';
+import { Property } from "csstype";
 
 const Home: NextPage = () => {
     const parallax = useRef<IParallax>(null);
@@ -20,16 +21,40 @@ const Home: NextPage = () => {
     }
 
     const cloudStl = {
-        display: 'flex', justifyContent: 'center', alignItems: 'center'
+         display: 'flex', justifyContent: 'center', alignItems: 'center'
     }
 
     return (
         <Parallax
             ref={parallax}
             horizontal={false}
-            pages={3}
+            pages={2}
             style={{ top: '0', left: '0', background: 'transparent' }}
         >
+            <ParallaxLayer
+                sticky={{ start: 0  }}
+                style={{ ...cloudStl, zIndex: 10000 }}
+            >
+                <Header />
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={0}
+                speed={0.1}
+                factor={1}
+            >
+                <Box sx={{ ...cloudyBackGround }} />
+            </ParallaxLayer>
+
+            <ParallaxLayer
+                offset={0.05}
+                speed={-0.07}
+                factor={2}
+                style={{ ...cloudStl }}
+            >
+                <Box sx={{ ...sun() }} />
+            </ParallaxLayer>
+
             <ParallaxLayer
                 offset={0}
                 speed={0.1}
@@ -48,37 +73,19 @@ const Home: NextPage = () => {
 
             <ParallaxLayer
                 offset={0.7}
-                speed={0.5}
+                speed={1.5}
                 factor={0.5}
                 style={{ ...cloudStl, zIndex: 13 }}>
                 <Box sx={{ ...cloud(3) }} />
             </ParallaxLayer>
 
             <ParallaxLayer
-                offset={1}
+                offset={0.2}
                 speed={0.5}
                 factor={0.5}
                 style={{ ...cloudStl, zIndex: 14 }}>
                 <Box sx={{ ...cloud(4) }} />
             </ParallaxLayer>
-
-
-            <ParallaxLayer
-                sticky={{ start: 0, end: 0.5 }}
-            >
-                <Header />
-            </ParallaxLayer>
-
-            <ParallaxLayer
-                offset={1.1}
-                speed={-0.5}
-                factor={1}
-                style={{
-                    background: 'linear-gradient(0deg, rgba(63,54,71,1) 0%, rgba(63,54,71,1) 79%, rgba(63,54,71,0) 100%)',
-                    position: 'absolute',
-                    zIndex: 1000
-                }}
-            />
 
             <ParallaxLayer
                 offset={1}
@@ -92,19 +99,24 @@ const Home: NextPage = () => {
                 <AboutBox />
             </ParallaxLayer>
 
-            <ParallaxLayer
-                offset={0}
-                speed={-1.2}
-                factor={0.5}
-                style={{
-                    ...cloudStl,
-                    color: 'white',
-                    zIndex: 9
-                }}>
-                <Box sx={{ ...sun() }} />
-            </ParallaxLayer>
 
-            <ParallaxLayer
+            {/*<ParallaxLayer
+                offset={1}
+                speed={-0.5}
+                factor={1}
+                style={{
+                    backgroundColor: 'rgba(63,54,71,1)',
+                    background: 'linear-gradient(0deg, rgba(63,54,71,1) 0%, rgba(63,54,71,1) 79%, rgba(63,54,71,0) 100%)',
+                    position: 'absolute',
+                    zIndex: 1000
+                }}
+            />*/}
+
+            {/**/}
+
+
+
+            {/*<ParallaxLayer
                 style={{
                     ...cloudStl,
                     zIndex: 1100,
@@ -127,7 +139,7 @@ const Home: NextPage = () => {
                     </Typography>
                     <ReactPlayer width="100%" url='https://soundcloud.com/romulo-bordezani' controls={true} />
                 </Box>
-            </ParallaxLayer>
+            </ParallaxLayer>*/}
         </Parallax>
     );
 };
