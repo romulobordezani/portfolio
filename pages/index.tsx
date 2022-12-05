@@ -1,7 +1,5 @@
 import React, { useRef } from 'react'
 import type { NextPage } from 'next'
-import ReactPlayer from 'react-player/soundcloud'
-import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 import {
@@ -10,14 +8,13 @@ import {
   sun,
 } from '../components/layout/cloudy-back-ground/styles'
 import Header from '../components/layout/header'
-import { useTheme } from '@mui/system'
 import { AboutContent } from '../components/content/about'
-import { Property } from 'csstype'
 import { RadioContent } from '../components/content/radio'
 
 const Home: NextPage = () => {
   const parallax = useRef<IParallax>(null)
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const scroll = (to: number) => {
     if (parallax.current) {
       parallax.current.scrollTo(to)
