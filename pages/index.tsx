@@ -5,11 +5,11 @@ import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 import {
   cloud,
   cloudyBackGround,
-  sun,
 } from '../components/layout/cloudy-back-ground/styles'
-import Header from '../components/layout/header'
 import { AboutContent } from '../components/content/about'
 import { RadioContent } from '../components/content/radio'
+import SocialBar from '../components/layout/social-bar'
+import { FloatingLogo } from '../components/layout/floating-logo'
 
 const Home: NextPage = () => {
   const parallax = useRef<IParallax>(null)
@@ -35,23 +35,39 @@ const Home: NextPage = () => {
       style={{ top: '0', left: '0', background: 'transparent' }}
     >
       <ParallaxLayer
-        sticky={{ start: 0 }}
-        style={{ ...cloudStl, zIndex: 10000 }}
+        sticky={{ start: 0, end: 3 }}
+        style={{
+          width: '100%',
+          height: 'fit-content',
+          position: 'absolute',
+          top: 0,
+          display: 'flex',
+          justifyContent: 'end',
+          right: 0,
+          zIndex: 10001,
+          padding: '1rem',
+        }}
       >
-        <Header />
+        <SocialBar />
+      </ParallaxLayer>
+
+      <ParallaxLayer
+        offset={0}
+        speed={-0.07}
+        factor={1}
+        style={{
+          ...cloudStl,
+          justifyContent: 'start',
+          zIndex: 10000,
+          position: 'absolute',
+          top: 0,
+        }}
+      >
+        <FloatingLogo />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={0.1} factor={1}>
         <Box sx={{ ...cloudyBackGround }} />
-      </ParallaxLayer>
-
-      <ParallaxLayer
-        offset={0.05}
-        speed={-0.07}
-        factor={2}
-        style={{ ...cloudStl }}
-      >
-        <Box sx={{ ...sun() }} />
       </ParallaxLayer>
 
       <ParallaxLayer
@@ -93,7 +109,6 @@ const Home: NextPage = () => {
       <ParallaxLayer offset={1} speed={2.5} style={{ zIndex: 10001 }}>
         <AboutContent />
       </ParallaxLayer>
-
       <ParallaxLayer
         style={{
           ...cloudStl,
