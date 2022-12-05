@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import Logo from '../../../public/images/mulo _logo_vertical-sun.svg'
-import Image from 'next/image'
 import { Box } from '@mui/material'
 
 export const FloatingLogo: FC = () => {
@@ -14,7 +13,9 @@ export const FloatingLogo: FC = () => {
         position: 'relative',
       }}
     >
-      <Image src={Logo} alt="Mulo" fill />
+      <picture>
+        <img src={Logo} alt="Mulo" style={{ width: '100%', height: '100%' }} />
+      </picture>
     </Box>
   )
 }
