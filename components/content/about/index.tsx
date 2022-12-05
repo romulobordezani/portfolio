@@ -5,7 +5,7 @@ import Avatar from '@mui/material/Avatar';
 import SocialBar from '../../layout/social-bar';
 import { useTheme } from '@mui/system';
 
-const AboutBox: React.FC = () => {
+export const AboutContent: React.FC = () => {
     const theme = useTheme();
 
     const responsiveFont = {
@@ -46,5 +46,3 @@ const AboutBox: React.FC = () => {
         </Box>
     );
 };
-
-export default AboutBox;

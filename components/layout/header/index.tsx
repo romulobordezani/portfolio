@@ -13,23 +13,20 @@ const Header: FC = () => {
     const theme = useTheme();
 
     return (
-        <MuiAppBar position="fixed" elevation={0} sx={{ backgroundColor: 'transparent' }}>
-            <Toolbar>
-                <Box sx={{
-                    width: '100%',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    margin: '30px',
-                    [theme.breakpoints.down('md')]: {
-                        margin: '5px',
-                    },
-                }}>
-                    <Box>
-                        <SocialBar />
-                    </Box>
-                </Box>
-            </Toolbar>
-        </MuiAppBar>
+        <Box sx={{
+            width: '100%',
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'end',
+            alignContent: 'start',
+            [theme.breakpoints.down('md')]: {
+                margin: '5px',
+            },
+        }}>
+            <Box sx={{ padding: '1rem', }}>
+                <SocialBar />
+            </Box>
+        </Box>
     );
 };
 
