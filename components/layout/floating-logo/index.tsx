@@ -1,21 +1,15 @@
-import { FC } from 'react'
-import Logo from '../../../public/images/mulo_logo_vertical-sun.svg'
-import { Box } from '@mui/material'
+import { FC } from 'react';
+import LogoSvg from '../../../public/images/mulo_logo_vertical-sun.svg';
+import { Box } from '@mui/material';
+import { floatingLogo } from './styles.module';
+import { bem } from '../../../src/utils/bem';
 
 export const FloatingLogo: FC = () => {
   return (
-    <Box
-      sx={{
-        width: '60%',
-        maxWidth: '330px',
-        maxHeight: '770px',
-        height: '70%',
-        position: 'relative',
-      }}
-    >
+    <Box className={floatingLogo}>
       <picture>
-        <img src={Logo} alt="Mulo" style={{ width: '100%', height: '100%' }} />
+        <img src={LogoSvg} alt="Mulo" className={bem(floatingLogo, 'image')} />
       </picture>
     </Box>
-  )
-}
+  );
+};

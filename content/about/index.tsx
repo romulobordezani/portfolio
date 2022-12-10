@@ -1,17 +1,17 @@
-import * as React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Avatar from '@mui/material/Avatar'
-import { useTheme } from '@mui/system'
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
+import { useTheme } from '@mui/system';
 
 export const AboutContent: React.FC = () => {
-  const theme = useTheme()
+  const theme = useTheme();
 
   const responsiveFont = {
     [theme.breakpoints.up('xl')]: {
       fontSize: '1.6rem',
     },
-  }
+  };
 
   return (
     <Box sx={{ mh: '10%', padding: '10%' }}>
@@ -64,5 +64,5 @@ export const AboutContent: React.FC = () => {
         </Typography>
       </Typography>
     </Box>
-  )
-}
+  );
+};
